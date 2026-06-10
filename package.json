@@ -1,0 +1,46 @@
+{
+  "name": "developer-portfolio",
+  "description": "Portfolio of Sathish",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.1",
+    "axios": "^1.6.8",
+    "lottie-react": "^2.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-fast-marquee": "^1.6.2",
+    "react-google-recaptcha": "^3.1.0",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.26.0",
+    "react-toastify": "^10.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "latest",
+    "baseline-browser-mapping": "^2.9.11",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "jsdom": "^29.0.1",
+    "postcss": "latest",
+    "sass": "^1.69.5",
+    "tailwindcss": "latest",
+    "vite": "^5.4.0",
+    "vitest": "^4.1.1"
+  }
+}

@@ -16,11 +16,13 @@ function App() {
       <ToastContainer />
       <ScrollToHash />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <ScrollToTop />
       <Footer />
     </div>

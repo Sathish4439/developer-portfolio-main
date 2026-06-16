@@ -11,7 +11,7 @@ function BlogCard({ blog }) {
       <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
         <img
           src={blog?.cover_image}
-          alt=""
+          alt={blog?.title || "Blog cover image"}
           className='h-full w-full group-hover:scale-110 transition-all duration-300 object-cover'
         />
       </div>

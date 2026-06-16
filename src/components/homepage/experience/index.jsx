@@ -37,7 +37,7 @@ function Experience() {
           <div className="flex justify-center">
             <div className="flex flex-col gap-6 items-center w-full max-w-2xl">
               {experiences.map((experience) => (
-                <div key={experience.id} className="w-full max-w-[500px] items-center">
+                <div key={experience.id} className="w-full items-center">
                   <GlowCard identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative w-full min-h-[120px] items-center">
                       <img
@@ -56,9 +56,18 @@ function Experience() {
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {experience.title}
                           </p>
-                          <p className="text-sm sm:text-base">
+                          <p className="text-sm sm:text-base text-gray-300 font-semibold">
                             {experience.company}
                           </p>
+                          {experience.achievements && (
+                            <ul className="mt-3 list-disc list-inside text-xs text-gray-450 space-y-1.5 border-t border-indigo-950 pt-2.5">
+                              {experience.achievements.map((ach, idx) => (
+                                <li key={idx} className="text-left text-gray-400 leading-relaxed pl-1 -indent-4 ml-4">
+                                  {ach}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
                       </div>
                     </div>

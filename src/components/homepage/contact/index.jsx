@@ -16,6 +16,18 @@ function ContactSection() {
         </span>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
+
+      {/* Availability Banner */}
+      <div className="mb-10 p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-center flex items-center justify-center gap-3">
+        <span className="relative flex h-3 w-3">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
+        </span>
+        <span className="text-sm md:text-base font-semibold text-emerald-400">
+          Available for Full-Time Opportunities and Freelance Projects
+        </span>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <ContactForm />
         <div className="lg:w-3/4 ">

@@ -44,6 +44,7 @@ function HeroSection() {
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
               title="GitHub Profile"
+              aria-label="GitHub Profile"
             >
               <BsGithub size={30} />
             </a>
@@ -53,6 +54,7 @@ function HeroSection() {
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
               title="LinkedIn Profile"
+              aria-label="LinkedIn Profile"
             >
               <BsLinkedin size={30} />
             </a>
@@ -63,6 +65,7 @@ function HeroSection() {
                 rel="noreferrer"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
                 title="Medium Blog"
+                aria-label="Medium Blog"
               >
                 <FaMedium size={30} />
               </a>
@@ -73,6 +76,7 @@ function HeroSection() {
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
               title="LeetCode Profile"
+              aria-label="LeetCode Profile"
             >
               <SiLeetcode size={30} />
             </a>
@@ -81,12 +85,11 @@ function HeroSection() {
           <div className="flex items-center gap-3">
             <a
               href="#contact"
-              className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+              className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border border-indigo-900 text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3 hover:border-pink-500"
+              aria-label="Contact me"
             >
-              <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
-                <span>Contact me</span>
-                <RiContactsFill size={16} />
-              </button>
+              <span>Contact me</span>
+              <RiContactsFill size={16} />
             </a>
 
             <a
@@ -95,6 +98,7 @@ function HeroSection() {
               target="_blank"
               rel="noreferrer"
               href={personalData.resume}
+              aria-label="Download Resume"
             >
               <span>Download Resume</span>
               <MdDownload size={16} />

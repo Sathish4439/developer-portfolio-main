@@ -261,7 +261,7 @@ export const skillsImage = (skill) => {
     case "express":
     case "expressjs":
     case "express.js":
-      return express;
+      return nodejs;
     default:
       break;
   }

@@ -45,6 +45,8 @@ function Skills() {
                       <img
                         src={typeof skillsImage(skill) === 'string' ? skillsImage(skill) : (skillsImage(skill)?.src || skillsImage(skill)?.default || '')}
                         alt={skill}
+                        width={16}
+                        height={16}
                         className="h-4 w-auto rounded"
                       />
                     )}
@@ -83,6 +85,8 @@ function Skills() {
                       <img
                         src={typeof skillsImage(skill) === 'string' ? skillsImage(skill) : (skillsImage(skill)?.src || skillsImage(skill)?.default || '')}
                         alt={skill}
+                        width={40}
+                        height={40}
                         className="h-full w-auto rounded-lg"
                       />
                     )}

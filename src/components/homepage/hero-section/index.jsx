@@ -13,6 +13,7 @@ function HeroSection() {
         src="/hero.svg"
         alt=""
         aria-hidden="true"
+        fetchPriority="high"
         className="absolute -top-[98px] -z-10 w-full"
       />
 

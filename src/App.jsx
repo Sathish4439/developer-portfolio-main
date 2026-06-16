@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -7,8 +8,9 @@ import ScrollToTop from './components/helper/scroll-to-top'
 import ScrollToHash from './components/helper/scroll-to-hash'
 import Navbar from './components/navbar'
 import Home from './pages/Home'
-import Blog from './pages/Blog'
-import NotFound from './pages/NotFound'
+
+const Blog = lazy(() => import('./pages/Blog'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
   return (
@@ -17,11 +19,17 @@ function App() {
       <ScrollToHash />
       <Navbar />
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={
+          <div className="flex justify-center items-center h-40">
+            <span className="text-xl text-[#16f2b3]">Loading...</span>
+          </div>
+        }>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </main>
       <ScrollToTop />
       <Footer />

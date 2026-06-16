@@ -74,6 +74,24 @@ function Navbar() {
               </div>
             </Link>
           </li>
+          <li>
+            <Link
+              className="block px-4 py-2 no-underline outline-none hover:no-underline"
+              to="/#contact"
+            >
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+                CONTACT
+              </div>
+            </Link>
+          </li>
+          <li className="ml-2">
+            <Link
+              className="hidden md:inline-block px-4 py-1.5 bg-gradient-to-r from-pink-500 to-violet-600 text-xs font-bold uppercase tracking-wider text-white rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(236,72,153,0.4)]"
+              to="/#contact"
+            >
+              Hire Me
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

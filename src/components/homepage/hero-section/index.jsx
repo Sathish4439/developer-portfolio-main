@@ -17,6 +17,15 @@ function HeroSection() {
 
       <div className="grid grid-cols-1 items-center lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+          {/* Availability Badge */}
+          <div className="mb-4 flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-400">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+            </span>
+            <span>{personalData.availability}</span>
+          </div>
+
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
             Hello, <br />
             This is <span className=" text-pink-500">{personalData.name}</span>
@@ -24,12 +33,17 @@ function HeroSection() {
             <span className=" text-[#16f2b3]">{personalData.designation}</span>.
           </h1>
 
-          <div className="my-12 flex items-center gap-5">
+          <p className="mt-4 text-gray-400 text-sm md:text-base lg:text-lg max-w-xl">
+            "{personalData.tagline}"
+          </p>
+
+          <div className="my-8 flex items-center gap-5">
             <a
               href={personalData.github}
               target="_blank"
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              title="GitHub Profile"
             >
               <BsGithub size={30} />
             </a>
@@ -38,6 +52,7 @@ function HeroSection() {
               target="_blank"
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              title="LinkedIn Profile"
             >
               <BsLinkedin size={30} />
             </a>
@@ -47,6 +62,7 @@ function HeroSection() {
                 target="_blank"
                 rel="noreferrer"
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
+                title="Medium Blog"
               >
                 <FaMedium size={30} />
               </a>
@@ -56,6 +72,7 @@ function HeroSection() {
               target="_blank"
               rel="noreferrer"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              title="LeetCode Profile"
             >
               <SiLeetcode size={30} />
             </a>
@@ -79,7 +96,7 @@ function HeroSection() {
               rel="noreferrer"
               href={personalData.resume}
             >
-              <span>Get Resume</span>
+              <span>Download Resume</span>
               <MdDownload size={16} />
             </a>
           </div>
@@ -125,7 +142,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">availability:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-green-400">Available for Freelance</span>
+                <span className="text-green-400">Full-Time & Freelance</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">

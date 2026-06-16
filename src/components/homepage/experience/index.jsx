@@ -12,7 +12,8 @@ function Experience() {
     >
       <img
         src="/section.svg"
-        alt="Hero"
+        alt=""
+        aria-hidden="true"
         className="absolute top-0 -z-10 w-full"
       />
 
@@ -42,7 +43,8 @@ function Experience() {
                     <div className="p-3 relative w-full min-h-[120px] items-center">
                       <img
                         src="/blur-23.svg"
-                        alt="Hero"
+                        alt=""
+                        aria-hidden="true"
                         className="absolute bottom-0 opacity-80 w-full items-center"
                       />
                       <div className="flex items-start gap-x-6 px-3 py-4">

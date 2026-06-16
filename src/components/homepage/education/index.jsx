@@ -9,7 +9,8 @@ function Education() {
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <img
         src="/section.svg"
-        alt="Hero"
+        alt=""
+        aria-hidden="true"
         className="absolute top-0 -z-10 w-full"
       />
       <div className="flex justify-center -translate-y-[1px]">
@@ -44,7 +45,8 @@ function Education() {
                     <div className="p-3 relative text-white">
                       <img
                         src="/blur-23.svg"
-                        alt="Hero"
+                        alt=""
+                        aria-hidden="true"
                         className="absolute bottom-0 opacity-80 w-full"
                       />
                       <div className="flex justify-center">

@@ -48,11 +48,11 @@ export const projectsData = [
   },
   {
     id: 15,
-    name: "Akirava Retail & Admin Ecosystem",
+    name: "akirva Auto Rider & Driver Ecosystem",
     description:
-      "A complete commercial ecosystem featuring a Customer App with premium UI, a Vendor/Store Partner App, and an advanced Administrative Control Console for real-time order tracking and store operations.",
-    problem: "Bridging the gap between multi-vendor physical retail inventories, delivery agents, and customer shopping workflows in real-time.",
-    solution: "Designed and engineered customer and admin Flutter applications with high-fidelity UI, utilizing Firestore real-time listeners, Geofencing, and automated push notifications.",
+      "A dynamic transportation ecosystem featuring a customer booking application, auto-driver utility, and administrative dashboard for seamless local ride-hailing services.",
+    problem: "Connecting passengers with local auto-rickshaw drivers efficiently in real-time without excessive platform fees.",
+    solution: "Designed and engineered customer and driver Flutter applications with live geolocation tracking, Firestore real-time listeners, and interactive Google Maps API integration.",
     tools: [
       "Flutter",
       "Dart",
@@ -68,11 +68,11 @@ export const projectsData = [
   },
   {
     id: 16,
-    name: "Splendour Park Labor Management",
+    name: "Splendour Park Management",
     description:
-      "An enterprise workflow app built for labor attendance, tasks tracking, wage disbursements, and compliance reporting built specifically to meet Labour Commission guidelines.",
-    problem: "Inefficient manual attendance and complex regulatory compliance requirements for large-scale construction site laborers.",
-    solution: "Developed an offline-first Flutter app with biometric/facial logs, automated compliance document generator, and direct integration with payroll workflows.",
+      "An enterprise-level operations and business management software custom-built to handle menswear manufacturing, billing, wholesale distribution, bulk purchasing, labor tracking, and customer management.",
+    problem: "Fragmented systems for tracking bulk cloth rolls, piece-rate labor attendance, wholesale invoices, and customer accounts.",
+    solution: "Developed an offline-first management application with custom database sync via SQLite, supporting multiple Git branches, automated PDF invoices, and detailed worker logs.",
     tools: [
       "Flutter",
       "Dart",
@@ -82,7 +82,7 @@ export const projectsData = [
       "AWS S3",
       "PDF Generation"
     ],
-    role: "Mobile App Developer",
+    role: "Full Stack Developer",
     code: "",
     demo: "",
     featured: true,
@@ -117,7 +117,9 @@ export const projectsData = [
     id: 1,
     name: "Virtual to Live",
     description:
-      "Virtual 2 Live is an all-in-one digital platform that connects users with local businesses, products, properties, education, and events through immersive virtual experiences. It offers reality-based e-commerce, VR and 360° tours, live shopping, online property services, matrimony, and event streaming—creating a seamless, privacy-focused ecosystem for discovering, booking, and engaging anytime, anywhere.",
+      "An all-in-one digital marketplace and discovery platform connecting users with local businesses, real estate, education, and events via immersive, high-definition 3D virtual reality and 360-degree tours.",
+    problem: "Traditional e-commerce and local directories lack immersive user engagement, making it difficult for remote customers to inspect physical properties or experience venues before booking.",
+    solution: "Engineered a cross-platform Flutter app integrated with 360° video players, Google Maps navigation, and Razorpay payment gateway to enable reality-based virtual shopping and booking.",
     tools: [
       "Flutter",
       "Getx",
@@ -135,7 +137,9 @@ export const projectsData = [
     id: 2,
     name: "Ovantica",
     description:
-      "Ovantica (Since 2015) – India’s trusted re-commerce platform for refurbished and renewed smartphones, laptops, and gadgets. Offering affordable luxury, 47+ quality checks, up to 1-year warranty, easy replacement policy, and secure packaging. Customers can also sell old devices hassle-free with fair valuation, free pickup, and quick payments",
+      "India’s leading trusted re-commerce mobile application facilitating the assessment, valuation, purchase, and sale of refurbished/renewed smartphones, laptops, and gadgets.",
+    problem: "The secondhand electronics market suffers from lack of transparency, inaccurate valuations, and insecure transactions for buyers and sellers.",
+    solution: "Built a highly responsive Flutter application using GetX architecture, implementing a 47-point quality check catalog, secure payment integration, and a streamlined device trade-in workflow.",
     tools: [
       "Flutter",
       "Getx",
@@ -153,9 +157,13 @@ export const projectsData = [
     id: 3,
     name: "lalassa",
     description:
-      "I have worked on building a comprehensive Pet Care Platform that covers everything from veterinary care, grooming, training, and pet sitting to advanced services like adoption. The platform also supports daycare and boarding facilities, adventure activities for pets and parents, and convenient transportation options. Along with health consultations and access to pet supplies, it creates a one-stop solution that connects pet owners with trusted services, ensuring better care, safety, and happiness for their pets",
+      "A comprehensive Pet Care Ecosystem providing pet owners with seamless access to veterinary care, grooming, certified training, pet sitting, adoption, and daycare services.",
+    problem: "Pet parents struggle to find a single, unified source for verified pet care service providers, emergency veterinary consultations, and premium pet supplies.",
+    solution: "Developed a Flutter-based client app with Firestore integration to offer local service matching, appointment scheduling, and direct messaging with certified pet experts.",
     tools: [
-      "Flutter", "Getx", "Firebase"
+      "Flutter",
+      "Getx",
+      "Firebase"
     ],
     code: "",
     role: "Flutter Developer",
@@ -166,7 +174,9 @@ export const projectsData = [
     id: 4,
     name: "Nest Pilot",
     description:
-      "NestPilot is an all-in-one mobile app designed to simplify PG and hostel living. It enables tenants to manage rent and electricity bills, payments, meals, facility bookings, and maintenance issues from a single, secure platform. With a smart dashboard, real-time notifications, QR-based onboarding, and flexible payment options, NestPilot ensures a smooth, transparent, and hassle-free living experience for students and working professionals",
+      "An all-in-one modern hostel and PG management application streamlining rent tracking, utility billing, meal scheduling, facility booking, and complaint management for tenants and operators.",
+    problem: "Hostel and PG living is plagued by manual rent tracking, fragmented communications, and delayed responses to maintenance tickets.",
+    solution: "Created a full-stack ecosystem with a Flutter mobile app and React web dashboard, utilizing a PostgreSQL database to manage billing automation, QR-based onboarding, and real-time maintenance requests.",
     tools: [
       "Flutter",
       "Getx",
@@ -186,7 +196,9 @@ export const projectsData = [
     id: 5,
     name: "RutsNRides",
     description:
-      "Ruts n Rides is an all-in-one motorcycle training and ride booking app for beginners and riding enthusiasts. It makes booking training programs easy, offers flexible session slots, bike and gear rental options, and simple booking tracking—all through a smooth, user-friendly experience. Start your riding journey with confidence and skill.",
+      "An interactive booking and training application for motorcycle enthusiasts, simplifying session slot bookings, bike and gear rentals, and structured training tracking.",
+    problem: "Motorcycle training centers and rental providers rely on manual bookings, leading to slot conflicts and underutilized gear.",
+    solution: "Engineered a full-stack platform using Flutter, Node.js, and MongoDB, featuring real-time schedule conflict resolution, digital rental checklists, and automated payment processing.",
     tools: ["Flutter", "Getx", "Firebase", "MongoDB", "NodeJS", "Express"],
     code: "",
     demo: "",
@@ -197,7 +209,9 @@ export const projectsData = [
     id: 6,
     name: "Velocy Tax",
     description:
-      "VelocyTax is a comprehensive taxi booking app that simplifies urban travel. It offers real-time ride tracking, secure payment options, and a user-friendly interface for seamless cab booking. With features like driver ratings, emergency assistance, and location-based search, it ensures a safe and convenient ride experience for users.",
+      "A premium urban taxi booking application featuring high-fidelity real-time ride tracking, secure multi-channel payments, and location-based passenger-driver matching.",
+    problem: "Commuters frequently encounter unreliable local transport, unsafe rides, and dynamic pricing lack of transparency.",
+    solution: "Designed and implemented a high-performance Flutter app integrating Socket.io for real-time driver tracking, Google Maps API for route mapping, and Razorpay for seamless card/UPI payments.",
     tools: [
       "Flutter",
       "Getx",
@@ -217,7 +231,9 @@ export const projectsData = [
     id: 7,
     name: "Aptimaster",
     description:
-      "Aptimaster is a comprehensive education platform that provides students with access to a wide range of courses, tutorials, and resources. It offers a user-friendly interface for seamless learning and a secure payment system for easy course enrollment.",
+      "An interactive, scalable ed-tech mobile application offering structured learning paths, video courses, self-assessment tutorials, and secure payment-enabled enrollment.",
+    problem: "Aspirants preparing for logical reasoning and aptitude tests lack structured learning paths and instant progress tracking on mobile.",
+    solution: "Built a full-stack ed-tech solution leveraging Flutter and Node.js with PostgreSQL, providing offline video playback caching, progress metrics, and secure course purchasing.",
     tools: ["Flutter", "Getx", "Firebase", "Postgresql", "NodeJS", "Express"],
     code: "",
     demo: "",
@@ -228,7 +244,9 @@ export const projectsData = [
     id: 8,
     name: "Premium Parts",
     description:
-      "Premium Parts is a comprehensive business management solution designed for automotive parts companies. The platform features a Flutter-based cross-platform frontend (mobile and desktop) and a Node.js/Express backend with Prisma ORM. Key features include real-time attendance tracking with geolocation, task assignment and monitoring, automated payroll and payslip generation, product catalog management with QR code generation, employee points/rewards system, and multi-role support for admins, employees, mechanics, retailers, and fleet owners.",
+      "An enterprise-grade ERP and operations management app for automotive parts companies, featuring real-time attendance tracking, task management, QR inventory control, and automated payroll.",
+    problem: "Automotive parts distributors struggle with offline fleet tracking, manual employee timesheets, and error-prone multi-tier retail commissions.",
+    solution: "Architected a Flutter client (Mobile & Desktop) and a robust Node.js/Prisma backend to automate payroll generation, geo-fenced attendance logs, and QR code parts scanning.",
     tools: [
       "Flutter",
       "Dart",
@@ -251,7 +269,9 @@ export const projectsData = [
     id: 9,
     name: "Judah Food Delivery - User App",
     description:
-      "A comprehensive food delivery application for users to browse restaurants, order food, and track deliveries in real-time. Features include secure payments via Razorpay, Firebase push notifications, and detailed order history.",
+      "A consumer-facing food delivery application designed for seamless restaurant discovery, custom menu cart management, secure payments, and live order tracking.",
+    problem: "Users face slow page loads, disjointed payment options, and poor communication about delivery statuses during peak hours.",
+    solution: "Developed a Flutter app with GetX state management, utilizing Razorpay SDK, Firebase Cloud Messaging, and Dio for high-speed API data fetching.",
     tools: ["Flutter", "Getx", "Firebase", "Google Maps", "Razorpay", "Dio"],
     code: "",
     demo: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
@@ -262,7 +282,9 @@ export const projectsData = [
     id: 10,
     name: "Judah Delivery Partner - Agent App",
     description:
-      "A dedicated app for delivery agents to receive orders, navigate to locations using Google Maps, and manage their delivery status. Features real-time location tracking using Socket.io and automated payout management.",
+      "A dedicated logistics application for delivery agents, featuring automated route optimization, real-time dispatch alerts, and earnings tracking dashboards.",
+    problem: "Delivery agents waste time navigating inefficient routes and need real-time coordination with restaurants and customers.",
+    solution: "Created a Flutter app integrating Google Maps Navigation API and real-time Socket.io connections with the Node.js server for instant dispatch updates.",
     tools: ["Flutter", "Getx", "Firebase", "Google Maps", "Socket.io", "Node.js"],
     code: "",
     demo: "https://play.google.com/store/apps/details?id=com.judah.deliverypartner&pcampaignid=web_share",
@@ -273,7 +295,9 @@ export const projectsData = [
     id: 11,
     name: "Judah Restaurant Partner - Vendor App",
     description:
-      "An application for restaurant owners to manage their menu, track incoming orders, and view business analytics. Includes features for inventory management and real-time order status updates.",
+      "A business dashboard for restaurant partners, allowing real-time order acceptance, menu management, and sales analytical reporting.",
+    problem: "Merchant partners need a reliable interface to manage incoming order backlogs, update stock levels, and view daily sales metrics.",
+    solution: "Built a lightweight Flutter admin application connected to a Node.js/Prisma database, enabling instant push alerts for orders and real-time inventory toggling.",
     tools: ["Flutter", "Getx", "Firebase", "Node.js", "Express", "Prisma"],
     code: "",
     demo: "https://play.google.com/store/apps/details?id=com.judah.restaurentpartner&pcampaignid=web_share",

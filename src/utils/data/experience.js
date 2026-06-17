@@ -5,9 +5,9 @@ export const experiences = [
     company: "Dhigrowth",
     duration: "(September 2025 - Present)",
     achievements: [
-      "Developed and launched Flutter applications targeting business automation and customer engagement workflows.",
-      "Integrated Firebase Authentication, Cloud Messaging, and Firestore for high-performance real-time data sync.",
-      "Configured AWS EC2 infrastructure, security groups, and environment pipelines for reliable service deployment."
+      "Engineered the Judah Food Delivery suite (Customer, Partner, Vendor apps) and the Splendour Park Management Suite for menswear wholesaling and billing.",
+      "Developed the akirva Auto Rider & Driver ecosystem consisting of the customer app, driver app, and React Web Admin Console dashboard.",
+      "Built the Nest Pilot hostel utility along with highly secure, containerized Node.js, Express, PostgreSQL, and AWS backend services."
     ]
   },
   {
@@ -16,20 +16,20 @@ export const experiences = [
     company: "Elanoxtech",
     duration: "(July 2024 - September 2025)",
     achievements: [
-      "Designed a robust LMS platform supporting video-based streaming workflows with advanced access control.",
-      "Managed deployment environments utilizing Docker containers and Nginx reverse proxy setups.",
-      "Optimized Flutter application performance, reducing frame rendering times and memory footprints."
+      "Developed key mobile applications including Virtual to Live (3D VR/360° e-commerce platform), Ovantica (re-commerce platform), and lalassa (pet care portal).",
+      "Built custom mobile features incorporating Google Maps API, Firestore real-time listeners, and payment gateways like Razorpay.",
+      "Optimized app performance and memory usage, using GetX for highly responsive, lag-free user experiences."
     ]
   },
   {
     id: 3,
-    title: "Freelancer",
+    title: "Freelancer / Independent Developer",
     company: "Independent Client Engagements",
     duration: "(June 2023 - June 2024)",
     achievements: [
-      "Built automation utilities (WhatsApp Sender) leveraging official Meta Cloud/Business APIs.",
-      "Designed and hosted multiple bespoke applications using Node.js, Express, React, and MongoDB/MySQL.",
-      "Managed client projects end-to-end, gathering requirements, creating wireframes, and writing clean, documented code."
+      "Designed and developed custom applications including the Mayiliragu Academy LMS, Premium Parts ERP, and an AI-powered RAG Chatbot Dashboard.",
+      "Built automation utilities (WhatsApp Sender Automation) leveraging official Meta Cloud/Business APIs.",
+      "Managed project life cycles using modern stacks: Flutter, React, Node.js, Prisma ORM, PostgreSQL, and Qdrant Cloud."
     ]
   }
 ]

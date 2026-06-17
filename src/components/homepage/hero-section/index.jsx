@@ -1,10 +1,10 @@
 import { personalData } from "@/utils/data/personal-data";
 import { Link } from "react-router-dom";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaMedium } from "react-icons/fa";
+import { FaMedium, FaDev } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiHashnode } from "react-icons/si";
 
 function HeroSection() {
   return (
@@ -70,6 +70,30 @@ function HeroSection() {
                 aria-label="Medium Blog"
               >
                 <FaMedium size={30} />
+              </a>
+            )}
+            {personalData.devTo && (
+              <a
+                href={personalData.devTo}
+                target="_blank"
+                rel="noreferrer"
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                title="Dev.to Profile"
+                aria-label="Dev.to Profile"
+              >
+                <FaDev size={30} />
+              </a>
+            )}
+            {personalData.hashnode && (
+              <a
+                href={personalData.hashnode}
+                target="_blank"
+                rel="noreferrer"
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                title="Hashnode Profile"
+                aria-label="Hashnode Profile"
+              >
+                <SiHashnode size={30} />
               </a>
             )}
             <a

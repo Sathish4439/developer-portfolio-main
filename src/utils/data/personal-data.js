@@ -16,5 +16,8 @@ export const personalData = {
   stackOverflow: "",
   leetcode: "https://leetcode.com/u/aravindsathish0885/",
   devUsername: "Sathish4439",
+  devTo: "https://dev.to/5119__sathishg_d4ba94816",
+  hashnode: "https://hashnode.com/@sathish4439",
+  medium: "https://medium.com/@aravindsathish0885",
   resume: "/resume.pdf"
 };

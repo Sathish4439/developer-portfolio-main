@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=16F2B3&center=true&vCenter=true&width=700&lines=Hi+there%2C+I'm+Sathish!+👋;Full-Stack+Software+Developer;Flutter+%7C+React+%7C+Node.js;Building+Amazing+Cross-Platform+Apps;2+Years+of+Experience;Open+to+Collaboration+%26+Opportunities!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=16F2B3&center=true&vCenter=true&width=700&lines=Hi+there%2C+I'm+Sathish!+👋;Flutter+%26+Full-Stack+Developer;React+%7C+AWS+%7C+Prisma+%7C+Node.js;Building+Scalable+Mobile+%26+Web+Apps;2%2B+Years+of+Experience;Open+to+Collaboration+%26+Opportunities!" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -22,6 +22,12 @@
   <a href="https://www.linkedin.com/in/sathishgobi/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+  <a href="https://dev.to/5119__sathishg_d4ba94816" target="_blank">
+    <img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="Dev.to" />
+  </a>
+  <a href="https://hashnode.com/@sathish4439" target="_blank">
+    <img src="https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" alt="Hashnode" />
+  </a>
   <a href="https://medium.com/@aravindsathish0885" target="_blank">
     <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
   </a>
@@ -40,9 +46,9 @@
 
 <div align="justify">
 
-I am a **Full-Stack Software Developer** with **2 years** of hands-on experience in building, deploying, and maintaining cross-platform and web applications. I specialize in developing high-performance applications using **Flutter** (Android, iOS, Web, Windows) and modern JavaScript frameworks. My technical expertise includes **React.js**, **Node.js**, **Firebase**, and cloud-based deployment using **AWS** and **Hostinger**.
+I am a **Flutter & Full-Stack Developer** based in Coimbatore, Tamil Nadu, with **2+ years** of hands-on experience building high-performance cross-platform mobile applications and scalable web platforms. I specialize in the **Flutter/Dart** ecosystem for client apps and **React.js, Node.js, AWS, Prisma, PostgreSQL, and MySQL** for robust back-end/full-stack systems.
 
-I am experienced in version control and collaboration using **Git** and **GitHub**, and I follow best practices for clean code, scalability, and performance optimization. I am a fast learner with a strong passion for problem-solving, learning new technologies, and delivering reliable software solutions.
+I help startups and businesses turn ideas into scalable digital products. Experienced in offline-first architecture, real-time sync, automated messaging integrations, and deploying robust server infrastructures.
 
 **I am available for freelance projects as well as full-time opportunities that align with my skills and professional interests.**
 
@@ -76,6 +82,7 @@ I am experienced in version control and collaboration using **Git** and **GitHub
   
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" />
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
@@ -95,17 +102,17 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 
 <p align="center">Here are some of my key projects that showcase my skills and experience.</p>
 
-### 1. Virtual to Live
+### 1. Mayiliragu Academy LMS
 
 <table>
 <tr>
 <td width="100%">
 
-**Description:** Virtual 2 Live is an all-in-one digital platform that connects users with local businesses, products, properties, education, and events through immersive virtual experiences. It offers reality-based e-commerce, VR and 360° tours, live shopping, online property services, matrimony, and event streaming—creating a seamless, privacy-focused ecosystem for discovering, booking, and engaging anytime, anywhere.
+**Description:** An end-to-end, high-performance, and feature-rich Learning Management System (LMS) tailored for aspirants preparing for competitive government examinations. It features a cross-platform Flutter mobile application for students, a React/TypeScript/Vite web application for administrative & faculty management, and a robust Node.js/Express backend powered by Prisma ORM and PostgreSQL.
 
-**Role:** Flutter Developer
+**Role:** Full Stack Developer (Freelance)
 
-**Tech Stack:** `Flutter` • `Getx` • `Firebase` • `Google Maps` • `razorpay` • `360 Video`
+**Tech Stack:** `Flutter` • `React` • `TypeScript` • `Vite` • `Node.js` • `Express` • `Prisma` • `PostgreSQL` • `Firebase` • `Google Drive API`
 
 </td>
 </tr>
@@ -113,17 +120,17 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 
 ---
 
-### 2. Ovantica
+### 2. WhatsApp Sender Automation
 
 <table>
 <tr>
 <td width="100%">
 
-**Description:** Ovantica (Since 2015) – India's trusted re-commerce platform for refurbished and renewed smartphones, laptops, and gadgets. Offering affordable luxury, 47+ quality checks, up to 1-year warranty, easy replacement policy, and secure packaging. Customers can also sell old devices hassle-free with fair valuation, free pickup, and quick payments
+**Description:** A developer automation utility and SaaS tool designed for businesses to automate bulk messaging, schedule alerts, and manage client communications seamlessly using Meta's Cloud APIs.
 
-**Role:** Flutter Developer
+**Role:** Full Stack Developer (Freelance)
 
-**Tech Stack:** `Flutter` • `Getx` • `Firebase` • `Google Maps` • `razorpay` • `Live tracking`
+**Tech Stack:** `Flutter` • `Dart` • `Node.js` • `Express` • `Meta Business API` • `MongoDB` • `Webhooks`
 
 </td>
 </tr>
@@ -131,17 +138,17 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 
 ---
 
-### 3. lalassa
+### 3. akirva Auto Rider & Driver Ecosystem
 
 <table>
 <tr>
 <td width="100%">
 
-**Description:** I have worked on building a comprehensive Pet Care Platform that covers everything from veterinary care, grooming, training, and pet sitting to advanced services like adoption. The platform also supports daycare and boarding facilities, adventure activities for pets and parents, and convenient transportation options. Along with health consultations and access to pet supplies, it creates a one-stop solution that connects pet owners with trusted services, ensuring better care, safety, and happiness for their pets
+**Description:** A dynamic transportation ecosystem featuring a customer booking application, auto-driver utility, and administrative React dashboard for seamless local ride-hailing services.
 
-**Role:** Flutter Developer
+**Role:** Flutter Developer & UI Architect (Dhigrowth)
 
-**Tech Stack:** `Flutter` • `Getx` • `Firebase`
+**Tech Stack:** `Flutter` • `Dart` • `Firebase Firestore` • `Node.js` • `Express` • `Google Maps API` • `React`
 
 </td>
 </tr>
@@ -149,17 +156,17 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 
 ---
 
-### 4. Nest Pilot
+### 4. Splendour Park Management Suite
 
 <table>
 <tr>
 <td width="100%">
 
-**Description:** NestPilot is an all-in-one mobile app designed to simplify PG and hostel living. It enables tenants to manage rent and electricity bills, payments, meals, facility bookings, and maintenance issues from a single, secure platform. With a smart dashboard, real-time notifications, QR-based onboarding, and flexible payment options, NestPilot ensures a smooth, transparent, and hassle-free living experience for students and working professionals
+**Description:** An enterprise-level operations and business management software custom-built to handle menswear manufacturing, billing, wholesale distribution, bulk purchasing, labor tracking, and customer management.
 
-**Role:** Full Stack Developer
+**Role:** Full Stack Developer (Dhigrowth)
 
-**Tech Stack:** `Flutter` • `Getx` • `Firebase` • `React` • `NodeJS` • `Express` • `Postgresql` • `AWS`
+**Tech Stack:** `Flutter` • `Dart` • `SQLite` • `Node.js` • `Express` • `AWS S3` • `PDF Generation`
 
 </td>
 </tr>
@@ -167,35 +174,17 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 
 ---
 
-### 5. RutsNRides
+### 5. RAG System & Chatbot Dashboard
 
 <table>
 <tr>
 <td width="100%">
 
-**Description:** Ruts n Rides is an all-in-one motorcycle training and ride booking app for beginners and riding enthusiasts. It makes booking training programs easy, offers flexible session slots, bike and gear rental options, and simple booking tracking—all through a smooth, user-friendly experience. Start your riding journey with confidence and skill.
+**Description:** A Retrieval-Augmented Generation (RAG) system featuring a real-time cross-platform Flutter dashboard and a Node.js/TypeScript backend. It implements automated PDF text parsing and dynamic web crawling, rolling-window semantic chunking, and high-dimensional embeddings generation indexed in Qdrant Cloud Vector Database. Search results are synthesized using Groq (LLaMA 3.1) and streamed to the user via Server-Sent Events (SSE) alongside instant source citations.
 
-**Role:** Full Stack Developer
+**Role:** Full Stack Developer (Freelance)
 
-**Tech Stack:** `Flutter` • `Getx` • `Firebase` • `MongoDB` • `NodeJS` • `Express`
-
-</td>
-</tr>
-</table>
-
----
-
-### 6. Velocy Tax
-
-<table>
-<tr>
-<td width="100%">
-
-**Description:** VelocyTax is a comprehensive taxi booking app that simplifies urban travel. It offers real-time ride tracking, secure payment options, and a user-friendly interface for seamless cab booking. With features like driver ratings, emergency assistance, and location-based search, it ensures a safe and convenient ride experience for users.
-
-**Role:** Full Stack Developer
-
-**Tech Stack:** `Flutter` • `Getx` • `Firebase` • `Mysql` • `NodeJS` • `Express` • `Razorpay` • `Google Maps`
+**Tech Stack:** `Flutter` • `Dart` • `GetX` • `Node.js` • `TypeScript` • `Express` • `Qdrant Cloud` • `HuggingFace` • `Groq API` • `Playwright` • `Server-Sent Events (SSE)`
 
 </td>
 </tr>
@@ -208,17 +197,50 @@ I am experienced in version control and collaboration using **Git** and **GitHub
 <details>
 <summary>Click to expand and see all projects</summary>
 
-### 7. Aptimaster
+### 6. Virtual to Live
+- **Description:** An all-in-one digital marketplace and discovery platform connecting users with local businesses, real estate, education, and events via immersive, high-definition 3D virtual reality and 360-degree tours.
+- **Role:** Flutter Developer (Elanoxtech)
+- **Tech Stack:** Flutter, Getx, Firebase, Google Maps, Razorpay, 360 Video
 
-- **Description:** Aptimaster is a comprehensive education platform that provides students with access to a wide range of courses, tutorials, and resources. It offers a user-friendly interface for seamless learning and a secure payment system for easy course enrollment.
-- **Role:** Full Stack Developer
+### 7. Ovantica
+- **Description:** India’s leading trusted re-commerce mobile application facilitating the assessment, valuation, purchase, and sale of refurbished/renewed smartphones, laptops, and gadgets.
+- **Role:** Flutter Developer (Elanoxtech)
+- **Tech Stack:** Flutter, Getx, Firebase, Google Maps, Razorpay, Live tracking
+
+### 8. lalassa
+- **Description:** A comprehensive Pet Care Ecosystem providing pet owners with seamless access to veterinary care, grooming, certified training, pet sitting, adoption, and daycare services.
+- **Role:** Flutter Developer (Elanoxtech)
+- **Tech Stack:** Flutter, Getx, Firebase
+
+### 9. Nest Pilot
+- **Description:** An all-in-one modern hostel and PG management application streamlining rent tracking, utility billing, meal scheduling, facility booking, and complaint management for tenants and operators.
+- **Role:** Full Stack Developer (Dhigrowth)
+- **Tech Stack:** Flutter, Getx, Firebase, React, NodeJS, Express, Postgresql, AWS
+
+### 10. RutsNRides
+- **Description:** An interactive booking and training application for motorcycle enthusiasts, simplifying session slot bookings, bike and gear rentals, and structured training tracking.
+- **Role:** Full Stack Developer (Dhigrowth)
+- **Tech Stack:** Flutter, Getx, Firebase, MongoDB, NodeJS, Express
+
+### 11. Velocy Tax
+- **Description:** A premium urban taxi booking application featuring high-fidelity real-time ride tracking, secure multi-channel payments, and location-based passenger-driver matching.
+- **Role:** Full Stack Developer (Dhigrowth)
+- **Tech Stack:** Flutter, Getx, Firebase, Mysql, NodeJS, Express, Razorpay, Google Maps
+
+### 12. Aptimaster
+- **Description:** An interactive, scalable ed-tech mobile application offering structured learning paths, video courses, self-assessment tutorials, and secure payment-enabled enrollment.
+- **Role:** Full Stack Developer (Dhigrowth)
 - **Tech Stack:** Flutter, Getx, Firebase, Postgresql, NodeJS, Express
 
-### 8. Prmium Parts
-
-- **Description:** Premium Parts is a comprehensive business management solution designed for automotive parts companies. The platform features a Flutter-based cross-platform frontend (mobile and desktop) and a Node.js/Express backend with Prisma ORM. Key features include real-time attendance tracking with geolocation, task assignment and monitoring, automated payroll and payslip generation, product catalog management with QR code generation, employee points/rewards system, and multi-role support for admins, employees, mechanics, retailers, and fleet owners.
-- **Role:** Full Stack Developer
+### 13. Premium Parts
+- **Description:** An enterprise-grade ERP and operations management app for automotive parts companies, featuring real-time attendance tracking, task management, QR inventory control, and automated payroll.
+- **Role:** Full Stack Developer (Freelance)
 - **Tech Stack:** Flutter, Dart, Node.js, Express.js, PostgreSQL, Prisma, JWT, Firebase, Google Maps API, QR Code, PDF Generation
+
+### 14. Judah Food Delivery Suite (User, Delivery & Restaurant Partner)
+- **Description:** A complete 3-app ecosystem containing a consumer ordering application (Dio, Razorpay), an optimized logistics dispatch agent application (Socket.io, Maps routing), and a restaurant merchant management portal.
+- **Role:** Full Stack Developer (Dhigrowth)
+- **Tech Stack:** Flutter, Getx, Firebase, Google Maps, Socket.io, Node.js, Express, Prisma, Razorpay
 
 </details>
 
@@ -317,17 +339,26 @@ A reusable login component with authentication features and smooth animations.
 
 ## 💼 Work Experience
 
-### 1. Full stack developer
+### 1. Full Stack Developer
 
-**Dhigrowth** | (september 2025 - present)
+**Dhigrowth** | (September 2025 - Present)
+- Engineered the Judah Food Delivery suite (Customer, Partner, Vendor apps) and the Splendour Park Management Suite for menswear wholesaling and billing.
+- Developed the akirva Auto Rider & Driver ecosystem consisting of the customer app, driver app, and React Web Admin Console dashboard.
+- Built the Nest Pilot hostel utility along with highly secure, containerized Node.js, Express, PostgreSQL, and AWS backend services.
 
 ### 2. Flutter Developer
 
-**Elanoxtech** | (july 2024 - september 2025)
+**Elanoxtech** | (July 2024 - September 2025)
+- Developed key mobile applications including Virtual to Live (3D VR/360° e-commerce platform), Ovantica (re-commerce platform), and lalassa (pet care portal).
+- Built custom mobile features incorporating Google Maps API, Firestore real-time listeners, and payment gateways like Razorpay.
+- Optimized app performance and memory usage, using GetX for highly responsive, lag-free user experiences.
 
-### 3. Freelancer
+### 3. Freelancer / Independent Developer
 
-**Code and build something in everyday.** | (Jun 2023 - June 2024)
+**Independent Client Engagements** | (June 2023 - June 2024)
+- Designed and developed custom applications including the Mayiliragu Academy LMS, Premium Parts ERP, and an AI-powered RAG Chatbot Dashboard.
+- Built automation utilities (WhatsApp Sender Automation) leveraging official Meta Cloud/Business APIs.
+- Managed project life cycles using modern stacks: Flutter, React, Node.js, Prisma ORM, PostgreSQL, and Qdrant Cloud.
 
 ## 🎓 Education
 

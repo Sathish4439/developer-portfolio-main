@@ -1,9 +1,9 @@
 export const personalData = {
   name: "Sathish G",
   profile: "/profile.png",
-  designation: "Software Developer",
+  designation: "Flutter & Full Stack Developer",
   description:
-    "My name is Sathish. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+    "I'm Sathish G, a Flutter Full Stack Developer from Coimbatore, India. I specialize in building high-performance Android and iOS applications using Flutter, Firebase, REST APIs, and modern software architecture. I also have strong expertise in full-stack web development using React, Node.js, AWS, Prisma, PostgreSQL, and MySQL, helping startups and businesses turn ideas into scalable products. In my daily life, I am a professional and enthusiastic programmer and a quick learner with a self-learning attitude. I love to learn and explore new technologies, am passionate about problem-solving, and am available for any kind of job opportunity that suits my skills and interests.",
   email: "sathishg.dev@gmail.com",
   phone: "+917868031207",
   address: "Tamil Nadu, India",

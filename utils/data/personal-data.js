@@ -17,6 +17,5 @@ export const personalData = {
   devTo: "https://dev.to/5119__sathishg_d4ba94816",
   hashnode: "https://hashnode.com/@sathish4439",
   medium: "https://medium.com/@aravindsathish0885",
-  resume:
-    "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing",
+  resume: "/resume.pdf"
 };

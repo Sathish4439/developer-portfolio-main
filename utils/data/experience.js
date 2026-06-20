@@ -14,7 +14,7 @@ export const experiences = [
   {
     id: 3,
     title: "Freelancer",
-    company: "Code and build something in everyday.",
+    company: "Befhue & Independent Clients",
     duration: "(Jun 2023 - June 2024)"
   }
 ]

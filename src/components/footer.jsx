@@ -18,7 +18,7 @@ function Footer() {
               href="https://www.linkedin.com/in/sathishgobi/"
               className="text-[#16f2b3]"
             >
-              Sathish
+              Sathish G
             </a>
           </p>
           <div className="flex items-center gap-5">

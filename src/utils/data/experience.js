@@ -24,10 +24,10 @@ export const experiences = [
   {
     id: 3,
     title: "Freelancer / Independent Developer",
-    company: "Independent Client Engagements",
+    company: "Befhue & Independent Clients",
     duration: "(June 2023 - June 2024)",
     achievements: [
-      "Designed and developed custom applications including the Mayiliragu Academy LMS, Premium Parts ERP, and an AI-powered RAG Chatbot Dashboard.",
+      "Designed and developed custom applications for Befhue and other clients, including the Mayiliragu Academy LMS, Premium Parts ERP, and an AI-powered RAG Chatbot Dashboard.",
       "Built automation utilities (WhatsApp Sender Automation) leveraging official Meta Cloud/Business APIs.",
       "Managed project life cycles using modern stacks: Flutter, React, Node.js, Prisma ORM, PostgreSQL, and Qdrant Cloud."
     ]

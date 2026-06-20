@@ -1,11 +1,11 @@
 export const personalData = {
   name: "Sathish G",
   profile: "/sathish.png",
-  designation: "Flutter Developer & Full Stack Engineer",
-  tagline: "Building Mobile Apps That Solve Real Business Problems",
+  designation: "Flutter Developer in Coimbatore | Mobile App Developer | Full Stack Developer | Android, iOS, Web & Firebase Expert",
+  tagline: "Building Android, iOS, Web and Full Stack Applications. I help businesses build Android, iOS, Web, and backend solutions using Flutter and modern full-stack technologies.",
   availability: "Available for Full-Time Opportunities and Freelance Projects",
   description:
-    "Hi, I'm Sathish, a Flutter Developer and Full Stack Engineer passionate about building scalable mobile applications, LMS platforms, automation tools, and cloud-based solutions. With 2+ years of hands-on experience in Flutter (Android, iOS, Web, Windows) and Node.js/Express, I deliver high-performance applications deployed on AWS, Docker, and Nginx. Let's build something amazing together!",
+    "I am Sathish G, a dedicated Flutter Developer Coimbatore, Mobile App Developer Coimbatore, and Full Stack Developer Coimbatore. With 2+ years of professional experience, I help businesses build cross-platform mobile apps as a Flutter Freelancer Coimbatore and provide high-quality MVP development services. If you want to hire a Flutter Developer India, I offer expertise in Flutter mobile app development, MERN stack, Node.js backend development, and Firebase database integration. I specialize in building internal business applications such as invoice management software, HR/employee management systems, custom SaaS dashboards, and automated workflows. Having worked with companies like Dhigrowth, Elanoxtech, and Befhue, I ensure robust, scalable, and secure deployment on AWS, Docker, and Nginx. Let's work together to turn your vision into a successful product!",
   email: "sathishg.dev@gmail.com",
   phone: "+917868031207",
   address: "Tamil Nadu, India",
@@ -21,3 +21,4 @@ export const personalData = {
   medium: "https://medium.com/@aravindsathish0885",
   resume: "/resume.pdf"
 };
+

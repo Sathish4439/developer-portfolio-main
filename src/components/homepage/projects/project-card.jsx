@@ -73,6 +73,22 @@ function ProjectCard({ project }) {
           </div>
         )}
 
+        {/* Impact block (if exists) */}
+        {project.impact && project.impact.length > 0 && (
+          <div className="mb-6 relative rounded-lg bg-[#0d1224] border border-[#16f2b3]/40 p-4 shadow-[0_0_15px_rgba(22,242,179,0.15)]">
+            <span className="text-[#16f2b3] text-xs font-bold uppercase tracking-wider block mb-2">
+              Key Achievements & Impact
+            </span>
+            <ul className="list-disc list-inside text-gray-300 text-xs sm:text-sm space-y-1.5">
+              {project.impact.map((item, idx) => (
+                <li key={idx} className="leading-relaxed">
+                  <span dangerouslySetInnerHTML={{ __html: item.replace(/(\d+(?:,\d+)*[%+]*)/g, '<strong class="text-white font-bold">$1</strong>') }} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Role */}
         <div className="mb-6 flex items-center justify-between">
           <div>

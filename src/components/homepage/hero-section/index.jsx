@@ -1,7 +1,7 @@
 import { personalData } from "@/utils/data/personal-data";
 import { Link } from "react-router-dom";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaMedium, FaDev } from "react-icons/fa";
+import { FaMedium, FaDev, FaCalendarAlt } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode, SiHashnode } from "react-icons/si";
@@ -29,14 +29,11 @@ function HeroSection() {
           </div>
 
           <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            Hello, <br />
-            This is <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{personalData.designation}</span>.
+            Flutter Developer & Full Stack Engineer — Building Scalable Apps from Tamil Nadu, India
           </h1>
 
           <p className="mt-4 text-gray-400 text-sm md:text-base lg:text-lg max-w-xl">
-            "{personalData.tagline}"
+            {personalData.tagline}
           </p>
 
           <div className="my-8 flex items-center gap-5">
@@ -108,22 +105,41 @@ function HeroSection() {
             </a>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <a
               href="#contact"
-              className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border border-indigo-900 text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3 hover:border-pink-500"
-              aria-label="Contact me"
+              className="px-3 text-xs md:px-6 py-3 md:py-4 bg-[#0d1224] rounded-full border border-indigo-900 text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3 hover:border-pink-500"
+              aria-label="Hire Me"
             >
-              <span>Contact me</span>
+              <span>Hire Me</span>
               <RiContactsFill size={16} />
             </a>
 
             <a
-              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              href="#contact"
+              className="px-3 text-xs md:px-6 py-3 md:py-4 bg-[#0d1224] rounded-full border border-emerald-600 text-center md:text-sm font-medium uppercase tracking-wider text-emerald-400 no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3 hover:bg-emerald-900/30"
+              aria-label="Schedule a Call"
+            >
+              <span>Schedule a Call</span>
+              <FaCalendarAlt size={14} />
+            </a>
+
+            <a
+              href="#projects"
+              className="px-3 text-xs md:px-6 py-3 md:py-4 bg-[#0d1224] rounded-full border border-violet-600 text-center md:text-sm font-medium uppercase tracking-wider text-violet-400 no-underline transition-all duration-200 ease-out md:font-semibold flex items-center gap-1 hover:gap-3 hover:bg-violet-900/30"
+              aria-label="View Projects"
+            >
+              <span>View Projects</span>
+              <RiContactsFill size={16} />
+            </a>
+
+            <a
+              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-6 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
               target="_blank"
               rel="noreferrer"
               href={personalData.resume}
+              download
               aria-label="Download Resume"
             >
               <span>Download Resume</span>

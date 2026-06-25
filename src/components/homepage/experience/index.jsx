@@ -63,11 +63,16 @@ function Experience() {
                           </p>
                           {experience.achievements && (
                             <ul className="mt-3 list-disc list-inside text-xs text-gray-450 space-y-1.5 border-t border-indigo-950 pt-2.5">
-                              {experience.achievements.map((ach, idx) => (
-                                <li key={idx} className="text-left text-gray-400 leading-relaxed pl-1 -indent-4 ml-4">
-                                  {ach}
-                                </li>
-                              ))}
+                              {experience.achievements.map((ach, idx) => {
+                                // Render markdown **bold** as bold HTML elements
+                                const highlightedText = ach.replace(/\*\*(.*?)\*\*/g, '<strong class="text-[#16f2b3] font-bold">$1</strong>');
+                                
+                                return (
+                                  <li key={idx} className="text-left text-gray-400 leading-relaxed pl-1 -indent-4 ml-4">
+                                    <span dangerouslySetInnerHTML={{ __html: highlightedText }} />
+                                  </li>
+                                );
+                              })}
                             </ul>
                           )}
                         </div>

@@ -11,6 +11,9 @@ function ContactForm() {
     name: "",
     email: "",
     message: "",
+    projectType: "New Mobile App",
+    budget: "Under $1,000",
+    company: "",
   });
 
   const checkRequired = () => {
@@ -44,10 +47,14 @@ function ContactForm() {
         return;
       }
 
+      // NOTE: Ensure your EmailJS template contains {{projectType}}, {{budget}}, and {{company}} fields
       const templateParams = {
         from_name: userInput.name,
         from_email: userInput.email,
         message: userInput.message,
+        projectType: userInput.projectType,
+        budget: userInput.budget,
+        company: userInput.company,
       };
 
       await emailjs.send(
@@ -64,6 +71,9 @@ function ContactForm() {
         name: "",
         email: "",
         message: "",
+        projectType: "New Mobile App",
+        budget: "Under $1,000",
+        company: "",
       });
     } catch (error) {
       console.error(error);
@@ -75,7 +85,7 @@ function ContactForm() {
 
   return (
     <div>
-      <h2 className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">Contact with me</h2>
+      <h2 className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">Ready to Build Something Great?</h2>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">{"If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests."}</p>
         <div className="mt-6 flex flex-col gap-4">
@@ -112,6 +122,53 @@ function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
+            <label htmlFor="company" className="text-base">Company / Organization (Optional): </label>
+            <input
+              id="company"
+              className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
+              type="text"
+              maxLength="100"
+              value={userInput.company}
+              onChange={(e) => setUserInput({ ...userInput, company: e.target.value })}
+              placeholder="e.g. Acme Corp"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="projectType" className="text-base">Project Type: </label>
+              <select
+                id="projectType"
+                className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 text-white"
+                value={userInput.projectType}
+                onChange={(e) => setUserInput({ ...userInput, projectType: e.target.value })}
+              >
+                <option value="New Mobile App">New Mobile App</option>
+                <option value="Web Application">Web Application</option>
+                <option value="MVP / Startup">MVP / Startup</option>
+                <option value="Full-Time Role">Full-Time Role</option>
+                <option value="Freelance Help">Freelance Help</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="budget" className="text-base">Budget Range: </label>
+              <select
+                id="budget"
+                className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2 text-white"
+                value={userInput.budget}
+                onChange={(e) => setUserInput({ ...userInput, budget: e.target.value })}
+              >
+                <option value="Under $1,000">Under $1,000</option>
+                <option value="$1,000 – $5,000">$1,000 – $5,000</option>
+                <option value="$5,000 – $20,000">$5,000 – $20,000</option>
+                <option value="Enterprise / Custom">Enterprise / Custom</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
             <label htmlFor="message" className="text-base">Your Message: </label>
             <textarea
               id="message"
@@ -127,7 +184,7 @@ function ContactForm() {
           </div>
           <div className="flex flex-col items-center gap-3">
             {error.required && <p className="text-sm text-red-400">
-              All fields are required!
+              Name, Email and Message fields are required!
             </p>}
             <button
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
@@ -144,6 +201,7 @@ function ContactForm() {
                   </span>
               }
             </button>
+            <p className="text-xs text-gray-400 mt-2">I typically respond within 24 hours.</p>
           </div>
         </div>
       </div>

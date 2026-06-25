@@ -1,11 +1,11 @@
 export const personalData = {
   name: "Sathish G",
-  profile: "/sathish.png",
-  designation: "Flutter Developer in Coimbatore | Mobile App Developer | Full Stack Developer | Android, iOS, Web & Firebase Expert",
-  tagline: "Building Android, iOS, Web and Full Stack Applications. I help businesses build Android, iOS, Web, and backend solutions using Flutter and modern full-stack technologies.",
+  profile: "/sathish.webp",
+  designation: "Full Stack Engineer & Flutter Developer",
+  tagline: "Architecting high-performance Flutter mobile apps and scalable React/Node.js web applications deployed on AWS.",
   availability: "Available for Full-Time Opportunities and Freelance Projects",
   description:
-    "I am Sathish G, a dedicated Flutter Developer Coimbatore, Mobile App Developer Coimbatore, and Full Stack Developer Coimbatore. With 2+ years of professional experience, I help businesses build cross-platform mobile apps as a Flutter Freelancer Coimbatore and provide high-quality MVP development services. If you want to hire a Flutter Developer India, I offer expertise in Flutter mobile app development, MERN stack, Node.js backend development, and Firebase database integration. I specialize in building internal business applications such as invoice management software, HR/employee management systems, custom SaaS dashboards, and automated workflows. Having worked with companies like Dhigrowth, Elanoxtech, and Befhue, I ensure robust, scalable, and secure deployment on AWS, Docker, and Nginx. Let's work together to turn your vision into a successful product!",
+    "I am Sathish G, a Full Stack Engineer and Flutter Developer based in Tamil Nadu, India, with 2+ years of professional experience architecting cross-platform applications and scalable web solutions. I specialize in building high-performance mobile apps with Flutter and dynamic web interfaces with React, backed by robust Node.js APIs and scalable AWS infrastructure. I have successfully delivered enterprise-grade products including Learning Management Systems (LMS), real-time food delivery ecosystems, and offline-first SaaS platforms. Whether you need a freelance Flutter developer in India to build an MVP, or a dedicated software engineer to scale your production architecture, I bring deep expertise in state management, cloud deployment (Docker, Nginx, EC2), and real-time database synchronization.",
   email: "sathishg.dev@gmail.com",
   phone: "+917868031207",
   address: "Tamil Nadu, India",
@@ -19,6 +19,6 @@ export const personalData = {
   devTo: "https://dev.to/5119__sathishg_d4ba94816",
   hashnode: "https://hashnode.com/@sathish4439",
   medium: "https://medium.com/@aravindsathish0885",
-  resume: "/resume.pdf"
+  resume: "/Sathish_G_Resume.pdf"
 };
 

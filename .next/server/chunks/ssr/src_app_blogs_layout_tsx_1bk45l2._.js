@@ -1,3 +1,0 @@
-module.exports=[23439,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function({children:a}){return(0,b.jsx)(b.Fragment,{children:a})},"metadata",0,{title:"Technical Articles & Blogs | Sathish G",description:"Read publications by Sathish G covering Flutter performance optimization, Express microservice scaling with Docker, and sub-100ms real-time synchronization pipelines."}])},55489,a=>{a.n(a.i(23439))}];
-
-//# sourceMappingURL=src_app_blogs_layout_tsx_1bk45l2._.js.map

@@ -31,3 +31,9 @@ dist-ssr
 # OpenSpec local changes
 openspec/
 .agent/
+
+# Next.js Build Output and Cache
+.next/
+next-env.d.ts
+out/
+build/

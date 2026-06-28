@@ -1,0 +1,614 @@
+/* ═══════════════════════════════════════════════════════════
+   HOME PAGE — exact match to manx-13.vercel.app layout
+   ═══════════════════════════════════════════════════════════ */
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; /* Standard section spacing */
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    gap: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* ─── HERO ────────────────────────────────────────────── */
+.heroSection {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+/* PORT / FOLIO full-width row */
+.heroTitleRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 1512px;
+  padding: 0 1rem;
+  gap: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.portSide {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.folioSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.heroWord {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 6px;
+  color: #fff;
+  font-size: clamp(70px, 16vw, 300px);
+  display: block;
+  white-space: nowrap;
+}
+
+/* Profile image between the two words */
+.heroImgWrap {
+  flex-shrink: 0;
+  width: clamp(100px, 22vw, 420px);
+  align-self: flex-end;
+  margin-bottom: -8px;
+  z-index: 20;
+  margin-left: clamp(6px, 1.5vw, 24px);
+  margin-right: clamp(6px, 1.5vw, 24px);
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(163, 230, 53, 0.15));
+}
+
+/* "Full Stack & Flutter Engineer" yellow badge under FOLIO */
+.heroBadgeWrap {
+  position: absolute;
+  bottom: -44px;
+  right: 0;
+  z-index: 40;
+  width: clamp(180px, 28vw, 360px);
+  height: 44px;
+}
+
+.heroBadgeBg {
+  position: absolute;
+  inset: 0;
+  background: #a3e635;
+  border-radius: 2px;
+  transform: rotate(-1.03deg);
+}
+
+.heroBadgeText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(13px, 2vw, 28px);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #000;
+  white-space: nowrap;
+  transform: rotate(-1deg);
+}
+
+/* Scroll indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scrollLabel {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+  animation: scrollPulse 1.5s infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.4; transform: translateY(6px); }
+}
+
+/* ─── INTRO CARD ─────────────────────────────────────── */
+.introSection {
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 1rem 0;
+}
+
+.introCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  display: grid;
+  grid-template-columns: 320px minmax(280px, 460px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .introCard {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .introCard {
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+/* Card: gradient border effect */
+.introCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  padding: 1px;
+  background: linear-gradient(
+    137deg,
+    rgba(255,255,255,0.27) 0%,
+    rgba(255,255,255,0.04) 32%,
+    rgba(255,255,255,0) 62%,
+    rgba(255,255,255,0.33) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Left column */
+.introLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.introName {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(36px, 4vw, 50px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.accent { color: #a3e635; }
+
+.introTagline {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.7);
+  max-width: 420px;
+}
+
+.introDesc {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.4);
+  max-width: 400px;
+}
+
+.introCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  border: 2px solid #a3e635;
+  border-radius: 9999px;
+  padding: 0.6rem 1.5rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #a3e635;
+  transition: all 0.2s;
+}
+
+.introCta:hover {
+  background: #a3e635;
+  color: #000;
+}
+
+/* Middle column */
+.introMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.introSkillsHeading {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillPill {
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 9999px;
+  padding: 0.4rem 1rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(16px, 1.5vw, 22px);
+  font-weight: 300;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skillPill:hover {
+  background: #a3e635;
+  border-color: #a3e635;
+  color: #000;
+}
+
+/* Right column */
+.introRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.statCard {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 28px;
+  padding: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+  background: rgba(255,255,255,0.03);
+  transition: all 0.3s;
+}
+
+.statCard:hover {
+  background: rgba(163,230,53,0.05);
+  border-color: rgba(163,230,53,0.3);
+  transform: translateY(-6px) scale(1.04);
+}
+
+.statValue {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(50px, 6vw, 80px);
+  font-weight: 400;
+  line-height: 1;
+  color: #a3e635;
+}
+
+.statLabel {
+  margin-top: 0.5rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(16px, 1.5vw, 22px);
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ─── SERVICES ───────────────────────────────────────── */
+.servicesSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(64px, 10vw, 180px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.viewAllBtn {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #a3e635;
+  border: 2px solid #a3e635;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.viewAllBtn:hover {
+  background: #a3e635;
+  color: #000;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 4px solid #a3e635;
+  border-radius: 70px;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 2rem;
+  min-height: 160px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .serviceCard {
+    border-radius: 40px;
+    min-height: 120px;
+  }
+}
+
+.serviceCard:hover {
+  background: rgba(163,230,53,0.05);
+  box-shadow: 0 0 40px rgba(163,230,53,0.15);
+}
+
+.serviceTitle {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(30px, 4vw, 68px);
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.serviceCard:hover .serviceTitle {
+  color: #a3e635;
+}
+
+.serviceDesc {
+  margin-top: 0.75rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.serviceCard:hover .serviceDesc {
+  max-height: 80px;
+  opacity: 1;
+}
+
+/* ─── BRANDS ─────────────────────────────────────────── */
+.brandsSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brandsTitle {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.brandsCard {
+  border: 3px solid #a3e635;
+  border-radius: 50px;
+  background: #000;
+  padding: clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 4vw, 3rem);
+  transition: box-shadow 0.5s;
+}
+
+.brandsCard:hover {
+  box-shadow: 0 0 60px rgba(163,230,53,0.12);
+}
+
+.brandsRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+}
+
+@media (max-width: 640px) {
+  .brandsRow {
+    justify-content: center;
+  }
+}
+
+.brandName {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(22px, 3vw, 40px);
+  font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.03em;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.brandName:hover {
+  color: #a3e635;
+  transform: scale(1.1);
+}
+
+/* ─── CTA ─────────────────────────────────────────────── */
+.ctaSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.ctaCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  background: #a3e635;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 6vw, 4rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ctaGlow1 {
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  filter: blur(64px);
+  pointer-events: none;
+}
+
+.ctaGlow2 {
+  position: absolute;
+  bottom: -5rem;
+  left: -5rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  filter: blur(64px);
+  pointer-events: none;
+}
+
+.ctaTitle {
+  position: relative;
+  z-index: 10;
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(40px, 8vw, 90px);
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+.ctaText {
+  position: relative;
+  z-index: 10;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 300;
+  color: rgba(0,0,0,0.65);
+}
+
+.ctaBtn {
+  position: relative;
+  z-index: 10;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: #000;
+  color: #a3e635;
+  padding: 1rem 2.5rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  transition: all 0.22s;
+}
+
+.ctaBtn:hover {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+}

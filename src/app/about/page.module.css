@@ -1,0 +1,339 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+/* Hero Section */
+.heroSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.backLink:hover .backText {
+  color: #a3e635;
+}
+
+.titleArea {
+  position: relative;
+}
+
+.badge {
+  display: inline-block;
+  background: #a3e635;
+  padding: 0.25rem 1rem;
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #000;
+  transform: rotate(-1deg);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.title {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(72px, 12vw, 180px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.titleLine {
+  height: 4px;
+  background: #a3e635;
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Bio Section */
+.bioSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.bioGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .bioGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+.bioTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bioHeading {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+}
+
+.accent {
+  color: #a3e635;
+}
+
+.bioParagraph1 {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: 300;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bioParagraph2 {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.toolsImgWrap {
+  margin-top: 1rem;
+}
+
+.toolsImg {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.photoCol {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.photoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+}
+
+.photoGlow {
+  position: absolute;
+  inset: 0;
+  background: rgba(163, 230, 53, 0.05);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.profileImg {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(163, 230, 53, 0.12));
+  transition: transform 0.4s ease;
+}
+
+.profileImg:hover {
+  transform: scale(1.04);
+}
+
+/* Stats Section */
+.statsSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.statCard:hover {
+  background: rgba(163, 230, 53, 0.05);
+  border-color: rgba(163, 230, 53, 0.3);
+  transform: translateY(-6px) scale(1.04);
+}
+
+.statValue {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(60px, 8vw, 80px);
+  font-weight: 400;
+  line-height: 1;
+  color: #a3e635;
+  transition: transform 0.3s;
+}
+
+.statCard:hover .statValue {
+  transform: scale(1.1);
+}
+
+.statLabel {
+  margin-top: 0.5rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Skills Section */
+.skillsSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.skillsHeading {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(56px, 8vw, 100px);
+  font-weight: 400;
+  line-height: 1;
+  color: #a3e635;
+  margin-bottom: 2.5rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillPill {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: 300;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: default;
+  text-transform: capitalize;
+}
+
+.skillPill:hover {
+  background: #a3e635;
+  border-color: #a3e635;
+  color: #000;
+  transform: scale(1.06);
+}
+
+/* Return Footer */
+.returnFooter {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.returnBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.returnBtn:hover {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.05);
+}
+
+.returnText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s;
+}
+
+.returnBtn:hover .returnText {
+  color: #a3e635;
+}

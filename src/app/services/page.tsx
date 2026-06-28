@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 import ScrollReveal from "../../components/ScrollReveal";
 
 export const metadata = {
-  title: "Professional Services | Sathish G — Flutter & Full Stack",
-  description: "End-to-end development services spanning high-performance Flutter mobile apps, React web solutions, scalable Node.js microservices, and AWS DevOps setup.",
+  title: "Flutter & Full Stack Services in Coimbatore | Sathish G",
+  description: "End-to-end software development services available in Coimbatore and Tamil Nadu, spanning high-performance Flutter mobile applications, React layouts, scalable backend APIs, and AWS deployments.",
 };
 
 const services = [

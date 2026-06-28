@@ -61,6 +61,11 @@ export default function Home() {
               <div className={styles.heroBadgeBg} />
               <div className={styles.heroBadgeText}>Full Stack &amp; Flutter Engineer</div>
             </div>
+            {/* Geo Location Badge for Google local search indexing */}
+            <div className={`${styles.locationBadge} fadeUp stagger-2`}>
+              <span className={styles.locationPin}>📍</span>
+              <span className={styles.locationText}>Based in Coimbatore, Tamil Nadu</span>
+            </div>
           </div>
         </div>
 

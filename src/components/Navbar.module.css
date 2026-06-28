@@ -74,6 +74,8 @@
   border: none;
   cursor: pointer;
   padding: 0.4rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .bar {
@@ -103,13 +105,14 @@
 .drawer {
   display: none;
   position: fixed;
-  top: 72px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.97);
   backdrop-filter: blur(20px);
-  z-index: 99;
+  z-index: 999;
   transform: translateX(100%);
   transition: transform 0.3s ease;
 }
@@ -121,7 +124,7 @@
 .drawerLinks {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.5rem;
+  padding: 100px 1.5rem 2rem 1.5rem;
   gap: 0.5rem;
   list-style: none;
   margin: 0;

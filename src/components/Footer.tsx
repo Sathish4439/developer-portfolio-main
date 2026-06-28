@@ -88,10 +88,10 @@ export default function Footer() {
         <div className={styles.watermark}>PORTFOLIO</div>
 
         {/* Bottom bar */}
-        <div className={styles.bottom}>
+        {/* <div className={styles.bottom}>
           <span className={styles.copy}>© {year} Sathish G. All rights reserved.</span>
           <span className={styles.copy}>Built with Next.js &amp; ♥</span>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

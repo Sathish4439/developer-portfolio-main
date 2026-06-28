@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const skills = [
   "Flutter Developer",
@@ -48,30 +49,34 @@ export default function About() {
       <section className={styles.bioSection}>
         <div className={styles.bioGrid}>
           {/* Bio Text */}
-          <div className={`${styles.bioTextCol} fadeUp stagger-3`}>
-            <h2 className={styles.bioHeading}>
-              <span className={styles.accent}>R U </span>Sathish G
-            </h2>
-            <p className={styles.bioParagraph1}>
-              I Design And Build Smooth, Aesthetic Web Experiences Where Code Meets Clean Vibes. UI/UX Is My Zone — Minimal, Intuitive, And Made To Feel Right.
-            </p>
-            <p className={styles.bioParagraph2}>
-              With a background in computer systems, I bridge the gap between beautiful design and rock-solid development. Every pixel matters. Every interaction tells a story. Based in Tamil Nadu, India, I bring 2+ years of professional experience building cross-platform solutions and scaling architectures.
-            </p>
-          </div>
+          <ScrollReveal animationClass="fadeUp" delayClass="stagger-1">
+            <div className={styles.bioTextCol}>
+              <h2 className={styles.bioHeading}>
+                <span className={styles.accent}>R U </span>Sathish G
+              </h2>
+              <p className={styles.bioParagraph1}>
+                I Design And Build Smooth, Aesthetic Web Experiences Where Code Meets Clean Vibes. UI/UX Is My Zone — Minimal, Intuitive, And Made To Feel Right.
+              </p>
+              <p className={styles.bioParagraph2}>
+                With a background in computer systems, I bridge the gap between beautiful design and rock-solid development. Every pixel matters. Every interaction tells a story. Based in Tamil Nadu, India, I bring 2+ years of professional experience building cross-platform solutions and scaling architectures.
+              </p>
+            </div>
+          </ScrollReveal>
 
           {/* Profile Photo */}
-          <div className={`${styles.photoCol} slideInRight stagger-3`}>
-            <div className={styles.photoContainer}>
-              <div className={styles.photoGlow} />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                className={styles.profileImg}
-                alt="Sathish G"
-                src="/sathish.png"
-              />
+          <ScrollReveal animationClass="slideInRight" delayClass="stagger-1">
+            <div className={styles.photoCol}>
+              <div className={styles.photoContainer}>
+                <div className={styles.photoGlow} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className={styles.profileImg}
+                  alt="Sathish G"
+                  src="/sathish.png"
+                />
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -79,32 +84,48 @@ export default function About() {
       <section className={styles.statsSection}>
         <div className={styles.statsGrid}>
           {stats.map(({ value, label }, idx) => (
-            <div key={label} className={`${styles.statCard} scaleIn stagger-${idx + 1}`}>
-              <div className={styles.statValue}>{value}</div>
-              <div className={styles.statLabel}>{label}</div>
-            </div>
+            <ScrollReveal
+              key={label}
+              animationClass="scaleIn"
+              delayClass={`stagger-${idx + 1}`}
+            >
+              <div className={styles.statCard}>
+                <div className={styles.statValue}>{value}</div>
+                <div className={styles.statLabel}>{label}</div>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* ─────────── SKILLS SECTION ─────────── */}
       <section className={styles.skillsSection}>
-        <h2 className={`${styles.skillsHeading} fadeUp stagger-1`}>Skill Level</h2>
+        <ScrollReveal animationClass="fadeUp">
+          <h2 className={styles.skillsHeading}>Skill Level</h2>
+        </ScrollReveal>
         <ul className={styles.skillsList}>
           {skills.map((skill, idx) => (
-            <li key={skill} className={`skillPill fadeUp stagger-${Math.min(idx + 1, 6)}`}>
-              {skill}
-            </li>
+            <ScrollReveal
+              key={skill}
+              animationClass="fadeUp"
+              delayClass={`stagger-${Math.min(idx + 1, 6)}`}
+            >
+              <li className="skillPill">
+                {skill}
+              </li>
+            </ScrollReveal>
           ))}
         </ul>
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
-      <section className={`${styles.returnFooter} fadeIn stagger-4`}>
-        <Link href="/" className={styles.returnBtn}>
-          <span className={styles.backIcon}>&larr;</span>
-          <span className={styles.returnText}>Return to Home</span>
-        </Link>
+      <section className={styles.returnFooter}>
+        <ScrollReveal animationClass="fadeIn">
+          <Link href="/" className={styles.returnBtn}>
+            <span className={styles.backIcon}>&larr;</span>
+            <span className={styles.returnText}>Return to Home</span>
+          </Link>
+        </ScrollReveal>
       </section>
     </main>
   );

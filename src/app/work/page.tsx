@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
@@ -108,83 +109,92 @@ export default function Work() {
       </section>
 
       {/* ─────────── FILTER BAR ─────────── */}
-      <section className={`${styles.filtersSection} fadeUp stagger-2`}>
-        <div className={styles.filtersList}>
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`${styles.filterBtn} ${activeCategory === cat ? styles.filterBtnActive : ""}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      <section className={styles.filtersSection}>
+        <ScrollReveal animationClass="fadeUp">
+          <div className={styles.filtersList}>
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`${styles.filterBtn} ${activeCategory === cat ? styles.filterBtnActive : ""}`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* ─────────── PROJECTS GRID ─────────── */}
       <section className={styles.gridSection}>
         <div className={styles.projectsGrid}>
           {filteredProjects.map((proj, idx) => (
-            <article
+            <ScrollReveal
               key={proj.id}
-              className={`${styles.projectCard} fadeUp stagger-${Math.min(idx + 1, 8)}`}
-              style={{
-                borderColor: `${proj.accent}15`,
-              }}
+              animationClass="fadeUp"
+              delayClass={`stagger-${Math.min(idx + 1, 6)}`}
             >
-              {/* Colored Accent Top Border */}
-              <div
-                className={styles.accentBorder}
-                style={{ backgroundColor: proj.accent }}
-              />
-
-              <div className={styles.cardHeader}>
-                <div className={styles.clientYear}>
-                  <span className={styles.client}>Sathish G</span>
-                  <span className={styles.year}>{proj.year}</span>
-                </div>
-              </div>
-
-              <h3 className={styles.projectTitle}>{proj.title}</h3>
-              <p className={styles.projectDesc}>{proj.description}</p>
-
-              <div className={styles.tagsList}>
-                {proj.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className={styles.tagPill}
-                    style={{
-                      borderColor: `${proj.accent}30`,
-                      color: proj.accent,
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Faint Glow on Hover */}
-              <div
-                className={styles.hoverGlow}
+              <article
+                className={styles.projectCard}
                 style={{
-                  background: `radial-gradient(circle at 50% 0%, ${proj.accent}08 0%, transparent 70%)`,
+                  borderColor: `${proj.accent}15`,
                 }}
-              />
-            </article>
+              >
+                {/* Colored Accent Top Border */}
+                <div
+                  className={styles.accentBorder}
+                  style={{ backgroundColor: proj.accent }}
+                />
+
+                <div className={styles.cardHeader}>
+                  <div className={styles.clientYear}>
+                    <span className={styles.client}>Sathish G</span>
+                    <span className={styles.year}>{proj.year}</span>
+                  </div>
+                </div>
+
+                <h3 className={styles.projectTitle}>{proj.title}</h3>
+                <p className={styles.projectDesc}>{proj.description}</p>
+
+                <div className={styles.tagsList}>
+                  {proj.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className={styles.tagPill}
+                      style={{
+                        borderColor: `${proj.accent}30`,
+                        color: proj.accent,
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Faint Glow on Hover */}
+                <div
+                  className={styles.hoverGlow}
+                  style={{
+                    background: `radial-gradient(circle at 50% 0%, ${proj.accent}08 0%, transparent 70%)`,
+                  }}
+                />
+              </article>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
-      <section className={`${styles.ctaSection} fadeUp stagger-3`}>
-        <div className={styles.ctaCard}>
-          <div className={styles.ctaGlow1} />
-          <div className={styles.ctaGlow2} />
-          <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
-          <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
-          <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
-        </div>
+      <section className={styles.ctaSection}>
+        <ScrollReveal animationClass="scaleIn">
+          <div className={styles.ctaCard}>
+            <div className={styles.ctaGlow1} />
+            <div className={styles.ctaGlow2} />
+            <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
+            <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
+            <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
+          </div>
+        </ScrollReveal>
       </section>
     </main>
   );

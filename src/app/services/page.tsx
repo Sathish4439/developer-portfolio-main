@@ -1,5 +1,11 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
+
+export const metadata = {
+  title: "Professional Services | Sathish G — Flutter & Full Stack",
+  description: "End-to-end development services spanning high-performance Flutter mobile apps, React web solutions, scalable Node.js microservices, and AWS DevOps setup.",
+};
 
 const services = [
   { title: "Flutter App Dev", desc: "Cross-platform mobile apps for Android & iOS with custom widgets, native integrations, and robust state management." },
@@ -35,20 +41,28 @@ export default function Services() {
       <section className={styles.servicesSection}>
         <div className={styles.servicesGrid}>
           {services.map((svc, idx) => (
-            <div key={svc.title} className={`${styles.serviceCard} scaleIn stagger-${idx + 1}`}>
-              <h3 className={styles.serviceTitle}>{svc.title}</h3>
-              <p className={styles.serviceDesc}>{svc.desc}</p>
-            </div>
+            <ScrollReveal
+              key={svc.title}
+              animationClass="scaleIn"
+              delayClass={`stagger-${idx + 1}`}
+            >
+              <div className={styles.serviceCard}>
+                <h3 className={styles.serviceTitle}>{svc.title}</h3>
+                <p className={styles.serviceDesc}>{svc.desc}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
-      <section className={`${styles.returnFooter} fadeIn stagger-4`}>
-        <Link href="/" className={styles.returnBtn}>
-          <span className={styles.backIcon}>&larr;</span>
-          <span className={styles.returnText}>Return to Home</span>
-        </Link>
+      <section className={styles.returnFooter}>
+        <ScrollReveal animationClass="fadeIn">
+          <Link href="/" className={styles.returnBtn}>
+            <span className={styles.backIcon}>&larr;</span>
+            <span className={styles.returnText}>Return to Home</span>
+          </Link>
+        </ScrollReveal>
       </section>
     </main>
   );

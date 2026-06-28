@@ -22,14 +22,14 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         {/* Logo */}
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={`${styles.logo} fadeIn stagger-1`}>
           SATHISH.DEV
         </Link>
 
         {/* Desktop links */}
         <ul className={styles.links}>
-          {navLinks.map(({ href, label }) => (
-            <li key={href}>
+          {navLinks.map(({ href, label }, idx) => (
+            <li key={href} className={`fadeIn stagger-${idx + 1}`}>
               <Link
                 href={href}
                 className={`${styles.link} ${pathname === href ? styles.active : ""}`}

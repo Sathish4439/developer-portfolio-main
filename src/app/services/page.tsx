@@ -1,5 +1,11 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
+
+export const metadata = {
+  title: "Professional Services | Sathish G — Flutter & Full Stack",
+  description: "End-to-end development services spanning high-performance Flutter mobile apps, React web solutions, scalable Node.js microservices, and AWS DevOps setup.",
+};
 
 const services = [
   { title: "Flutter App Dev", desc: "Cross-platform mobile apps for Android & iOS with custom widgets, native integrations, and robust state management." },
@@ -14,10 +20,10 @@ const services = [
 
 export default function Services() {
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -25,30 +31,38 @@ export default function Services() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>WHAT I DO</div>
-          <h1 className={styles.title}>SERVICES</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>WHAT I DO</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>SERVICES</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
       {/* ─────────── SERVICES LIST ─────────── */}
       <section className={styles.servicesSection}>
         <div className={styles.servicesGrid}>
-          {services.map((svc) => (
-            <div key={svc.title} className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>{svc.title}</h3>
-              <p className={styles.serviceDesc}>{svc.desc}</p>
-            </div>
+          {services.map((svc, idx) => (
+            <ScrollReveal
+              key={svc.title}
+              animationClass="scaleIn"
+              delayClass={`stagger-${idx + 1}`}
+            >
+              <div className={styles.serviceCard}>
+                <h3 className={styles.serviceTitle}>{svc.title}</h3>
+                <p className={styles.serviceDesc}>{svc.desc}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
       <section className={styles.returnFooter}>
-        <Link href="/" className={styles.returnBtn}>
-          <span className={styles.backIcon}>&larr;</span>
-          <span className={styles.returnText}>Return to Home</span>
-        </Link>
+        <ScrollReveal animationClass="fadeIn">
+          <Link href="/" className={styles.returnBtn}>
+            <span className={styles.backIcon}>&larr;</span>
+            <span className={styles.returnText}>Return to Home</span>
+          </Link>
+        </ScrollReveal>
       </section>
     </main>
   );

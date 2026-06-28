@@ -41,6 +41,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Sathish G",
+              "url": "https://sathish.qzz.io",
+              "image": "https://sathish.qzz.io/sathish.png",
+              "jobTitle": "Full Stack Engineer & Flutter Developer",
+              "knowsAbout": [
+                "Flutter Mobile App Development",
+                "React & Next.js Frontend",
+                "Node.js Backend & microservices",
+                "AWS Deployment & DevOps",
+                "Docker Containerization",
+                "PostgreSQL & Prisma ORM"
+              ],
+              "sameAs": [
+                "https://github.com/Sathish4439",
+                "https://www.linkedin.com/in/sathishgobi/"
+              ]
+            })
+          }}
+        />
+      </head>
       <body>
         <Navbar />
         <main style={{ flex: 1 }}>{children}</main>

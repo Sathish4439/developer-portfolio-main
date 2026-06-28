@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
@@ -90,10 +91,10 @@ export default function Work() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -101,90 +102,99 @@ export default function Work() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>SELECTED PROJECTS</div>
-          <h1 className={styles.title}>WORK</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>SELECTED PROJECTS</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>WORK</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
       {/* ─────────── FILTER BAR ─────────── */}
       <section className={styles.filtersSection}>
-        <div className={styles.filtersList}>
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`${styles.filterBtn} ${activeCategory === cat ? styles.filterBtnActive : ""}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal animationClass="fadeUp">
+          <div className={styles.filtersList}>
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`${styles.filterBtn} ${activeCategory === cat ? styles.filterBtnActive : ""}`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* ─────────── PROJECTS GRID ─────────── */}
       <section className={styles.gridSection}>
         <div className={styles.projectsGrid}>
-          {filteredProjects.map((proj) => (
-            <article
+          {filteredProjects.map((proj, idx) => (
+            <ScrollReveal
               key={proj.id}
-              className={styles.projectCard}
-              style={{
-                borderColor: `${proj.accent}15`,
-              }}
+              animationClass="fadeUp"
+              delayClass={`stagger-${Math.min(idx + 1, 6)}`}
             >
-              {/* Colored Accent Top Border */}
-              <div
-                className={styles.accentBorder}
-                style={{ backgroundColor: proj.accent }}
-              />
-
-              <div className={styles.cardHeader}>
-                <div className={styles.clientYear}>
-                  <span className={styles.client}>Sathish G</span>
-                  <span className={styles.year}>{proj.year}</span>
-                </div>
-              </div>
-
-              <h3 className={styles.projectTitle}>{proj.title}</h3>
-              <p className={styles.projectDesc}>{proj.description}</p>
-
-              <div className={styles.tagsList}>
-                {proj.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className={styles.tagPill}
-                    style={{
-                      borderColor: `${proj.accent}30`,
-                      color: proj.accent,
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              {/* Faint Glow on Hover */}
-              <div
-                className={styles.hoverGlow}
+              <article
+                className={styles.projectCard}
                 style={{
-                  background: `radial-gradient(circle at 50% 0%, ${proj.accent}08 0%, transparent 70%)`,
+                  borderColor: `${proj.accent}15`,
                 }}
-              />
-            </article>
+              >
+                {/* Colored Accent Top Border */}
+                <div
+                  className={styles.accentBorder}
+                  style={{ backgroundColor: proj.accent }}
+                />
+
+                <div className={styles.cardHeader}>
+                  <div className={styles.clientYear}>
+                    <span className={styles.client}>Sathish G</span>
+                    <span className={styles.year}>{proj.year}</span>
+                  </div>
+                </div>
+
+                <h3 className={styles.projectTitle}>{proj.title}</h3>
+                <p className={styles.projectDesc}>{proj.description}</p>
+
+                <div className={styles.tagsList}>
+                  {proj.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className={styles.tagPill}
+                      style={{
+                        borderColor: `${proj.accent}30`,
+                        color: proj.accent,
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Faint Glow on Hover */}
+                <div
+                  className={styles.hoverGlow}
+                  style={{
+                    background: `radial-gradient(circle at 50% 0%, ${proj.accent}08 0%, transparent 70%)`,
+                  }}
+                />
+              </article>
+            </ScrollReveal>
           ))}
         </div>
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
       <section className={styles.ctaSection}>
-        <div className={styles.ctaCard}>
-          <div className={styles.ctaGlow1} />
-          <div className={styles.ctaGlow2} />
-          <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
-          <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
-          <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
-        </div>
+        <ScrollReveal animationClass="scaleIn">
+          <div className={styles.ctaCard}>
+            <div className={styles.ctaGlow1} />
+            <div className={styles.ctaGlow2} />
+            <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
+            <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
+            <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
+          </div>
+        </ScrollReveal>
       </section>
     </main>
   );

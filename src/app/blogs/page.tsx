@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
+import ScrollReveal from "../../components/ScrollReveal";
 
 interface Article {
   id: number;
@@ -88,10 +89,10 @@ export default function Blogs() {
   };
 
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -99,9 +100,9 @@ export default function Blogs() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>TECHNICAL ARTICLES</div>
-          <h1 className={styles.title}>BLOGS</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>TECHNICAL ARTICLES</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>BLOGS</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
@@ -114,46 +115,51 @@ export default function Blogs() {
           </div>
         ) : (
           <div className={styles.grid}>
-            {articles.map((art) => (
-              <a
+            {articles.map((art, idx) => (
+              <ScrollReveal
                 key={art.id}
-                href={art.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.blogCard}
+                animationClass="fadeUp"
+                delayClass={`stagger-${Math.min(idx + 1, 6)}`}
               >
-                {art.cover_image && (
-                  <div className={styles.cardCover}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={art.cover_image} alt={art.title} className={styles.coverImg} />
-                  </div>
-                )}
-                <div className={styles.cardContent}>
-                  <div className={styles.cardMeta}>
-                    <span>{formatDate(art.published_at)}</span>
-                    <span className={styles.metaDivider}>&bull;</span>
-                    <span>{art.reading_time_minutes} min read</span>
-                  </div>
-
-                  <h3 className={styles.blogTitle}>{art.title}</h3>
-                  <p className={styles.blogDesc}>{art.description}</p>
-
-                  <div className={styles.cardFooter}>
-                    <div className={styles.tags}>
-                      {art.tag_list.slice(0, 3).map((tag) => (
-                        <span key={tag} className={styles.tagPill}>
-                          #{tag}
-                        </span>
-                      ))}
+                <a
+                  href={art.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.blogCard}
+                >
+                  {art.cover_image && (
+                    <div className={styles.cardCover}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={art.cover_image} alt={art.title} className={styles.coverImg} />
                     </div>
-                    {art.public_reactions_count > 0 && (
-                      <span className={styles.reactions}>
-                        &hearts; {art.public_reactions_count}
-                      </span>
-                    )}
+                  )}
+                  <div className={styles.cardContent}>
+                    <div className={styles.cardMeta}>
+                      <span>{formatDate(art.published_at)}</span>
+                      <span className={styles.metaDivider}>&bull;</span>
+                      <span>{art.reading_time_minutes} min read</span>
+                    </div>
+
+                    <h3 className={styles.blogTitle}>{art.title}</h3>
+                    <p className={styles.blogDesc}>{art.description}</p>
+
+                    <div className={styles.cardFooter}>
+                      <div className={styles.tags}>
+                        {art.tag_list.slice(0, 3).map((tag) => (
+                          <span key={tag} className={styles.tagPill}>
+                            #{tag}
+                          </span>
+                        ))}
+                      </div>
+                      {art.public_reactions_count > 0 && (
+                        <span className={styles.reactions}>
+                          &hearts; {art.public_reactions_count}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </ScrollReveal>
             ))}
           </div>
         )}
@@ -161,13 +167,15 @@ export default function Blogs() {
 
       {/* ─────────── CTA SECTION ─────────── */}
       <section className={styles.ctaSection}>
-        <div className={styles.ctaCard}>
-          <div className={styles.ctaGlow1} />
-          <div className={styles.ctaGlow2} />
-          <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
-          <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
-          <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
-        </div>
+        <ScrollReveal animationClass="scaleIn">
+          <div className={styles.ctaCard}>
+            <div className={styles.ctaGlow1} />
+            <div className={styles.ctaGlow2} />
+            <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
+            <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
+            <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
+          </div>
+        </ScrollReveal>
       </section>
     </main>
   );

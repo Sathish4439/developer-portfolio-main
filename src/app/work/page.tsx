@@ -90,10 +90,10 @@ export default function Work() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -101,14 +101,14 @@ export default function Work() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>SELECTED PROJECTS</div>
-          <h1 className={styles.title}>WORK</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>SELECTED PROJECTS</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>WORK</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
       {/* ─────────── FILTER BAR ─────────── */}
-      <section className={styles.filtersSection}>
+      <section className={`${styles.filtersSection} fadeUp stagger-2`}>
         <div className={styles.filtersList}>
           {categories.map((cat) => (
             <button
@@ -125,10 +125,10 @@ export default function Work() {
       {/* ─────────── PROJECTS GRID ─────────── */}
       <section className={styles.gridSection}>
         <div className={styles.projectsGrid}>
-          {filteredProjects.map((proj) => (
+          {filteredProjects.map((proj, idx) => (
             <article
               key={proj.id}
-              className={styles.projectCard}
+              className={`${styles.projectCard} fadeUp stagger-${Math.min(idx + 1, 8)}`}
               style={{
                 borderColor: `${proj.accent}15`,
               }}
@@ -177,7 +177,7 @@ export default function Work() {
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
-      <section className={styles.ctaSection}>
+      <section className={`${styles.ctaSection} fadeUp stagger-3`}>
         <div className={styles.ctaCard}>
           <div className={styles.ctaGlow1} />
           <div className={styles.ctaGlow2} />

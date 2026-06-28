@@ -34,17 +34,17 @@ const brands = ["Dhigrowth", "Elanoxtech", "Befhue", "Mayiliragu Academy", "Prem
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
         {/* PORT + Image + FOLIO row */}
         <div className={styles.heroTitleRow}>
-          <div className={styles.portSide}>
+          <div className={`${styles.portSide} slideInLeft`}>
             <span className={styles.heroWord}>PORT</span>
           </div>
 
           {/* Profile Image sits between PORT and FOLIO */}
-          <div className={styles.heroImgWrap}>
+          <div className={`${styles.heroImgWrap} scaleIn stagger-1`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/sathish.png"
@@ -54,9 +54,9 @@ export default function Home() {
           </div>
 
           <div className={styles.folioSide}>
-            <span className={styles.heroWord}>FOLIO</span>
+            <span className={`${styles.heroWord} slideInRight stagger-1`}>FOLIO</span>
             {/* Yellow badge under FOLIO */}
-            <div className={styles.heroBadgeWrap}>
+            <div className={`${styles.heroBadgeWrap} fadeUp stagger-2`}>
               <div className={styles.heroBadgeBg} />
               <div className={styles.heroBadgeText}>Full Stack &amp; Flutter Engineer</div>
             </div>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className={styles.scrollIndicator}>
+        <div className={`${styles.scrollIndicator} fadeIn stagger-3`}>
           <span className={styles.scrollLabel}>Scroll</span>
           <div className={styles.scrollLine} />
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
 
       {/* ─────────── INTRO CARD ─────────── */}
       <section className={styles.introSection}>
-        <div className={styles.introCard}>
+        <div className={`${styles.introCard} fadeUp stagger-2`}>
           {/* Left: Name + Description */}
           <aside className={styles.introLeft}>
             <h2 className={styles.introName}>
@@ -94,8 +94,8 @@ export default function Home() {
           <div className={styles.introMiddle}>
             <h3 className={styles.introSkillsHeading}>Specializations</h3>
             <ul className={styles.skillsList}>
-              {skills.map((s) => (
-                <li key={s} className={styles.skillPill}>{s}</li>
+              {skills.map((s, idx) => (
+                <li key={s} className={`skillPill fadeUp stagger-${Math.min(idx + 1, 6)}`}>{s}</li>
               ))}
             </ul>
           </div>
@@ -103,8 +103,8 @@ export default function Home() {
           {/* Right: Stats */}
           <div className={styles.introRight}>
             <div className={styles.statsGrid}>
-              {stats.map(({ value, label }) => (
-                <div key={label} className={styles.statCard}>
+              {stats.map(({ value, label }, idx) => (
+                <div key={label} className={`${styles.statCard} scaleIn stagger-${idx + 1}`}>
                   <div className={styles.statValue}>{value}</div>
                   <div className={styles.statLabel}>{label}</div>
                 </div>
@@ -115,14 +115,14 @@ export default function Home() {
       </section>
 
       {/* ─────────── SERVICES ─────────── */}
-      <section className={styles.servicesSection}>
+      <section className={`${styles.servicesSection} fadeUp stagger-3`}>
         <div className={styles.sectionTop}>
           <h2 className={styles.sectionTitle}>Services</h2>
           <Link href="/services" className={styles.viewAllBtn}>View All Services &rarr;</Link>
         </div>
         <div className={styles.servicesGrid}>
-          {services.map((svc) => (
-            <Link href="/services" key={svc.title} className={styles.serviceCard}>
+          {services.map((svc, idx) => (
+            <Link href="/services" key={svc.title} className={`${styles.serviceCard} scaleIn stagger-${idx + 1}`}>
               <h3 className={styles.serviceTitle}>{svc.title}</h3>
               <p className={styles.serviceDesc}>{svc.desc}</p>
             </Link>
@@ -131,12 +131,12 @@ export default function Home() {
       </section>
 
       {/* ─────────── BRANDS ─────────── */}
-      <section className={styles.brandsSection}>
+      <section className={`${styles.brandsSection} fadeUp stagger-4`}>
         <h2 className={styles.brandsTitle}>Brands Worked With</h2>
         <div className={styles.brandsCard}>
           <div className={styles.brandsRow}>
-            {brands.map((b) => (
-              <span key={b} className={styles.brandName}>{b}</span>
+            {brands.map((b, idx) => (
+              <span key={b} className={`${styles.brandName} scaleIn stagger-${Math.min(idx + 1, 6)}`}>{b}</span>
             ))}
           </div>
         </div>

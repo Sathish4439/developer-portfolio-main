@@ -38,10 +38,10 @@ export default function Contact() {
   };
 
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -49,9 +49,9 @@ export default function Contact() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>GET IN TOUCH</div>
-          <h1 className={styles.title}>CONTACT</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>GET IN TOUCH</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>CONTACT</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
@@ -59,7 +59,7 @@ export default function Contact() {
       <section className={styles.contentSection}>
         <div className={styles.contactGrid}>
           {/* Direct & Social Details */}
-          <div className={styles.infoCol}>
+          <div className={`${styles.infoCol} fadeUp stagger-3`}>
             <div className={styles.infoBlock}>
               <h3 className={styles.blockTitle}>Direct Contact</h3>
               <div className={styles.detailsList}>
@@ -85,13 +85,13 @@ export default function Contact() {
             <div className={styles.infoBlock}>
               <h3 className={styles.blockTitle}>Find Me Online</h3>
               <div className={styles.socialsGrid}>
-                {socialLinks.map((soc) => (
+                {socialLinks.map((soc, idx) => (
                   <a
                     key={soc.name}
                     href={soc.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.socialCard}
+                    className={`${styles.socialCard} scaleIn stagger-${idx + 1}`}
                   >
                     <span className={styles.socialName}>{soc.name}</span>
                     <span className={styles.socialHandle}>{soc.handle}</span>
@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div className={styles.formCol}>
+          <div className={`${styles.formCol} slideInRight stagger-3`}>
             <div className={styles.formCard}>
               <h3 className={styles.formTitle}>Send A Message</h3>
               <form onSubmit={handleSubmit} className={styles.form}>

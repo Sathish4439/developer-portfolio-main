@@ -27,10 +27,10 @@ const stats = [
 
 export default function About() {
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -38,9 +38,9 @@ export default function About() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>WHO I AM</div>
-          <h1 className={styles.title}>ABOUT</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>WHO I AM</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>ABOUT</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
@@ -48,7 +48,7 @@ export default function About() {
       <section className={styles.bioSection}>
         <div className={styles.bioGrid}>
           {/* Bio Text */}
-          <div className={styles.bioTextCol}>
+          <div className={`${styles.bioTextCol} fadeUp stagger-3`}>
             <h2 className={styles.bioHeading}>
               <span className={styles.accent}>R U </span>Sathish G
             </h2>
@@ -61,7 +61,7 @@ export default function About() {
           </div>
 
           {/* Profile Photo */}
-          <div className={styles.photoCol}>
+          <div className={`${styles.photoCol} slideInRight stagger-3`}>
             <div className={styles.photoContainer}>
               <div className={styles.photoGlow} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -78,8 +78,8 @@ export default function About() {
       {/* ─────────── STATS SECTION ─────────── */}
       <section className={styles.statsSection}>
         <div className={styles.statsGrid}>
-          {stats.map(({ value, label }) => (
-            <div key={label} className={styles.statCard}>
+          {stats.map(({ value, label }, idx) => (
+            <div key={label} className={`${styles.statCard} scaleIn stagger-${idx + 1}`}>
               <div className={styles.statValue}>{value}</div>
               <div className={styles.statLabel}>{label}</div>
             </div>
@@ -89,10 +89,10 @@ export default function About() {
 
       {/* ─────────── SKILLS SECTION ─────────── */}
       <section className={styles.skillsSection}>
-        <h2 className={styles.skillsHeading}>Skill Level</h2>
+        <h2 className={`${styles.skillsHeading} fadeUp stagger-1`}>Skill Level</h2>
         <ul className={styles.skillsList}>
-          {skills.map((skill) => (
-            <li key={skill} className={styles.skillPill}>
+          {skills.map((skill, idx) => (
+            <li key={skill} className={`skillPill fadeUp stagger-${Math.min(idx + 1, 6)}`}>
               {skill}
             </li>
           ))}
@@ -100,7 +100,7 @@ export default function About() {
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
-      <section className={styles.returnFooter}>
+      <section className={`${styles.returnFooter} fadeIn stagger-4`}>
         <Link href="/" className={styles.returnBtn}>
           <span className={styles.backIcon}>&larr;</span>
           <span className={styles.returnText}>Return to Home</span>

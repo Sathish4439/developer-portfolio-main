@@ -88,10 +88,10 @@ export default function Blogs() {
   };
 
   return (
-    <main className={styles.wrapper}>
+    <main className={`${styles.wrapper} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.backLinkWrap}>
+        <div className={`${styles.backLinkWrap} fadeIn stagger-1`}>
           <Link href="/" className={styles.backLink}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.backText}>Back to Home</span>
@@ -99,9 +99,9 @@ export default function Blogs() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={styles.badge}>TECHNICAL ARTICLES</div>
-          <h1 className={styles.title}>BLOGS</h1>
-          <div className={styles.titleLine} />
+          <div className={`${styles.badge} fadeIn stagger-1`}>TECHNICAL ARTICLES</div>
+          <h1 className={`${styles.title} slideInLeft stagger-2`}>BLOGS</h1>
+          <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
@@ -114,13 +114,13 @@ export default function Blogs() {
           </div>
         ) : (
           <div className={styles.grid}>
-            {articles.map((art) => (
+            {articles.map((art, idx) => (
               <a
                 key={art.id}
                 href={art.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.blogCard}
+                className={`${styles.blogCard} fadeUp stagger-${Math.min(idx + 1, 6)}`}
               >
                 {art.cover_image && (
                   <div className={styles.cardCover}>
@@ -160,7 +160,7 @@ export default function Blogs() {
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
-      <section className={styles.ctaSection}>
+      <section className={`${styles.ctaSection} fadeUp stagger-3`}>
         <div className={styles.ctaCard}>
           <div className={styles.ctaGlow1} />
           <div className={styles.ctaGlow2} />

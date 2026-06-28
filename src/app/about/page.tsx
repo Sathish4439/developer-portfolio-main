@@ -52,7 +52,7 @@ export default function About() {
           <ScrollReveal animationClass="fadeUp" delayClass="stagger-1">
             <div className={styles.bioTextCol}>
               <h2 className={styles.bioHeading}>
-                <span className={styles.accent}>G</span>Sathish
+                <span className={styles.accent}>G </span>Sathish 
               </h2>
               <p className={styles.bioParagraph1}>
                 I Design And Build Smooth, Aesthetic Web Experiences Where Code Meets Clean Vibes. UI/UX Is My Zone — Minimal, Intuitive, And Made To Feel Right.

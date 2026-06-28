@@ -1,0 +1,209 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+/* Hero Section */
+.heroSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.backLink:hover .backText {
+  color: #a3e635;
+}
+
+.titleArea {
+  position: relative;
+}
+
+.badge {
+  display: inline-block;
+  background: #a3e635;
+  padding: 0.25rem 1rem;
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #000;
+  transform: rotate(-1deg);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.title {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(72px, 12vw, 180px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.titleLine {
+  height: 4px;
+  background: #a3e635;
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Services Grid */
+.servicesSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem 2rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 4px solid #a3e635;
+  border-radius: 70px;
+  padding: clamp(2rem, 4vw, 3rem) 2.5rem;
+  min-height: 180px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  .serviceCard {
+    border-radius: 40px;
+    padding: 1.5rem;
+    min-height: 140px;
+  }
+}
+
+.serviceCard:hover {
+  background: rgba(163, 230, 53, 0.05);
+  box-shadow: 0 0 40px rgba(163, 230, 53, 0.15);
+}
+
+.serviceTitle {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(32px, 4vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.serviceCard:hover .serviceTitle {
+  color: #a3e635;
+}
+
+.serviceDesc {
+  margin-top: 1rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.serviceCard:hover .serviceDesc {
+  max-height: 120px;
+  opacity: 1;
+}
+
+/* Return Footer */
+.returnFooter {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.returnBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.returnBtn:hover {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.05);
+}
+
+.returnText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s;
+}
+
+.returnBtn:hover .returnText {
+  color: #a3e635;
+}

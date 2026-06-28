@@ -1,0 +1,3 @@
+module.exports=[65955,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function({children:a}){return(0,b.jsx)(b.Fragment,{children:a})},"metadata",0,{title:"About Sathish G | Full Stack Engineer & Flutter Developer",description:"Learn more about Sathish G's 2+ years of experience, professional journey, skill set, stats, and background in building high-performance cross-platform applications."}])},69807,a=>{a.n(a.i(65955))}];
+
+//# sourceMappingURL=src_app_about_layout_tsx_0h02v46._.js.map

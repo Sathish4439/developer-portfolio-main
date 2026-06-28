@@ -1,0 +1,3 @@
+module.exports=[37064,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function({children:a}){return(0,b.jsx)(b.Fragment,{children:a})},"metadata",0,{title:"Get In Touch | Contact Sathish G",description:"Discuss project inquiries, freelance contract positions, or full-stack architectural needs directly with Sathish G. Based in Tamil Nadu, India."}])},70944,a=>{a.n(a.i(37064))}];
+
+//# sourceMappingURL=src_app_contact_layout_tsx_1t-fho7._.js.map

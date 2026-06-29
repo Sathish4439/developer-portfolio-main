@@ -110,7 +110,7 @@ export default function About() {
               animationClass="fadeUp"
               delayClass={`stagger-${Math.min(idx + 1, 6)}`}
             >
-              <li className="skillPill">
+              <li className={styles.skillPill}>
                 {skill}
               </li>
             </ScrollReveal>

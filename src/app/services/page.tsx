@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
-import ScrollReveal from "../../components/ScrollReveal";
+import AnimeReveal from "../../components/AnimeReveal";
 
 export const metadata = {
   title: "Flutter & Full Stack Services in Coimbatore | Sathish G",
@@ -32,37 +32,35 @@ export default function Services() {
 
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>WHAT I DO</div>
-          <h1 className={`${styles.title} slideInLeft stagger-2`}>SERVICES</h1>
+          <AnimeReveal direction="fade" duration={800}>
+            <h1 className={styles.title}>SERVICES</h1>
+          </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
       {/* ─────────── SERVICES LIST ─────────── */}
       <section className={styles.servicesSection}>
-        <div className={styles.servicesGrid}>
-          {services.map((svc, idx) => (
-            <ScrollReveal
-              key={svc.title}
-              animationClass="scaleIn"
-              delayClass={`stagger-${idx + 1}`}
-            >
-              <div className={styles.serviceCard}>
+        <AnimeReveal stagger={60} direction="fade" delay={150}>
+          <div className={styles.servicesGrid}>
+            {services.map((svc) => (
+              <div key={svc.title} className={styles.serviceCard}>
                 <h3 className={styles.serviceTitle}>{svc.title}</h3>
                 <p className={styles.serviceDesc}>{svc.desc}</p>
               </div>
-            </ScrollReveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
       <section className={styles.returnFooter}>
-        <ScrollReveal animationClass="fadeIn">
+        <AnimeReveal direction="fade" duration={600}>
           <Link href="/" className={styles.returnBtn}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.returnText}>Return to Home</span>
           </Link>
-        </ScrollReveal>
+        </AnimeReveal>
       </section>
     </main>
   );

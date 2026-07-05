@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
-import ScrollReveal from "../../components/ScrollReveal";
+import AnimeReveal from "../../components/AnimeReveal";
 
 interface Article {
   id: number;
@@ -101,7 +101,9 @@ export default function Blogs() {
 
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>TECHNICAL ARTICLES</div>
-          <h1 className={`${styles.title} slideInLeft stagger-2`}>BLOGS</h1>
+          <AnimeReveal direction="fade" duration={800}>
+            <h1 className={styles.title}>BLOGS</h1>
+          </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
@@ -114,14 +116,11 @@ export default function Blogs() {
             <p className={styles.loaderText}>Fetching technical publications...</p>
           </div>
         ) : (
-          <div className={styles.grid}>
-            {articles.map((art, idx) => (
-              <ScrollReveal
-                key={art.id}
-                animationClass="fadeUp"
-                delayClass={`stagger-${Math.min(idx + 1, 6)}`}
-              >
+          <AnimeReveal stagger={80} direction="fade" delay={150}>
+            <div className={styles.grid}>
+              {articles.map((art) => (
                 <a
+                  key={art.id}
                   href={art.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -159,15 +158,15 @@ export default function Blogs() {
                     </div>
                   </div>
                 </a>
-              </ScrollReveal>
-            ))}
-          </div>
+              ))}
+            </div>
+          </AnimeReveal>
         )}
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
       <section className={styles.ctaSection}>
-        <ScrollReveal animationClass="scaleIn">
+        <AnimeReveal direction="fade" duration={1000}>
           <div className={styles.ctaCard}>
             <div className={styles.ctaGlow1} />
             <div className={styles.ctaGlow2} />
@@ -175,7 +174,7 @@ export default function Blogs() {
             <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
             <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
           </div>
-        </ScrollReveal>
+        </AnimeReveal>
       </section>
     </main>
   );

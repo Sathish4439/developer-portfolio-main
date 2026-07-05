@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, FormEvent } from "react";
 import styles from "./page.module.css";
-import ScrollReveal from "../../components/ScrollReveal";
+import AnimeReveal from "../../components/AnimeReveal";
 
 const socialLinks = [
   { name: "GitHub", handle: "@Sathish4439", url: "https://github.com/Sathish4439" },
@@ -51,7 +51,9 @@ export default function Contact() {
 
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>GET IN TOUCH</div>
-          <h1 className={`${styles.title} slideInLeft stagger-2`}>CONTACT</h1>
+          <AnimeReveal direction="fade" duration={800}>
+            <h1 className={styles.title}>CONTACT</h1>
+          </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
@@ -60,7 +62,7 @@ export default function Contact() {
       <section className={styles.contentSection}>
         <div className={styles.contactGrid}>
           {/* Direct & Social Details */}
-          <ScrollReveal animationClass="fadeUp" delayClass="stagger-1">
+          <AnimeReveal direction="fade" duration={800}>
             <div className={styles.infoCol}>
               <div className={styles.infoBlock}>
                 <h3 className={styles.blockTitle}>Direct Contact</h3>
@@ -86,31 +88,28 @@ export default function Contact() {
 
               <div className={styles.infoBlock}>
                 <h3 className={styles.blockTitle}>Find Me Online</h3>
-                <div className={styles.socialsGrid}>
-                  {socialLinks.map((soc, idx) => (
-                    <ScrollReveal
-                      key={soc.name}
-                      animationClass="scaleIn"
-                      delayClass={`stagger-${idx + 1}`}
-                    >
+                <AnimeReveal stagger={80} direction="fade" delay={200}>
+                  <div className={styles.socialsGrid}>
+                    {socialLinks.map((soc) => (
                       <a
+                        key={soc.name}
                         href={soc.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialCard}
                       >
                         <span className={styles.socialName}>{soc.name}</span>
-                        <span className={styles.socialHandle}>{soc.handle}</span>
+                        <span className={styles.socialName}>{soc.handle}</span>
                       </a>
-                    </ScrollReveal>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                </AnimeReveal>
               </div>
             </div>
-          </ScrollReveal>
+          </AnimeReveal>
 
           {/* Form */}
-          <ScrollReveal animationClass="slideInRight" delayClass="stagger-1">
+          <AnimeReveal direction="fade" duration={900}>
             <div className={styles.formCol}>
               <div className={styles.formCard}>
                 <h3 className={styles.formTitle}>Send A Message</h3>
@@ -183,7 +182,7 @@ export default function Contact() {
                 </form>
               </div>
             </div>
-          </ScrollReveal>
+          </AnimeReveal>
         </div>
       </section>
     </main>

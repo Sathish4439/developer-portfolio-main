@@ -345,3 +345,28 @@
   color: #000;
   border: 2px solid #000;
 }
+
+.playStoreLink {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  border: 1px solid currentColor;
+  border-radius: 9999px;
+  padding: 0.35rem 1rem;
+  transition: all 0.2s;
+  align-self: flex-start;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.playStoreLink:hover {
+  background: #fff;
+  color: #000 !important;
+  border-color: #fff;
+}
+

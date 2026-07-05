@@ -3,11 +3,81 @@
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
-import ScrollReveal from "../../components/ScrollReveal";
+import AnimeReveal from "../../components/AnimeReveal";
 
 const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
 const projects = [
+  {
+    id: "virtual-2-live",
+    title: "Virtual 2 Live Business HUB",
+    category: "Cloud & SaaS",
+    year: "2025",
+    tags: ["Flutter", "Dart", "AI Automation", "VR 360", "No-Code Builder", "REST APIs"],
+    description: "An AI-powered all-in-one platform for shopping, services, VR 360 content, virtual trial rooms, and visual no-code customer journey automation.",
+    accent: "#0ea5e9",
+    liveUrl: "https://play.google.com/store/apps/details?id=app.virtual2live.com&pcampaignid=web_share",
+  },
+  {
+    id: "ovantica",
+    title: "Ovantica: Buy & Sell Gadgets",
+    category: "Flutter",
+    year: "2024",
+    tags: ["Flutter", "Dart", "Re-commerce", "API Integration", "Secure Checkout"],
+    description: "A secure re-commerce marketplace in India for buying refurbished gadgets and selling second-hand devices, featuring free doorstep pickups and 47-point quality tests.",
+    accent: "#f97316",
+    liveUrl: "https://play.google.com/store/apps/details?id=pro.network.ovantica&pcampaignid=web_share",
+  },
+  {
+    id: "lalassa",
+    title: "Lalassa: Veterinary & Pet Care",
+    category: "Flutter",
+    year: "2025",
+    tags: ["Flutter", "Dart", "Maps API", "Service Booking", "Consultation Portal"],
+    description: "A comprehensive veterinary and pet services application providing veterinary care booking, pet sitting, travel planning, emergency blood banks, and pet adoption matchmaking.",
+    accent: "#ec4899",
+    liveUrl: "https://play.google.com/store/apps/details?id=pet.lalassa.app&pcampaignid=web_share",
+  },
+  {
+    id: "inmall",
+    title: "INMALL Indian Marketplace",
+    category: "Web Apps",
+    year: "2024",
+    tags: ["Flutter", "Dart", "Multivendor E-com", "Ticketing", "Logistics"],
+    description: "A one-stop multivendor marketplace connecting Indian local sellers with customers in Hong Kong for restaurants, groceries, healthcare services, and movie ticketing.",
+    accent: "#eab308",
+    liveUrl: "https://play.google.com/store/apps/details?id=pro.network.inmall&pcampaignid=web_share",
+  },
+  {
+    id: "clean-culture-vendor",
+    title: "Clean Culture Vendor",
+    category: "Flutter",
+    year: "2024",
+    tags: ["Flutter", "Dart", "Operations Tracking", "Inventory Mgmt", "Logistics"],
+    description: "A dedicated partner platform for managing product supply, inventory readiness, real-time delivery coordination, and warehouse pickup logistics.",
+    accent: "#10b981",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.dhigrowth.cleanculture.vendor&pcampaignid=web_share",
+  },
+  {
+    id: "judah-fooddelivery",
+    title: "Judah Food Delivery",
+    category: "Flutter",
+    year: "2025",
+    tags: ["Flutter", "Dart", "Socket.io", "Google Maps", "Consumer E-com"],
+    description: "A customer-facing food ordering and delivery application with real-time tracking, active dispatching, and secure payment processing.",
+    accent: "#e11d48",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
+  },
+  {
+    id: "judah-restaurant",
+    title: "Judah Restaurant Partner",
+    category: "Flutter",
+    year: "2025",
+    tags: ["Flutter", "Socket.io", "Order Management", "Vendor Operations"],
+    description: "A partner-facing mobile app enabling restaurant vendors to manage orders, customize menus, monitor earnings, and coordinate with delivery riders.",
+    accent: "#f43f5e",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.restaurentpartner&pcampaignid=web_share",
+  },
   {
     id: "mayiliragu-lms",
     title: "Mayiliragu Academy LMS",
@@ -61,6 +131,7 @@ const projects = [
     tags: ["Flutter", "SQLite", "React", "Node.js", "PostgreSQL", "Docker"],
     description: "An offline-first facility management SaaS application designed to digitize rent tracking, automated billing, and maintenance operations.",
     accent: "#0284c7",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.nestpilot.dhigrowth&pcampaignid=web_share",
   },
   {
     id: "premium-parts",
@@ -70,15 +141,6 @@ const projects = [
     tags: ["Flutter", "Node.js", "Prisma", "PostgreSQL", "Google Maps"],
     description: "An ERP application automating payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
     accent: "#a855f7",
-  },
-  {
-    id: "judah-restaurant",
-    title: "Judah Restaurant Ecosystem",
-    category: "Flutter",
-    year: "2025",
-    tags: ["Flutter", "Socket.io", "Node.js", "Prisma", "PostgreSQL", "AWS EC2"],
-    description: "A complete food delivery infrastructure powering three distinct applications (Consumer, Delivery Agent, Vendor) with real-time order dispatching.",
-    accent: "#e11d48",
   },
 ];
 
@@ -103,14 +165,16 @@ export default function Work() {
 
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>SELECTED PROJECTS</div>
-          <h1 className={`${styles.title} slideInLeft stagger-2`}>WORK</h1>
+          <AnimeReveal direction="fade" duration={800}>
+            <h1 className={styles.title}>WORK</h1>
+          </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
 
       {/* ─────────── FILTER BAR ─────────── */}
       <section className={styles.filtersSection}>
-        <ScrollReveal animationClass="fadeUp">
+        <AnimeReveal direction="fade" duration={600}>
           <div className={styles.filtersList}>
             {categories.map((cat) => (
               <button
@@ -122,19 +186,16 @@ export default function Work() {
               </button>
             ))}
           </div>
-        </ScrollReveal>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── PROJECTS GRID ─────────── */}
       <section className={styles.gridSection}>
-        <div className={styles.projectsGrid}>
-          {filteredProjects.map((proj, idx) => (
-            <ScrollReveal
-              key={proj.id}
-              animationClass="fadeUp"
-              delayClass={`stagger-${Math.min(idx + 1, 6)}`}
-            >
+        <AnimeReveal key={activeCategory} stagger={80} direction="fade" delay={100}>
+          <div className={styles.projectsGrid}>
+            {filteredProjects.map((proj) => (
               <article
+                key={proj.id}
                 className={styles.projectCard}
                 style={{
                   borderColor: `${proj.accent}15`,
@@ -155,6 +216,21 @@ export default function Work() {
 
                 <h3 className={styles.projectTitle}>{proj.title}</h3>
                 <p className={styles.projectDesc}>{proj.description}</p>
+
+                {proj.liveUrl && (
+                   <a
+                     href={proj.liveUrl}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className={styles.playStoreLink}
+                     style={{
+                       borderColor: `${proj.accent}40`,
+                       color: proj.accent,
+                     }}
+                   >
+                     Play Store &rarr;
+                   </a>
+                 )}
 
                 <div className={styles.tagsList}>
                   {proj.tags.map((tag) => (
@@ -179,14 +255,14 @@ export default function Work() {
                   }}
                 />
               </article>
-            </ScrollReveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── CTA SECTION ─────────── */}
       <section className={styles.ctaSection}>
-        <ScrollReveal animationClass="scaleIn">
+        <AnimeReveal direction="fade" duration={1000}>
           <div className={styles.ctaCard}>
             <div className={styles.ctaGlow1} />
             <div className={styles.ctaGlow2} />
@@ -194,7 +270,7 @@ export default function Work() {
             <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
             <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
           </div>
-        </ScrollReveal>
+        </AnimeReveal>
       </section>
     </main>
   );

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "src/components/Navbar";
 import Footer from "src/components/Footer";
+import PageTransition from "src/components/PageTransition";
+import SmoothScrollProvider from "src/components/SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: "Flutter App Developer in Coimbatore | Sathish G",
@@ -152,8 +154,11 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <SmoothScrollProvider />
         <Navbar />
-        <main style={{ flex: 1 }}>{children}</main>
+        <main style={{ flex: 1 }}>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>

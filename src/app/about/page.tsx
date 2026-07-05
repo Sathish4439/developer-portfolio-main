@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import styles from "./page.module.css";
-import ScrollReveal from "../../components/ScrollReveal";
+import AnimeReveal from "../../components/AnimeReveal";
 
 const skills = [
   "Flutter Developer",
@@ -40,7 +40,9 @@ export default function About() {
 
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>WHO I AM</div>
-          <h1 className={`${styles.title} slideInLeft stagger-2`}>ABOUT</h1>
+          <AnimeReveal direction="fade" duration={800}>
+            <h1 className={styles.title}>ABOUT</h1>
+          </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
       </section>
@@ -49,7 +51,7 @@ export default function About() {
       <section className={styles.bioSection}>
         <div className={styles.bioGrid}>
           {/* Bio Text */}
-          <ScrollReveal animationClass="fadeUp" delayClass="stagger-1">
+          <AnimeReveal direction="fade" duration={800}>
             <div className={styles.bioTextCol}>
               <h2 className={styles.bioHeading}>
                 <span className={styles.accent}>G </span>Sathish 
@@ -61,10 +63,10 @@ export default function About() {
                 With a background in computer systems, I bridge the gap between beautiful design and rock-solid development. Every pixel matters. Every interaction tells a story. Based in Tamil Nadu, India, I bring 2+ years of professional experience building cross-platform solutions and scaling architectures.
               </p>
             </div>
-          </ScrollReveal>
+          </AnimeReveal>
 
           {/* Profile Photo */}
-          <ScrollReveal animationClass="slideInRight" delayClass="stagger-1">
+          <AnimeReveal direction="fade" duration={900}>
             <div className={styles.photoCol}>
               <div className={styles.photoContainer}>
                 <div className={styles.photoGlow} />
@@ -76,56 +78,48 @@ export default function About() {
                 />
               </div>
             </div>
-          </ScrollReveal>
+          </AnimeReveal>
         </div>
       </section>
 
       {/* ─────────── STATS SECTION ─────────── */}
       <section className={styles.statsSection}>
-        <div className={styles.statsGrid}>
-          {stats.map(({ value, label }, idx) => (
-            <ScrollReveal
-              key={label}
-              animationClass="scaleIn"
-              delayClass={`stagger-${idx + 1}`}
-            >
-              <div className={styles.statCard}>
+        <AnimeReveal stagger={80} direction="fade" delay={100}>
+          <div className={styles.statsGrid}>
+            {stats.map(({ value, label }) => (
+              <div key={label} className={styles.statCard}>
                 <div className={styles.statValue}>{value}</div>
                 <div className={styles.statLabel}>{label}</div>
               </div>
-            </ScrollReveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── SKILLS SECTION ─────────── */}
       <section className={styles.skillsSection}>
-        <ScrollReveal animationClass="fadeUp">
+        <AnimeReveal direction="fade" duration={700}>
           <h2 className={styles.skillsHeading}>Skill Level</h2>
-        </ScrollReveal>
-        <ul className={styles.skillsList}>
-          {skills.map((skill, idx) => (
-            <ScrollReveal
-              key={skill}
-              animationClass="fadeUp"
-              delayClass={`stagger-${Math.min(idx + 1, 6)}`}
-            >
-              <li className={styles.skillPill}>
+        </AnimeReveal>
+        <AnimeReveal stagger={50} direction="fade" delay={150}>
+          <ul className={styles.skillsList}>
+            {skills.map((skill) => (
+              <li key={skill} className={styles.skillPill}>
                 {skill}
               </li>
-            </ScrollReveal>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── RETURN FOOTER ─────────── */}
       <section className={styles.returnFooter}>
-        <ScrollReveal animationClass="fadeIn">
+        <AnimeReveal direction="fade" duration={600}>
           <Link href="/" className={styles.returnBtn}>
             <span className={styles.backIcon}>&larr;</span>
             <span className={styles.returnText}>Return to Home</span>
           </Link>
-        </ScrollReveal>
+        </AnimeReveal>
       </section>
     </main>
   );

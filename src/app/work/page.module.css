@@ -212,6 +212,16 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.metricsBadge {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 .projectTitle {
   font-family: 'Anton', Helvetica, sans-serif;
   font-size: clamp(24px, 3vw, 32px);

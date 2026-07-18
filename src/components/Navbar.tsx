@@ -27,18 +27,36 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <ul className={styles.links}>
-          {navLinks.map(({ href, label }, idx) => (
-            <li key={href} className={`fadeIn stagger-${idx + 1}`}>
-              <Link
-                href={href}
-                className={`${styles.link} ${pathname === href ? styles.active : ""}`}
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+          {/* Availability Status */}
+          <div className={styles.availabilityStatus}>
+            <span className={styles.pulseDot} />
+            <span className={styles.availabilityText}>Available for Hire</span>
+          </div>
+
+          <ul className={styles.links}>
+            {navLinks.map(({ href, label }, idx) => (
+              <li key={href} className={`fadeIn stagger-${idx + 1}`}>
+                <Link
+                  href={href}
+                  className={`${styles.link} ${pathname === href ? styles.active : ""}`}
+                >
+                  {label
+                }</Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Resume Download CTA */}
+          <a
+            href="/Sathish_G_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.resumeBtn}
+          >
+            Resume
+          </a>
+        </div>
 
         {/* Hamburger button (mobile) */}
         <button

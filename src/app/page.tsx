@@ -3,18 +3,18 @@ import styles from "./page.module.css";
 import AnimeReveal from "../components/AnimeReveal";
 
 const skills = [
-  "Flutter Developer",
-  "Full Stack Engineer",
-  "Node.js Backend",
-  "React & Next.js",
-  "AWS Deployment",
-  "Docker",
-  "Firebase",
-  "PostgreSQL",
-  "MongoDB",
-  "TypeScript",
-  "Prisma ORM",
-  "REST APIs",
+  { name: "Flutter", icon: "devicon-flutter-plain colored" },
+  { name: "React", icon: "devicon-react-original colored" },
+  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+  { name: "Next.js", icon: "devicon-nextjs-plain" },
+  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+  { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark colored" },
+  { name: "Docker", icon: "devicon-docker-plain colored" },
+  { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+  { name: "Prisma ORM", icon: "devicon-prisma-original" },
+  { name: "Firebase", icon: "devicon-firebase-plain colored" },
+  { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+  { name: "REST APIs", icon: "devicon-network-wired" },
 ];
 
 const stats = [
@@ -77,6 +77,21 @@ export default function Home() {
           </AnimeReveal>
         </div>
 
+        {/* Hero CTA & Availability */}
+        <div style={{ marginTop: "2.5rem", display: "flex", gap: "1.25rem", zIndex: 30, flexWrap: "wrap", justifyContent: "center" }}>
+          <a
+            href="/Sathish_G_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.heroResumeBtn}
+          >
+            Download Resume &rarr;
+          </a>
+          <Link href="/contact" className={styles.heroContactBtn}>
+            Hire Me
+          </Link>
+        </div>
+
         {/* Scroll indicator */}
         <AnimeReveal direction="fade" duration={800} delay={800}>
           <div className={styles.scrollIndicator}>
@@ -113,7 +128,10 @@ export default function Home() {
               <AnimeReveal stagger={50} direction="fade" delay={200}>
                 <ul className={styles.skillsList}>
                   {skills.map((s) => (
-                    <li key={s} className={styles.skillPill}>{s}</li>
+                    <li key={s.name} className={styles.skillPill}>
+                      {s.icon && <i className={`${s.icon} ${styles.skillIcon}`} />}
+                      <span>{s.name}</span>
+                    </li>
                   ))}
                 </ul>
               </AnimeReveal>
@@ -156,6 +174,62 @@ export default function Home() {
         </AnimeReveal>
       </section>
 
+      {/* ─────────── EXPERIENCE TIMELINE ─────────── */}
+      <section className={styles.experienceSection}>
+        <AnimeReveal direction="fade" duration={800}>
+          <div className={styles.sectionTop}>
+            <h2 className={styles.sectionTitle}>Work Experience</h2>
+            <Link href="/about" className={styles.viewAllBtn}>More About Me &rarr;</Link>
+          </div>
+        </AnimeReveal>
+
+        <div className={styles.timeline}>
+          <AnimeReveal stagger={100} direction="fade" delay={150}>
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineHeader}>
+                <h3 className={styles.roleTitle}>Full Stack Developer</h3>
+                <span className={styles.duration}>Sep 2025 - Present</span>
+              </div>
+              <div className={styles.companyLoc}>
+                <span className={styles.company}>Dhigrowth</span>
+                <span className={styles.loc}>Coimbatore, TN (Hybrid)</span>
+              </div>
+              <p className={styles.timelineDesc}>
+                Engineered the complete Judah Food Delivery 3-app ecosystem with Flutter &amp; Socket.io and developed the Nest Pilot facility management SaaS using Node.js &amp; PostgreSQL.
+              </p>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineHeader}>
+                <h3 className={styles.roleTitle}>Flutter Developer</h3>
+                <span className={styles.duration}>Jul 2024 - Sep 2025</span>
+              </div>
+              <div className={styles.companyLoc}>
+                <span className={styles.company}>Elanoxtech</span>
+                <span className={styles.loc}>Chennai, TN (On-site)</span>
+              </div>
+              <p className={styles.timelineDesc}>
+                Built key cross-platform mobile apps (Virtual to Live, Ovantica, lalassa) integrating Google Maps tracking APIs, Firebase listeners, and secure payment modules.
+              </p>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <div className={styles.timelineHeader}>
+                <h3 className={styles.roleTitle}>Freelance / Independent Developer</h3>
+                <span className={styles.duration}>Jun 2023 - Jun 2024</span>
+              </div>
+              <div className={styles.companyLoc}>
+                <span className={styles.company}>Freelance</span>
+                <span className={styles.loc}>Coimbatore &amp; Karur, TN</span>
+              </div>
+              <p className={styles.timelineDesc}>
+                Designed custom client applications including the Premium Parts ERP with offline SQLite synchronization and Mayiliragu Academy learning portal.
+              </p>
+            </div>
+          </AnimeReveal>
+        </div>
+      </section>
+
       {/* ─────────── BRANDS ─────────── */}
       <section className={styles.brandsSection}>
         <AnimeReveal direction="fade" duration={800}>
@@ -181,8 +255,24 @@ export default function Home() {
             <div className={styles.ctaGlow1} />
             <div className={styles.ctaGlow2} />
             <h2 className={styles.ctaTitle}>LET&apos;S WORK TOGETHER</h2>
-            <p className={styles.ctaText}>Got a project in mind? Let&apos;s make it real.</p>
-            <Link href="/contact" className={styles.ctaBtn}>Say Hello &rarr;</Link>
+            <p className={styles.ctaText}>Open for full-time engineering roles, remote hybrid opportunities, and freelance consulting projects.</p>
+
+            <div className={styles.contactDetailsRow}>
+              <a href="mailto:sathishg.dev@gmail.com" className={styles.contactPill}>
+                📧 sathishg.dev@gmail.com
+              </a>
+              <a href="tel:+917868031207" className={styles.contactPill}>
+                📞 +91 7868031207
+              </a>
+              <span className={styles.contactPill}>
+                📍 Coimbatore, TN, India
+              </span>
+            </div>
+
+            <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center" }}>
+              <Link href="/contact" className={styles.ctaBtn}>Contact Me</Link>
+              <a href="/Sathish_G_Resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.resumeCtaBtn}>Download Resume</a>
+            </div>
           </div>
         </AnimeReveal>
       </section>

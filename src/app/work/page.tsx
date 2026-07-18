@@ -17,6 +17,7 @@ const projects = [
     description: "An AI-powered all-in-one platform for shopping, services, VR 360 content, virtual trial rooms, and visual no-code customer journey automation.",
     accent: "#0ea5e9",
     liveUrl: "https://play.google.com/store/apps/details?id=app.virtual2live.com&pcampaignid=web_share",
+    metrics: "5,000+ Downloads",
   },
   {
     id: "ovantica",
@@ -27,6 +28,7 @@ const projects = [
     description: "A secure re-commerce marketplace in India for buying refurbished gadgets and selling second-hand devices, featuring free doorstep pickups and 47-point quality tests.",
     accent: "#f97316",
     liveUrl: "https://play.google.com/store/apps/details?id=pro.network.ovantica&pcampaignid=web_share",
+    metrics: "10,000+ Active Users",
   },
   {
     id: "lalassa",
@@ -37,6 +39,7 @@ const projects = [
     description: "A comprehensive veterinary and pet services application providing veterinary care booking, pet sitting, travel planning, emergency blood banks, and pet adoption matchmaking.",
     accent: "#ec4899",
     liveUrl: "https://play.google.com/store/apps/details?id=pet.lalassa.app&pcampaignid=web_share",
+    metrics: "98% Booking Success",
   },
   {
     id: "inmall",
@@ -47,6 +50,7 @@ const projects = [
     description: "A one-stop multivendor marketplace connecting Indian local sellers with customers in Hong Kong for restaurants, groceries, healthcare services, and movie ticketing.",
     accent: "#eab308",
     liveUrl: "https://play.google.com/store/apps/details?id=pro.network.inmall&pcampaignid=web_share",
+    metrics: "Cross-Border Logistics",
   },
   {
     id: "clean-culture-vendor",
@@ -57,6 +61,7 @@ const projects = [
     description: "A dedicated partner platform for managing product supply, inventory readiness, real-time delivery coordination, and warehouse pickup logistics.",
     accent: "#10b981",
     liveUrl: "https://play.google.com/store/apps/details?id=com.dhigrowth.cleanculture.vendor&pcampaignid=web_share",
+    metrics: "B2B Supply Chain",
   },
   {
     id: "judah-fooddelivery",
@@ -67,6 +72,7 @@ const projects = [
     description: "A customer-facing food ordering and delivery application with real-time tracking, active dispatching, and secure payment processing.",
     accent: "#e11d48",
     liveUrl: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
+    metrics: "Socket.io GPS Tracking",
   },
   {
     id: "judah-restaurant",
@@ -77,6 +83,7 @@ const projects = [
     description: "A partner-facing mobile app enabling restaurant vendors to manage orders, customize menus, monitor earnings, and coordinate with delivery riders.",
     accent: "#f43f5e",
     liveUrl: "https://play.google.com/store/apps/details?id=com.judah.restaurentpartner&pcampaignid=web_share",
+    metrics: "Real-time Order Logs",
   },
   {
     id: "mayiliragu-lms",
@@ -86,6 +93,7 @@ const projects = [
     tags: ["React", "Flutter", "Node.js", "AWS EC2", "Prisma", "PostgreSQL"],
     description: "An enterprise-grade Learning Management System (LMS) scaling to support 1,000+ active concurrent learners. Engineered with a Flutter app, React admin panel, and Node.js backend.",
     accent: "#ff3b3b",
+    metrics: "1,000+ Active Learners",
   },
   {
     id: "whatsapp-sender",
@@ -95,6 +103,7 @@ const projects = [
     tags: ["Flutter", "Node.js", "Express", "Meta Business API", "MongoDB"],
     description: "A developer automation utility and SaaS tool designed for businesses to automate bulk messaging and schedule alerts using Meta's Cloud APIs.",
     accent: "#7c3aed",
+    metrics: "Meta Business API",
   },
   {
     id: "akirva-eco",
@@ -104,6 +113,7 @@ const projects = [
     tags: ["Flutter", "Dart", "Firebase Firestore", "Node.js", "Maps API"],
     description: "A real-time ride-hailing ecosystem comprising interconnected Flutter apps for passengers and drivers, achieving sub-100ms state synchronization.",
     accent: "#2563eb",
+    metrics: "<100ms Sync Latency",
   },
   {
     id: "splendour-park",
@@ -113,6 +123,7 @@ const projects = [
     tags: ["Flutter", "SQLite", "Node.js", "Express", "AWS S3", "PDF Gen"],
     description: "An enterprise-level operations and business management software custom-built to handle menswear manufacturing, wholesale billing, and labor tracking.",
     accent: "#16a34a",
+    metrics: "Offline-First SQLite",
   },
   {
     id: "rag-chatbot",
@@ -122,6 +133,7 @@ const projects = [
     tags: ["Flutter", "Node.js", "Qdrant", "Groq API", "Playwright", "SSE"],
     description: "A Retrieval-Augmented Generation system with a Flutter UI, Node.js parser, Qdrant vector index, and Groq LLaMA 3.1 streaming responses with instant citations.",
     accent: "#f59e0b",
+    metrics: "Qdrant Vector DB",
   },
   {
     id: "nest-pilot",
@@ -132,6 +144,7 @@ const projects = [
     description: "An offline-first facility management SaaS application designed to digitize rent tracking, automated billing, and maintenance operations.",
     accent: "#0284c7",
     liveUrl: "https://play.google.com/store/apps/details?id=com.nestpilot.dhigrowth&pcampaignid=web_share",
+    metrics: "Multi-tenant SaaS",
   },
   {
     id: "premium-parts",
@@ -141,6 +154,7 @@ const projects = [
     tags: ["Flutter", "Node.js", "Prisma", "PostgreSQL", "Google Maps"],
     description: "An ERP application automating payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
     accent: "#a855f7",
+    metrics: "Automated Commissions",
   },
 ];
 
@@ -212,6 +226,18 @@ export default function Work() {
                     <span className={styles.client}>Sathish G</span>
                     <span className={styles.year}>{proj.year}</span>
                   </div>
+                  {proj.metrics && (
+                    <span
+                      className={styles.metricsBadge}
+                      style={{
+                        backgroundColor: `${proj.accent}15`,
+                        color: proj.accent,
+                        border: `1px solid ${proj.accent}30`
+                      }}
+                    >
+                      {proj.metrics}
+                    </span>
+                  )}
                 </div>
 
                 <h3 className={styles.projectTitle}>{proj.title}</h3>

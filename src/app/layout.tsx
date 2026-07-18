@@ -99,7 +99,7 @@ export default function RootLayout({
                 "image": "https://www.sathishdev.in/sathish.png",
                 "@id": "https://www.sathishdev.in/#localbusiness",
                 "url": "https://www.sathishdev.in",
-                "telephone": "+91-XXXXXXXXXX",
+                "telephone": "+917868031207",
                 "priceRange": "$$",
                 "address": {
                   "@type": "PostalAddress",

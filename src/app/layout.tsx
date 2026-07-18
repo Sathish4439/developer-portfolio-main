@@ -6,31 +6,50 @@ import PageTransition from "src/components/PageTransition";
 import SmoothScrollProvider from "src/components/SmoothScrollProvider";
 
 export const metadata: Metadata = {
-  title: "Flutter App Developer in Coimbatore | Sathish G",
+  metadataBase: new URL("https://www.sathishdev.in"),
+  title: "Flutter Developer in Coimbatore | Sathish G",
   description:
     "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
   keywords: [
     "Sathish G",
     "Flutter Developer Coimbatore",
+    "Flutter Developer in Coimbatore",
+    "Web Developer Coimbatore",
+    "Hire Flutter Developer",
+    "Hire Full Stack Developer",
     "Full Stack Engineer Tamil Nadu",
     "Mobile App Developer Coimbatore",
     "React Developer Coimbatore",
     "Node.js Developer Coimbatore",
     "AWS DevOps Coimbatore",
     "Freelance Developer India",
+    "Freelance Flutter Developer",
+    "Freelance Web Developer Coimbatore",
   ],
   authors: [{ name: "Sathish G" }],
+  alternates: {
+    canonical: "https://www.sathishdev.in",
+  },
   openGraph: {
-    title: "Flutter App Developer in Coimbatore | Sathish G",
+    title: "Flutter Developer in Coimbatore | Sathish G",
     description: "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
-    url: "https://sathish.qzz.io",
+    url: "https://www.sathishdev.in",
     siteName: "Sathish G Portfolio",
     type: "website",
+    images: [
+      {
+        url: "https://www.sathishdev.in/og-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Sathish G - Flutter Developer in Coimbatore",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flutter App Developer in Coimbatore | Sathish G",
+    title: "Flutter Developer in Coimbatore | Sathish G",
     description: "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
+    images: ["https://www.sathishdev.in/og-banner.png"],
   },
 };
 
@@ -49,10 +68,10 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
-                "@id": "https://sathish.qzz.io/#person",
+                "@id": "https://www.sathishdev.in/#person",
                 "name": "Sathish G",
-                "url": "https://sathish.qzz.io",
-                "image": "https://sathish.qzz.io/sathish.png",
+                "url": "https://www.sathishdev.in",
+                "image": "https://www.sathishdev.in/sathish.png",
                 "jobTitle": "Full Stack Engineer & Flutter Developer",
                 "address": {
                   "@type": "PostalAddress",
@@ -77,10 +96,10 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Sathish G — Flutter Developer & Full Stack Services",
-                "image": "https://sathish.qzz.io/sathish.png",
-                "@id": "https://sathish.qzz.io/#localbusiness",
-                "url": "https://sathish.qzz.io",
-                "telephone": "",
+                "image": "https://www.sathishdev.in/sathish.png",
+                "@id": "https://www.sathishdev.in/#localbusiness",
+                "url": "https://www.sathishdev.in",
+                "telephone": "+91-XXXXXXXXXX",
                 "priceRange": "$$",
                 "address": {
                   "@type": "PostalAddress",
@@ -94,7 +113,7 @@ export default function RootLayout({
                   "longitude": 76.9558
                 },
                 "founder": {
-                  "@id": "https://sathish.qzz.io/#person"
+                  "@id": "https://www.sathishdev.in/#person"
                 },
                 "areaServed": [
                   {

@@ -60,7 +60,7 @@ export default function Blogs() {
   useEffect(() => {
     async function fetchBlogs() {
       try {
-        const res = await fetch("https://dev.to/api/articles?username=Sathish4439");
+        const res = await fetch("https://dev.to/api/articles?username=5119__sathishg_d4ba94816");
         if (!res.ok) {
           throw new Error("Failed to fetch articles");
         }

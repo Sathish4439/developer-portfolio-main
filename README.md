@@ -1,4 +1,4 @@
-# Sathish G | Flutter & Full-Stack Developer Portfolio
+# Sathish Dev | Flutter Developer & Full Stack Engineer — Coimbatore, India
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=16F2B3&center=true&vCenter=true&width=700&lines=Hi+there%2C+I'm+Sathish!+👋;Flutter+%26+Full-Stack+Developer;React+%7C+AWS+%7C+Prisma+%7C+Node.js;Building+Scalable+Mobile+%26+Web+Apps;2%2B+Years+of+Experience;Open+to+Collaboration+%26+Opportunities!" alt="Sathish - Flutter, React, AWS, Node.js Full-Stack Mobile & Web Developer Typing SVG" />
@@ -18,6 +18,12 @@
 <br/>
 
 <div align="center">
+  <a href="https://www.sathishdev.in" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Portfolio-www.sathishdev.in-16F2B3?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Sathish Dev Portfolio Website" />
+  </a>
+  <a href="https://play.google.com/store/apps/dev?id=6517030172709793171" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Google_Play-Developer_Page-25D366?style=for-the-badge&logo=google-play&logoColor=white" alt="Sathish Dev Google Play Developer Apps" />
+  </a>
   <a href="https://github.com/Sathish4439" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=181717" alt="Sathish GitHub Profile - Software Engineer Repositories" />
   </a>
@@ -43,15 +49,13 @@
 
 <br/>
 
-## 👨‍💻 Professional Summary
+## 👨‍💻 About Me
 
-I am a results-oriented **Flutter & Full-Stack Developer** based in **Coimbatore, Tamil Nadu, India**, offering professional software engineering services across **Coimbatore, Karur, Chennai, and Bangalore**. With **2+ years** of hands-on experience, I design, build, and deploy high-performance cross-platform mobile applications (Android, iOS) and scalable full-stack web applications.
+Hi, I'm **Sathish G** (professionally known as **Sathish Dev**), a passionate **Flutter Developer** and **Full Stack Software Engineer** based in **Coimbatore, Tamil Nadu, India**. Offering premium freelance and engineering development services in **Coimbatore, Karur, Chennai, and Bangalore**. 
 
-I specialize in creating clean, maintainable codebases utilizing **Flutter/Dart** for frontend clients, coupled with **React.js, Node.js, Express, Prisma ORM, and AWS** for secure, high-performance backends. My expertise extends to offline-first architectures, real-time database synchronization, automated webhooks, payment gateways, and vector-database integrations.
+With **2+ years** of hands-on experience, I design, build, and deploy high-performance cross-platform mobile applications (Android, iOS) and scalable full-stack web applications. I specialize in creating clean, maintainable, testable codebases utilizing **Flutter/Dart** for frontend clients, coupled with **React.js, Node.js, Express, Prisma ORM, and AWS** for secure, high-performance backends. My expertise extends to offline-first architectures, real-time database synchronization, automated webhooks, payment gateways, and vector-database integrations.
 
-🎯 Targeted Roles: **Senior Flutter Developer | Full-Stack Engineer | Mobile App Specialist**
-
-**💼 Available for full-time opportunities (On-site / Hybrid / Remote) and select freelance projects.**
+**💼 Available for full-time opportunities (On-site / Hybrid / Remote) and freelance project agreements.**
 
 ---
 
@@ -73,15 +77,6 @@ I specialize in creating clean, maintainable codebases utilizing **Flutter/Dart*
 - 🛠️ **Proven Domain Experience**: Shipped complex, enterprise-ready software including Learning Management Systems (LMS), SaaS API utilities, ride-hailing networks, menswear wholesale ERPs, and high-dimensional AI-powered vector search (RAG) platforms.
 - 🌍 **Location Flexibility**: Actively seeking hybrid/on-site opportunities in **Bangalore**, **Chennai**, **Coimbatore**, and **Karur**, or **remote** roles globally.
 - ⚡ **Performance & Quality Focused**: Strong advocate of clean code architecture, offline-first database synchronization, containerized backend services, and interactive micro-animations.
-
----
-
-## ⚡ Key Achievements & Professional Highlights
-
-- **10+ Cross-Platform Apps Shipped**: Successfully designed and deployed multiple high-performance mobile apps to the Google Play Store and iOS App Store.
-- **Enterprise-Grade ERP Systems**: Built manufacturing, wholesale billing, and PG hostel utility dashboards facilitating high-volume offline transactions.
-- **Real-Time Logistics Networks**: Developed passenger-driver tracking ecosystems and dispatching algorithms for taxi and food delivery networks using WebSockets and real-time database listeners.
-- **Bleeding-Edge AI Solutions**: Designed a serverless PDF parser and web crawler feeding high-dimensional embedding nodes (Qdrant) with Server-Sent Events (SSE) answering engines.
 
 ---
 
@@ -203,6 +198,38 @@ Below is a curated selection of key projects highlighting end-to-end full-stack 
 * **Tech Stack**: Flutter, Getx, Firebase, Google Maps, Socket.io, Node.js, Express, Prisma, Razorpay
 
 </details>
+
+---
+
+## 📱 Published Android Apps
+
+I publish Android and iOS applications on Google Play and App Store under **Sathish Dev**.
+
+| App | Description | Architecture / Tech | Status |
+|---|---|---|---|
+| **Mayiliragu Academy** | Comprehensive LMS with video player and exams | Flutter + Clean Architecture | Live |
+| **Premium Parts** | ERP dashboard & attendance portal with QR scanning | Flutter + SQLite Offline-First | Live |
+| **Judah Food Delivery** | Customer, Rider, and Partner 3-app ecosystem | Flutter + Socket.io + Node.js | Live (Staging) |
+| **Nest Pilot** | Hostel & PG room rent, utility, and ticketing | Flutter + Next.js + PostgreSQL | Staging |
+
+🔗 **Google Play Developer Account**: [Sathish Dev Developer Profile](https://play.google.com/store/apps/dev?id=6517030172709793171)  
+🌐 **Website**: [www.sathishdev.in](https://www.sathishdev.in)
+
+---
+
+## 🛠️ Services
+
+✔ **Flutter App Development** (Custom Android & iOS Apps)  
+✔ **React & Next.js Web Development** (High Performance Web Apps)  
+✔ **Node.js & Express Backend Development** (Scalable APIs & Microservices)  
+✔ **PostgreSQL Database Design** & Query Optimization  
+✔ **AWS Deployment & DevOps** (Cloud Deployments, CI/CD, Docker)  
+✔ **Clean Architecture & Mobile UX Consultancy**  
+✔ **Payment Gateway Integration** (Razorpay, Stripe)  
+✔ **Real-time Ecosystems** (Socket.io, WebSockets)  
+✔ **AI & RAG Chatbot Integration** (Qdrant Vector DB, LLMs)  
+
+📩 Let's build your product → [www.sathishdev.in/contact](https://www.sathishdev.in/contact)
 
 ---
 
@@ -332,6 +359,29 @@ A reusable login component with authentication flows, validation, and smooth mic
 
 **Malar Matriculation Higher Secondary School** | *2018 - 2020*
 
+## 🔨 Currently Working On
+
+*   🎓 **Mayiliragu Academy LMS** — High-Performance Flutter + Node.js + PostgreSQL **(Clean Architecture)**
+*   🍔 **Judah Food Delivery** — 3-app dispatch ecosystem with Flutter + Socket.io **(Clean Architecture)**
+*   🔧 **Premium Parts ERP** — Offline-First SQLite sync & AWS integrations with Flutter **(Clean Architecture)**
+*   🤖 **AI-Powered RAG System** — Advanced data ingestion Node.js dashboard + Qdrant Cloud
+
+---
+
+## 🌐 Find Me Online
+
+| Platform | URL / Connection |
+| :--- | :--- |
+| **🌐 Portfolio Website** | [https://www.sathishdev.in](https://www.sathishdev.in) |
+| **💼 LinkedIn Profile** | [https://linkedin.com/in/sathishgobi](https://www.linkedin.com/in/sathishgobi/) |
+| **🐙 GitHub Account** | [https://github.com/Sathish4439](https://github.com/Sathish4439) |
+| **📱 Google Play** | [Sathish Dev Play Store Apps](https://play.google.com/store/apps/dev?id=6517030172709793171) |
+| **📝 Dev.to Blog** | [https://dev.to/5119__sathishg_d4ba94816](https://dev.to/5119__sathishg_d4ba94816) |
+| **🔖 Hashnode Blog** | [https://hashnode.com/@sathish4439](https://hashnode.com/@sathish4439) |
+| **✍️ Medium** | [https://medium.com/@aravindsathish0885](https://medium.com/@aravindsathish0885) |
+| **📧 Professional Email** | [sathishg.dev@gmail.com](mailto:sathishg.dev@gmail.com) |
+| **📍 Physical Base** | Coimbatore, Tamil Nadu, India |
+
 ---
 
 ## 📊 GitHub Profile Analytics
@@ -352,6 +402,9 @@ A reusable login component with authentication flows, validation, and smooth mic
 
 <div align="center">
   
+  <a href="https://www.sathishdev.in">
+    <img src="https://img.shields.io/badge/Portfolio-www.sathishdev.in-16F2B3?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Sathish Dev Portfolio Website" />
+  </a>
   <a href="mailto:sathishg.dev@gmail.com">
     <img src="https://img.shields.io/badge/Email-sathishg.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Sathish Gobi - sathishg.dev@gmail.com" />
   </a>
@@ -387,7 +440,7 @@ A reusable login component with authentication flows, validation, and smooth mic
   </p>
   
   <p align="center">
-    <b>Made with ❤️ by Sathish</b>
+    <b>Made with ❤️ by Sathish Dev | <a href="https://www.sathishdev.in">www.sathishdev.in</a></b>
   </p>
   
   <p align="center">

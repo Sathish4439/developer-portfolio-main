@@ -85,6 +85,18 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          {/* Mobile Resume Link */}
+          <li style={{ marginTop: "1.5rem" }}>
+            <a
+              href="/Sathish_G_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.drawerResumeBtn}
+              onClick={() => setOpen(false)}
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
       </div>
     </header>

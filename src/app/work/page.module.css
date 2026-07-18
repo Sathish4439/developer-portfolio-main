@@ -101,6 +101,13 @@
   padding: 0 2rem 3rem 2rem;
 }
 
+@media (max-width: 640px) {
+  .filtersSection {
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+
 .filtersList {
   display: flex;
   flex-wrap: wrap;
@@ -137,6 +144,15 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem 5rem 2rem;
+}
+
+@media (max-width: 640px) {
+  .gridSection {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .projectCard {
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 .projectsGrid {

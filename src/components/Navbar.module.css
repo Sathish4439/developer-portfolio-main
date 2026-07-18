@@ -208,6 +208,30 @@
   color: #a3e635;
 }
 
+.drawerResumeBtn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  font-family: 'Londrina Solid', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  background: #a3e635;
+  border: 2px solid #a3e635;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.22s ease;
+}
+
+.drawerResumeBtn:hover {
+  background: transparent;
+  color: #a3e635;
+}
+
+
 /* Mobile breakpoint */
 @media (max-width: 768px) {
   .links {

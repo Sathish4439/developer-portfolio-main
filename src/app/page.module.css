@@ -22,7 +22,6 @@
   }
 }
 
-/* ─── HERO ────────────────────────────────────────────── */
 .heroSection {
   position: relative;
   min-height: 100svh;
@@ -31,7 +30,15 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 2rem;
+  }
 }
 
 /* PORT / FOLIO full-width row */
@@ -192,13 +199,120 @@
   color: #a3e635;
 }
 
+/* Hero CTA row */
+.heroCta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.25rem;
+  z-index: 30;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Desktop: show 3-column layout, hide mobile */
+.heroDesktop {
+  display: flex;
+}
+
+.heroMobile {
+  display: none;
+}
+
+/* ── MOBILE HERO LAYOUT ─────────────────────────────── */
+@media (max-width: 640px) {
+  /* Hide desktop 3-column hero */
+  .heroDesktop {
+    display: none !important;
+  }
+
+  /* Show mobile stacked hero */
+  .heroMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    padding-top: 1rem;
+    z-index: 10;
+  }
+
+  .heroMobileImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(163, 230, 53, 0.15) 0%, transparent 70%);
+    flex-shrink: 0;
+  }
+
+  .heroMobileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: drop-shadow(0 0 40px rgba(163, 230, 53, 0.2));
+  }
+
+  .heroMobileTitle {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .heroWordMobile {
+    font-family: 'League Gothic', Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 4px;
+    color: #fff;
+    font-size: clamp(52px, 16vw, 90px);
+    display: block;
+    white-space: nowrap;
+  }
+
+  .heroMobileBadge {
+    background: #a3e635;
+    color: #000;
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transform: rotate(-1deg);
+  }
+
+  .heroMobileLocation {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .heroCta {
+    margin-top: 1.5rem;
+    gap: 0.75rem;
+  }
+
+  .heroResumeBtn, .heroContactBtn {
+    font-size: 15px;
+    padding: 0.55rem 1.25rem;
+  }
+}
 
 /* Scroll indicator */
 .scrollIndicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 3rem;
   z-index: 30;
   display: flex;
   flex-direction: column;
@@ -244,6 +358,53 @@
   padding: 0 1rem 0;
 }
 
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 80svh;
+    padding-bottom: 3rem;
+  }
+  .heroWord {
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    min-height: 75svh;
+    padding-bottom: 2rem;
+  }
+  .heroWord {
+    font-size: clamp(48px, 12vw, 85px);
+    letter-spacing: 1px;
+  }
+  .heroImgWrap {
+    width: clamp(75px, 25vw, 120px);
+    min-height: clamp(75px, 25vw, 120px);
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .heroBadgeWrap {
+    bottom: -32px;
+    width: clamp(140px, 35vw, 190px);
+    height: 32px;
+  }
+  .heroBadgeText {
+    font-size: 11px;
+  }
+  .locationBadge {
+    padding: 0.35rem 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .locationText {
+    font-size: 11px;
+  }
+  .heroResumeBtn, .heroContactBtn {
+    font-size: 14px;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+
 .introCard {
   position: relative;
   overflow: hidden;
@@ -262,6 +423,13 @@
   .introCard {
     grid-template-columns: 1fr 1fr;
     border-radius: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introCard {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
@@ -455,10 +623,10 @@
 
 .sectionTitle {
   font-family: 'League Gothic', Helvetica, sans-serif;
-  font-size: clamp(64px, 10vw, 180px);
+  font-size: clamp(38px, 9vw, 180px);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   color: #fff;
 }
 

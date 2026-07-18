@@ -38,7 +38,9 @@ export default function Home() {
     <main className={`${styles.main} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <div className={styles.heroTitleRow}>
+
+        {/* ── DESKTOP HERO: PORT | image | FOLIO (hidden on mobile) ── */}
+        <div className={`${styles.heroTitleRow} ${styles.heroDesktop}`}>
           <AnimeReveal direction="fade" duration={800} delay={100} className={styles.portSide}>
             <div>
               <span className={styles.heroWord}>PORT</span>
@@ -77,8 +79,29 @@ export default function Home() {
           </AnimeReveal>
         </div>
 
+        {/* ── MOBILE HERO: stacked image + text (hidden on desktop) ── */}
+        <div className={styles.heroMobile}>
+          {/* Profile image */}
+          <div className={styles.heroMobileImg}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/sathish.png" alt="Sathish G" className={styles.heroImg} />
+          </div>
+          {/* PORTFOLIO text */}
+          <div className={styles.heroMobileTitle}>
+            <span className={styles.heroWordMobile}>PORT</span>
+            <span className={styles.heroWordMobile}>FOLIO</span>
+          </div>
+          {/* Role badge */}
+          <div className={styles.heroMobileBadge}>Full Stack &amp; Flutter Engineer</div>
+          {/* Location */}
+          <div className={styles.heroMobileLocation}>
+            <span>📍</span>
+            <span>Coimbatore, Tamil Nadu</span>
+          </div>
+        </div>
+
         {/* Hero CTA & Availability */}
-        <div style={{ marginTop: "2.5rem", display: "flex", gap: "1.25rem", zIndex: 30, flexWrap: "wrap", justifyContent: "center" }}>
+        <div className={styles.heroCta}>
           <a
             href="/Sathish_G_Resume.pdf"
             target="_blank"

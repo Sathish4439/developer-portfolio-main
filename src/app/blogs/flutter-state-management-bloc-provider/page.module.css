@@ -1,0 +1,113 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(163, 230, 53, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  color: #a3e635;
+  padding: 0.3rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.metaRow {
+  display: flex;
+  gap: 1.5rem;
+  color: #71717a;
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1.5rem;
+}
+
+.articleBody {
+  color: #d4d4d8;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.articleBody h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.articleBody p {
+  margin-bottom: 1.25rem;
+}
+
+.articleBody pre {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #a3e635;
+  margin-bottom: 1.5rem;
+}

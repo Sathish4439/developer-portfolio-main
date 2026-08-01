@@ -33,6 +33,18 @@
   padding-bottom: 2.5rem;
 }
 
+.heroH1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 768px) {
   .heroSection {
     min-height: auto;
@@ -665,7 +677,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 4px solid #a3e635;
+  border: 4px solid rgba(255, 255, 255, 0.15);
   border-radius: 70px;
   padding: clamp(1.5rem, 3vw, 2.5rem) 2rem;
   min-height: 160px;
@@ -681,6 +693,7 @@
 }
 
 .serviceCard:hover {
+  border-color: #a3e635;
   background: rgba(163, 230, 53, 0.05);
   box-shadow: 0 0 40px rgba(163, 230, 53, 0.15);
 }

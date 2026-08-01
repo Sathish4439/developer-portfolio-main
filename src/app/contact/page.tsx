@@ -52,7 +52,7 @@ export default function Contact() {
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>GET IN TOUCH</div>
           <AnimeReveal direction="fade" duration={800}>
-            <h1 className={styles.title}>CONTACT</h1>
+            <h1 className={styles.title}>Contact Sathish G — Hire Flutter &amp; Full Stack Engineer</h1>
           </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
@@ -81,9 +81,20 @@ export default function Contact() {
                   </div>
                   <div className={styles.detailItem}>
                     <span className={styles.detailLabel}>Location</span>
-                    <span className={styles.detailVal}>Tamil Nadu, India</span>
+                    <span className={styles.detailVal}>Coimbatore, Tamil Nadu, India</span>
                   </div>
                 </div>
+              </div>
+
+              {/* Trust & Guarantee Box */}
+              <div className={styles.infoBlock} style={{ background: "rgba(163, 230, 53, 0.03)", border: "1px solid rgba(163, 230, 53, 0.2)", borderRadius: "12px", padding: "1.25rem" }}>
+                <p style={{ color: "#a3e635", fontWeight: "700", marginBottom: "0.5rem" }}>⚡ Response Guarantee</p>
+                <p style={{ color: "#d4d4d8", fontSize: "0.92rem", lineHeight: "1.5", marginBottom: "0.75rem" }}>
+                  I respond to all recruiter inquiries and project briefs within 24 hours.
+                </p>
+                <p style={{ color: "#71717a", fontSize: "0.85rem" }}>
+                  🔒 Direct to Sathish G — no assistants, no middleman agencies.
+                </p>
               </div>
 
               <div className={styles.infoBlock}>
@@ -143,6 +154,27 @@ export default function Contact() {
                   </div>
 
                   <div className={styles.inputGroup}>
+                    <label htmlFor="role" className={styles.label}>I am a:</label>
+                    <select id="role" name="role" className={styles.input} style={{ background: "#000", color: "#fff" }}>
+                      <option value="Recruiter">Recruiter / Hiring Manager</option>
+                      <option value="Founder">Founder / Business Owner</option>
+                      <option value="Agency">Agency Partner</option>
+                      <option value="Individual">Individual Client</option>
+                    </select>
+                  </div>
+
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="projectType" className={styles.label}>Project Type:</label>
+                    <select id="projectType" name="projectType" className={styles.input} style={{ background: "#000", color: "#fff" }}>
+                      <option value="Flutter">Flutter Mobile App</option>
+                      <option value="FullStack">Full Stack Web App (React / Next.js)</option>
+                      <option value="Backend">Node.js Backend / REST API</option>
+                      <option value="MVP">MVP Rapid Prototype</option>
+                      <option value="Other">Consulting / Other</option>
+                    </select>
+                  </div>
+
+                  <div className={styles.inputGroup}>
                     <label htmlFor="subject" className={styles.label}>Subject</label>
                     <input
                       type="text"
@@ -162,8 +194,8 @@ export default function Contact() {
                       id="message"
                       name="message"
                       required
-                      rows={5}
-                      placeholder="Tell me about your project..."
+                      rows={4}
+                      placeholder="Tell me about your project or role requirements..."
                       value={formState.message}
                       onChange={handleChange}
                       className={styles.textarea}

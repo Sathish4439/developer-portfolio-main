@@ -1,0 +1,178 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.hero {
+  margin-bottom: 4rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(163, 230, 53, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  color: #a3e635;
+  padding: 0.3rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #a1a1aa;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(163, 230, 53, 0.4);
+  transform: translateY(-2px);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.cardDesc {
+  color: #a1a1aa;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.faqItem {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faqQ {
+  font-weight: 600;
+  color: #a3e635;
+  margin-bottom: 0.5rem;
+}
+
+.faqA {
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+
+.cta {
+  background: linear-gradient(135deg, rgba(163, 230, 53, 0.1), rgba(163, 230, 53, 0.02));
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background: #a3e635;
+  color: #000;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: transform 0.2s;
+  margin-top: 1rem;
+}
+
+.ctaBtn:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,89 @@
+.section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.titleArea {
+  margin-bottom: 2.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(163, 230, 53, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  color: #a3e635;
+  padding: 0.3rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(163, 230, 53, 0.3);
+  transform: translateY(-2px);
+}
+
+.quote {
+  color: #d4d4d8;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a3e635, #10b981);
+  color: #000;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.roleCompany {
+  font-size: 0.85rem;
+  color: #71717a;
+}

@@ -56,6 +56,28 @@ export default function Navbar() {
           >
             Resume
           </a>
+
+          {/* Social Links */}
+          <div className={styles.socialIcons}>
+            <a
+              href="https://github.com/Sathish4439"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="GitHub Profile"
+            >
+              <i className="devicon-github-original" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sathishgobi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="LinkedIn Profile"
+            >
+              <i className="devicon-linkedin-plain" />
+            </a>
+          </div>
         </div>
 
         {/* Hamburger button (mobile) */}

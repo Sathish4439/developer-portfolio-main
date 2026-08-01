@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import AnimeReveal from "../components/AnimeReveal";
+import Testimonials from "../components/Testimonials";
 
 const skills = [
   { name: "Flutter", icon: "devicon-flutter-plain colored" },
@@ -38,6 +39,7 @@ export default function Home() {
     <main className={`${styles.main} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
+        <h1 className={styles.heroH1}>Sathish G — Flutter Developer &amp; Full Stack Engineer in Coimbatore</h1>
 
         {/* ── DESKTOP HERO: PORT | image | FOLIO (hidden on mobile) ── */}
         <div className={`${styles.heroTitleRow} ${styles.heroDesktop}`}>
@@ -134,11 +136,10 @@ export default function Home() {
                 <span className={styles.accent}>G. </span>Sathish
               </h2>
               <p className={styles.introTagline}>
-                I Build High-Performance Flutter Apps & Scalable Full-Stack Systems. Clean Code, Real Results.
+                Senior Flutter Developer &amp; Full-Stack Engineer based in Coimbatore, Tamil Nadu — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js web platforms.
               </p>
               <p className={styles.introDesc}>
-                Based in Tamil Nadu, India. 2+ years building cross-platform apps and cloud-deployed web platforms.
-                Every function optimised. Every UI pixel purposeful.
+                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, sub-100ms API latencies, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need a freelance Flutter mobile developer in Coimbatore, a full-stack engineer for MVP creation, or a dedicated Node.js microservice architect, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
               </p>
               <Link href="/about" className={styles.introCta}>
                 Learn More &rarr;
@@ -176,6 +177,9 @@ export default function Home() {
           </div>
         </AnimeReveal>
       </section>
+
+      {/* ─────────── TESTIMONIALS ─────────── */}
+      <Testimonials />
 
       {/* ─────────── SERVICES ─────────── */}
       <section className={styles.servicesSection}>

@@ -4,6 +4,7 @@ import Navbar from "src/components/Navbar";
 import Footer from "src/components/Footer";
 import PageTransition from "src/components/PageTransition";
 import SmoothScrollProvider from "src/components/SmoothScrollProvider";
+import MobileStickyBar from "src/components/MobileStickyBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sathishdev.in"),
@@ -59,13 +60,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://www.sathishdev.in/#website",
+                "name": "Sathish G — Flutter Developer & Full Stack Engineer Portfolio",
+                "url": "https://www.sathishdev.in",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://www.sathishdev.in/work?q={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              },
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
@@ -173,13 +189,14 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <SmoothScrollProvider />
         <Navbar />
         <main style={{ flex: 1 }}>
           <PageTransition>{children}</PageTransition>
         </main>
         <Footer />
+        <MobileStickyBar />
       </body>
     </html>
   );

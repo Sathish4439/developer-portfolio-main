@@ -9,6 +9,40 @@ const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
 const projects = [
   {
+    id: "mayiliragu-lms",
+    title: "Mayiliragu Academy LMS",
+    category: "Full Stack",
+    year: "2025",
+    tags: ["React", "Flutter", "Node.js", "AWS EC2", "Prisma", "PostgreSQL"],
+    description: "An enterprise-grade Learning Management System (LMS) scaling to support 1,000+ active concurrent learners. Engineered with a Flutter app, React admin panel, and Node.js backend.",
+    accent: "#ff3b3b",
+    metrics: "1,000+ Active Learners",
+    caseStudyUrl: "/work/mayiliragu-academy",
+  },
+  {
+    id: "judah-fooddelivery",
+    title: "Judah Food Delivery",
+    category: "Flutter",
+    year: "2025",
+    tags: ["Flutter", "Dart", "Socket.io", "Google Maps", "Consumer E-com"],
+    description: "A customer-facing food ordering and delivery application with real-time tracking, active dispatching, and secure payment processing.",
+    accent: "#e11d48",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
+    metrics: "Socket.io GPS Tracking",
+    caseStudyUrl: "/work/judah-food-delivery",
+  },
+  {
+    id: "premium-parts",
+    title: "Premium Parts ERP",
+    category: "Full Stack",
+    year: "2024",
+    tags: ["Flutter", "Node.js", "Prisma", "PostgreSQL", "Google Maps"],
+    description: "An ERP application automating payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
+    accent: "#a855f7",
+    metrics: "Automated Commissions",
+    caseStudyUrl: "/work/premium-parts",
+  },
+  {
     id: "virtual-2-live",
     title: "Virtual 2 Live Business HUB",
     category: "Cloud & SaaS",
@@ -64,17 +98,6 @@ const projects = [
     metrics: "B2B Supply Chain",
   },
   {
-    id: "judah-fooddelivery",
-    title: "Judah Food Delivery",
-    category: "Flutter",
-    year: "2025",
-    tags: ["Flutter", "Dart", "Socket.io", "Google Maps", "Consumer E-com"],
-    description: "A customer-facing food ordering and delivery application with real-time tracking, active dispatching, and secure payment processing.",
-    accent: "#e11d48",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
-    metrics: "Socket.io GPS Tracking",
-  },
-  {
     id: "judah-restaurant",
     title: "Judah Restaurant Partner",
     category: "Flutter",
@@ -84,16 +107,6 @@ const projects = [
     accent: "#f43f5e",
     liveUrl: "https://play.google.com/store/apps/details?id=com.judah.restaurentpartner&pcampaignid=web_share",
     metrics: "Real-time Order Logs",
-  },
-  {
-    id: "mayiliragu-lms",
-    title: "Mayiliragu Academy LMS",
-    category: "Full Stack",
-    year: "2025",
-    tags: ["React", "Flutter", "Node.js", "AWS EC2", "Prisma", "PostgreSQL"],
-    description: "An enterprise-grade Learning Management System (LMS) scaling to support 1,000+ active concurrent learners. Engineered with a Flutter app, React admin panel, and Node.js backend.",
-    accent: "#ff3b3b",
-    metrics: "1,000+ Active Learners",
   },
   {
     id: "whatsapp-sender",
@@ -146,16 +159,6 @@ const projects = [
     liveUrl: "https://play.google.com/store/apps/details?id=com.nestpilot.dhigrowth&pcampaignid=web_share",
     metrics: "Multi-tenant SaaS",
   },
-  {
-    id: "premium-parts",
-    title: "Premium Parts ERP",
-    category: "Full Stack",
-    year: "2024",
-    tags: ["Flutter", "Node.js", "Prisma", "PostgreSQL", "Google Maps"],
-    description: "An ERP application automating payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
-    accent: "#a855f7",
-    metrics: "Automated Commissions",
-  },
 ];
 
 export default function Work() {
@@ -180,7 +183,7 @@ export default function Work() {
         <div className={styles.titleArea}>
           <div className={`${styles.badge} fadeIn stagger-1`}>SELECTED PROJECTS</div>
           <AnimeReveal direction="fade" duration={800}>
-            <h1 className={styles.title}>WORK</h1>
+            <h1 className={styles.title}>Flutter Developer Portfolio — Production Apps &amp; Case Studies</h1>
           </AnimeReveal>
           <div className={`${styles.titleLine} slideInLeft stagger-2`} />
         </div>
@@ -243,20 +246,37 @@ export default function Work() {
                 <h3 className={styles.projectTitle}>{proj.title}</h3>
                 <p className={styles.projectDesc}>{proj.description}</p>
 
-                {proj.liveUrl && (
-                   <a
-                     href={proj.liveUrl}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className={styles.playStoreLink}
-                     style={{
-                       borderColor: `${proj.accent}40`,
-                       color: proj.accent,
-                     }}
-                   >
-                     Play Store &rarr;
-                   </a>
-                 )}
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                  {proj.caseStudyUrl && (
+                    <Link
+                      href={proj.caseStudyUrl}
+                      className={styles.playStoreLink}
+                      style={{
+                        backgroundColor: `${proj.accent}15`,
+                        borderColor: proj.accent,
+                        color: proj.accent,
+                        fontWeight: 600,
+                      }}
+                    >
+                      View Case Study &rarr;
+                    </Link>
+                  )}
+
+                  {proj.liveUrl && (
+                    <a
+                      href={proj.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.playStoreLink}
+                      style={{
+                        borderColor: `${proj.accent}40`,
+                        color: proj.accent,
+                      }}
+                    >
+                      Play Store &rarr;
+                    </a>
+                  )}
+                </div>
 
                 <div className={styles.tagsList}>
                   {proj.tags.map((tag) => (

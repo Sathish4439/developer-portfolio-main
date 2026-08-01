@@ -1,0 +1,140 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #a3e635;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.backLink:hover .backText {
+  color: #a3e635;
+}
+
+.badge {
+  display: inline-block;
+  background: #a3e635;
+  padding: 0.25rem 1rem;
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #000;
+  transform: rotate(-1deg);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.title {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.articleBody {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.articleBody h2 {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(24px, 3.5vw, 36px);
+  color: #a3e635;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.articleBody p {
+  margin-bottom: 1.5rem;
+}
+
+.articleBody ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.articleBody li {
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tagPill {
+  background: rgba(163, 230, 53, 0.1);
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  color: #a3e635;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 14px;
+}

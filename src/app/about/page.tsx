@@ -40,7 +40,7 @@ export default function About() {
         </div>
 
         <div className={styles.titleArea}>
-          <div className={`${styles.badge} fadeIn stagger-1`}>WHO I AM</div>
+          <div className={`${styles.badge} fadeIn stagger-1`}>ABOUT ME</div>
           <AnimeReveal direction="fade" duration={800}>
             <h1 className={styles.title}>About Sathish G — Flutter Developer &amp; Full Stack Engineer</h1>
           </AnimeReveal>

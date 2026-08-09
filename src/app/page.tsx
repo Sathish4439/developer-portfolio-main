@@ -139,7 +139,7 @@ export default function Home() {
                 Senior Flutter Developer &amp; Full-Stack Engineer based in Coimbatore, Tamil Nadu — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js web platforms.
               </p>
               <p className={styles.introDesc}>
-                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, sub-100ms API latencies, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need a freelance Flutter mobile developer in Coimbatore, a full-stack engineer for MVP creation, or a dedicated Node.js microservice architect, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
+                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, sub-100ms API latencies, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, a full-stack engineer for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, or a dedicated Node.js microservice architect, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
               </p>
               <Link href="/about" className={styles.introCta}>
                 Learn More &rarr;
@@ -255,6 +255,66 @@ export default function Home() {
             </div>
           </AnimeReveal>
         </div>
+      </section>
+
+      {/* ─────────── WHY WORK WITH ME ─────────── */}
+      <section className={styles.whySection}>
+        <AnimeReveal direction="fade" duration={800}>
+          <div className={styles.whyCard}>
+            <h2 className={styles.whyTitle}>Why Founders &amp; Recruiters Choose Sathish G</h2>
+            <div className={styles.whyGrid}>
+              <div className={styles.whyItem}>
+                <div className={styles.whyItemHeader}>
+                  <span className={styles.whyIcon}>⚡</span>
+                  <h3 className={styles.whyItemTitle}>Full-Stack Coverage</h3>
+                </div>
+                <p className={styles.whyItemDesc}>
+                  Flutter mobile apps + Node.js backend + AWS cloud deployment — one dedicated engineer providing complete product coverage.
+                </p>
+              </div>
+
+              <div className={styles.whyItem}>
+                <div className={styles.whyItemHeader}>
+                  <span className={styles.whyIcon}>🚀</span>
+                  <h3 className={styles.whyItemTitle}>Real Production Proof</h3>
+                </div>
+                <p className={styles.whyItemDesc}>
+                  Every listed app is shipped and active. Serving 1,000+ daily users across food delivery, LMS, and ERP enterprise platforms.
+                </p>
+              </div>
+
+              <div className={styles.whyItem}>
+                <div className={styles.whyItemHeader}>
+                  <span className={styles.whyIcon}>🎯</span>
+                  <h3 className={styles.whyItemTitle}>Sub-100ms API Latencies</h3>
+                </div>
+                <p className={styles.whyItemDesc}>
+                  High-speed backend performance micro-tuned with Prisma ORM indexes, PostgreSQL queries, and Redis caching layers.
+                </p>
+              </div>
+
+              <div className={styles.whyItem}>
+                <div className={styles.whyItemHeader}>
+                  <span className={styles.whyIcon}>📱</span>
+                  <h3 className={styles.whyItemTitle}>End-to-End Delivery</h3>
+                </div>
+                <p className={styles.whyItemDesc}>
+                  From initial Figma UI wireframes to Google Play and Apple App Store publishing with zero-crash stability.
+                </p>
+              </div>
+
+              <div className={styles.whyItem}>
+                <div className={styles.whyItemHeader}>
+                  <span className={styles.whyIcon}>🤝</span>
+                  <h3 className={styles.whyItemTitle}>Direct Communication</h3>
+                </div>
+                <p className={styles.whyItemDesc}>
+                  Daily async updates, clear milestone tracking, and transparent progress without agency middleman delays.
+                </p>
+              </div>
+            </div>
+          </div>
+        </AnimeReveal>
       </section>
 
       {/* ─────────── BRANDS ─────────── */}

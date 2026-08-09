@@ -1027,3 +1027,83 @@
 .skillIcon {
   font-size: 1.25rem;
 }
+
+/* ─────────── WHY SECTION ─────────── */
+.whySection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.whyCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyTitle {
+  font-family: 'League Gothic', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.whyItem {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.whyItem:hover {
+  border-color: rgba(163, 230, 53, 0.3);
+  transform: translateY(-2px);
+  background: rgba(163, 230, 53, 0.02);
+}
+
+.whyItemHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.whyIcon {
+  color: #a3e635;
+  font-size: 1.25rem;
+}
+
+.whyItemTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.whyItemDesc {
+  font-size: 0.92rem;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+.inlineLink {
+  color: #a3e635;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.inlineLink:hover {
+  color: #bef264;
+}

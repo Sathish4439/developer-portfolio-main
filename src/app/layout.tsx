@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.sathishdev.in"),
   title: "Flutter Developer in Coimbatore | Sathish G",
   description:
-    "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
+    "Hire Sathish G — Flutter & Node.js full-stack developer in Coimbatore. 2+ years, 15+ shipped apps. Available for freelance, startup MVPs & remote roles.",
   keywords: [
     "Sathish G",
     "Flutter Developer Coimbatore",
@@ -116,7 +116,7 @@ export default function RootLayout({
                 "image": "https://www.sathishdev.in/sathish.png",
                 "@id": "https://www.sathishdev.in/#localbusiness",
                 "url": "https://www.sathishdev.in",
-                "telephone": "+91-XXXXXXXXXX",
+                "telephone": "+91-7868031207",
                 "priceRange": "$$",
                 "address": {
                   "@type": "PostalAddress",
@@ -192,9 +192,9 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <SmoothScrollProvider />
         <Navbar />
-        <main style={{ flex: 1 }}>
+        <div style={{ flex: 1 }}>
           <PageTransition>{children}</PageTransition>
-        </main>
+        </div>
         <Footer />
         <MobileStickyBar />
       </body>

@@ -52,6 +52,7 @@ const projects = [
     accent: "#0ea5e9",
     liveUrl: "https://play.google.com/store/apps/details?id=app.virtual2live.com&pcampaignid=web_share",
     metrics: "5,000+ Downloads",
+    caseStudyUrl: "/work/virtual-2-live",
   },
   {
     id: "ovantica",
@@ -105,7 +106,7 @@ const projects = [
     tags: ["Flutter", "Socket.io", "Order Management", "Vendor Operations"],
     description: "A partner-facing mobile app enabling restaurant vendors to manage orders, customize menus, monitor earnings, and coordinate with delivery riders.",
     accent: "#f43f5e",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.restaurentpartner&pcampaignid=web_share",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery",
     metrics: "Real-time Order Logs",
   },
   {

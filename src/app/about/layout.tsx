@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Sathish G | Flutter Developer in Coimbatore, Tamil Nadu",
+  title: "About Sathish G — Flutter Developer with 2+ Years Experience | Coimbatore, Tamil Nadu",
   description: "Read the professional journey, core technical skillset, and stats of Sathish G, a senior Flutter app developer and Full Stack engineer based in Coimbatore, Tamil Nadu.",
 };
 

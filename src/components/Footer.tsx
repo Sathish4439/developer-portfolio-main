@@ -3,10 +3,17 @@ import styles from "./Footer.module.css";
 
 const footerNav = {
   Services: [
-    { label: "Flutter Dev", href: "/services" },
-    { label: "Full Stack", href: "/services" },
-    { label: "Node.js Backend", href: "/services" },
-    { label: "AWS & DevOps", href: "/services" },
+    { label: "Flutter Dev", href: "/services/flutter-development" },
+    { label: "Full Stack", href: "/services/full-stack-development" },
+    { label: "Node.js Backend", href: "/services/nodejs-development" },
+    { label: "AWS & DevOps", href: "/services/full-stack-development" },
+  ],
+  "Locations & Hiring": [
+    { label: "Flutter Dev Coimbatore", href: "/flutter-developer-coimbatore" },
+    { label: "Hire Flutter Dev", href: "/hire-flutter-developer" },
+    { label: "Flutter Dev India", href: "/flutter-developer-india" },
+    { label: "Freelance Flutter Dev", href: "/freelance-flutter-developer" },
+    { label: "Full Stack Developer", href: "/full-stack-developer" },
   ],
   Work: [
     { label: "Portfolio", href: "/work" },
@@ -88,10 +95,10 @@ export default function Footer() {
         <div className={styles.watermark}>PORTFOLIO</div>
 
         {/* Bottom bar */}
-        {/* <div className={styles.bottom}>
+        <div className={styles.bottom}>
           <span className={styles.copy}>© {year} Sathish G. All rights reserved.</span>
           <span className={styles.copy}>Built with Next.js &amp; ♥</span>
-        </div> */}
+        </div>
       </div>
     </footer>
   );

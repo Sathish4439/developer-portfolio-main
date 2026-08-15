@@ -16,22 +16,52 @@ export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    role: "Recruiter",
+    projectType: "Flutter",
     subject: "",
     message: "",
   });
 
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    setTimeout(() => {
-      setStatus("success");
-      setFormState({ name: "", email: "", subject: "", message: "" });
-    }, 1200);
+    setErrorMsg("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && data.success) {
+        setStatus("success");
+        setFormState({
+          name: "",
+          email: "",
+          role: "Recruiter",
+          projectType: "Flutter",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setStatus("error");
+        setErrorMsg(data.error || "Failed to send email. Please email sathishg.dev@gmail.com directly.");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMsg("Network connection error. Please email sathishg.dev@gmail.com directly.");
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormState({
       ...formState,
       [e.target.name]: e.target.value,
@@ -155,7 +185,14 @@ export default function Contact() {
 
                   <div className={styles.inputGroup}>
                     <label htmlFor="role" className={styles.label}>I am a:</label>
-                    <select id="role" name="role" className={styles.input} style={{ background: "#000", color: "#fff" }}>
+                    <select
+                      id="role"
+                      name="role"
+                      value={formState.role}
+                      onChange={handleChange}
+                      className={styles.input}
+                      style={{ background: "#000", color: "#fff" }}
+                    >
                       <option value="Recruiter">Recruiter / Hiring Manager</option>
                       <option value="Founder">Founder / Business Owner</option>
                       <option value="Agency">Agency Partner</option>
@@ -165,7 +202,14 @@ export default function Contact() {
 
                   <div className={styles.inputGroup}>
                     <label htmlFor="projectType" className={styles.label}>Project Type:</label>
-                    <select id="projectType" name="projectType" className={styles.input} style={{ background: "#000", color: "#fff" }}>
+                    <select
+                      id="projectType"
+                      name="projectType"
+                      value={formState.projectType}
+                      onChange={handleChange}
+                      className={styles.input}
+                      style={{ background: "#000", color: "#fff" }}
+                    >
                       <option value="Flutter">Flutter Mobile App</option>
                       <option value="FullStack">Full Stack Web App (React / Next.js)</option>
                       <option value="Backend">Node.js Backend / REST API</option>
@@ -202,6 +246,12 @@ export default function Contact() {
                     />
                   </div>
 
+                  {status === "error" && (
+                    <div style={{ color: "#ef4444", fontSize: "0.9rem", marginBottom: "1rem", lineHeight: "1.4" }}>
+                      ⚠️ {errorMsg}
+                    </div>
+                  )}
+
                   <button
                     type="submit"
                     disabled={status === "sending"}
@@ -210,6 +260,7 @@ export default function Contact() {
                     {status === "idle" && "Send Message"}
                     {status === "sending" && "Sending..."}
                     {status === "success" && "Message Sent!"}
+                    {status === "error" && "Try Again"}
                   </button>
                 </form>
               </div>

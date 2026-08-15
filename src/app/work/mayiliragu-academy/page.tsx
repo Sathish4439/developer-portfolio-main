@@ -4,16 +4,16 @@ import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
 
 export const metadata: Metadata = {
-  title: "Mayiliragu Academy LMS — E-Learning Flutter App Case Study | Sathish G",
+  title: "Mayiliragu Academy LMS — Flutter EdTech App Case Study | Sathish G",
   description:
-    "Technical case study by Sathish G, leading e-learning app developer india. How I built an enterprise LMS supporting 1,000+ active learners with a Flutter student app, React admin portal, and Node.js PostgreSQL backend on AWS.",
+    "Case study of Mayiliragu Academy by Sathish G, e-learning app developer India. How I built a Flutter LMS, React admin portal, and Node.js Prisma backend.",
   alternates: {
     canonical: "https://www.sathishdev.in/work/mayiliragu-academy",
   },
   openGraph: {
-    title: "Mayiliragu Academy LMS — E-Learning Flutter App Case Study | Sathish G",
+    title: "Mayiliragu Academy LMS — Flutter EdTech App Case Study | Sathish G",
     description:
-      "Enterprise e-learning LMS supporting 1,000+ learners across mobile and web platforms.",
+      "Enterprise e-learning LMS supporting 1,000+ learners with a 4-tier architecture across mobile, web, and desktop.",
     url: "https://www.sathishdev.in/work/mayiliragu-academy",
   },
 };
@@ -27,14 +27,22 @@ export default function MayiliraguAcademyCaseStudy() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "name": "Mayiliragu Academy LMS — E-Learning Platform",
-            "description": "Enterprise-grade Learning Management System engineered with Flutter, React, Node.js, Prisma ORM, and PostgreSQL by Sathish G, an expert e-learning app developer in India.",
+            "name": "Mayiliragu Academy LMS — Government Exam E-Learning Platform",
+            "description": "Enterprise-grade Learning Management System engineered with a Flutter student app, React admin portal, Node.js Express API with Prisma ORM, and Flutter desktop video processor.",
             "author": {
               "@type": "Person",
               "name": "Sathish G",
               "url": "https://www.sathishdev.in"
             },
-            "url": "https://www.sathishdev.in/work/mayiliragu-academy"
+            "url": "https://www.sathishdev.in/work/mayiliragu-academy",
+            "keywords": [
+              "Flutter LMS",
+              "EdTech developer India",
+              "TNPSC exam app",
+              "e-learning Flutter app",
+              "Node.js education platform",
+              "Prisma ORM developer"
+            ]
           })
         }}
       />
@@ -54,13 +62,13 @@ export default function MayiliraguAcademyCaseStudy() {
         </AnimeReveal>
 
         <p className={styles.subtitle}>
-          An enterprise-grade Learning Management System (LMS) engineered to support 1,000+ active concurrent learners across a mobile app and web management portal. Built by a specialized <strong>e-learning app developer in India</strong>.
+          An enterprise-grade Learning Management System (LMS) custom-built by an expert e-learning app developer in India. Engineered to support 1,000+ active concurrent learners with a modular Flutter LMS client, serving aspirants preparing for competitive government examinations like TNPSC, UPSC, SSC, and Banking.
         </p>
 
         <div className={styles.metaGrid}>
           <div>
             <div className={styles.metaLabel}>ROLE</div>
-            <div className={styles.metaValue}>Lead Full-Stack Developer</div>
+            <div className={styles.metaValue}>Lead Full-Stack Developer &amp; Architect</div>
           </div>
           <div>
             <div className={styles.metaLabel}>TIMELINE</div>
@@ -72,7 +80,7 @@ export default function MayiliraguAcademyCaseStudy() {
           </div>
           <div>
             <div className={styles.metaLabel}>STACK</div>
-            <div className={styles.metaValue}>Flutter, React, Node.js, AWS</div>
+            <div className={styles.metaValue}>Flutter, React 19, Node.js, AWS EC2</div>
           </div>
         </div>
 
@@ -81,10 +89,10 @@ export default function MayiliraguAcademyCaseStudy() {
           <h2 className={styles.sectionTitle}>The Challenge</h2>
           <div className={styles.contentBlock}>
             <p>
-              Mayiliragu Academy needed a modern digital education infrastructure to deliver structured video courses, mock exam test series, downloadable PDF study materials, and real-time student performance analytics to over 1,000 active learners across Tamil Nadu.
+              Mayiliragu Academy required a modern digital education infrastructure to deliver high-quality video lectures, timed mock exam test series, downloadable study notes, and real-time performance tracking to thousands of students preparing for competitive government exams. Managing this scale required solving the concurrency issues that arise during synchronized mock exam schedules, preventing system lag, and maintaining buffer-free video streams over low-bandwidth 3G/4G cellular networks.
             </p>
             <p style={{ marginTop: "1rem" }}>
-              Key engineering challenges included: preventing unauthorized screen recording of proprietary video content, handling simultaneous exam submissions during timed test windows without server crashes, ensuring fast video playback buffering on low-bandwidth 3G/4G networks, and providing non-technical instructors with an intuitive web admin portal to manage thousands of questions and video lessons effortlessly.
+              Furthermore, content protection was a critical commercial priority: the platform needed to strictly prevent unauthorized downloads and public sharing of proprietary lectures. Faculty also required a simple administrative dashboard to coordinate course material, review user metrics, and resolve student doubts. This meant the software system had to implement granular Role-Based Access Control (RBAC) across multiple user roles (Students, Faculty, Counselors, and Admins).
             </p>
           </div>
         </section>
@@ -94,125 +102,181 @@ export default function MayiliraguAcademyCaseStudy() {
           <h2 className={styles.sectionTitle}>The Solution I Built</h2>
           <div className={styles.contentBlock}>
             <p>
-              As a full-stack <strong>e-learning app developer in India</strong>, I designed and developed a 3-tier software ecosystem:
+              To address these requirements, I designed and developed a 4-tier software ecosystem:
             </p>
 
             <div className={styles.gridTwo} style={{ marginTop: "1.5rem" }}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>1. Student Mobile App (Flutter)</h3>
+                <h3 className={styles.cardTitle}>1. Flutter Student App</h3>
                 <p className={styles.cardDesc}>
-                  Cross-platform iOS and Android app featuring encrypted HLS video streaming, offline PDF viewing, interactive timed quiz interfaces with instant score reports, and personalized course progress dashboards.
+                  A cross-platform mobile client built with Flutter, utilizing `better_player_enhanced` for encrypted media streams, `firebase_messaging` for pushes, and secure local storage for offline PDF document access.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>2. Instructor Management Portal (React)</h3>
+                <h3 className={styles.cardTitle}>2. React 19 Admin &amp; Faculty Portal</h3>
                 <p className={styles.cardDesc}>
-                  A responsive Next.js/React web dashboard enabling course creators to upload video lessons to AWS S3, organize modular course chapters, construct bulk test question banks, and evaluate student analytics.
+                  A web application built with React 19 + TypeScript + Vite + Tailwind CSS 4, utilizing Zustand for lightweight state management and TanStack React Query for smooth CRUD operations. Deployed on Firebase Hosting.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>3. Scalable Backend API (Node.js &amp; Prisma)</h3>
+                <h3 className={styles.cardTitle}>3. Node.js Backend API</h3>
                 <p className={styles.cardDesc}>
-                  Express microservice backend paired with a PostgreSQL database and Prisma ORM, handling secure JWT authentication, subscription access control, automated test scoring, and Razorpay payment webhooks.
+                  A REST API server built with Express 5, TypeScript, and Prisma ORM (Prisma 7.x) interfacing a PostgreSQL database. Implements JWT sessions, AWS S3 storage, Firebase Admin SDK integration, and automated Zod validation.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>4. AWS Cloud Infrastructure</h3>
+                <h3 className={styles.cardTitle}>4. Flutter Desktop Video Processor</h3>
                 <p className={styles.cardDesc}>
-                  Hosted on AWS EC2 instances behind Nginx reverse proxies with SSL termination, media storage on AWS S3, and CloudFront CDN integration for fast asset delivery across India.
+                  An internal desktop utility built for faculty to process raw educational lectures, handle batch transcodings, and prepare secure video formats before uploading to cloud storage assets.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 3. Technical Architecture */}
+        {/* 3. Core Modules Built */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Core Modules Built</h2>
+          <div className={styles.gridThree}>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>📹</span>
+              <h3 className={styles.moduleTitle}>Video Learning Engine</h3>
+              <p className={styles.moduleDesc}>
+                Secure tokenized video streaming player supporting custom playback speeds (0.5x to 2x), auto-saving watch positions every 10 seconds, bookmarks, and offline resume.
+              </p>
+            </div>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>📝</span>
+              <h3 className={styles.moduleTitle}>Test Engine</h3>
+              <p className={styles.moduleDesc}>
+                Interactive exam system simulating actual government testing. Supports negative markings, timers, question review palettes (Green/Red/Yellow), auto-save, and instant evaluations.
+              </p>
+            </div>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>📊</span>
+              <h3 className={styles.moduleTitle}>Performance Analytics</h3>
+              <p className={styles.moduleDesc}>
+                Detailed analytics reporting student accuracy by subject and topic. Identifies weak areas (below 50%) and prompts personalized learning recommendations.
+              </p>
+            </div>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>📰</span>
+              <h3 className={styles.moduleTitle}>Current Affairs Feed</h3>
+              <p className={styles.moduleDesc}>
+                Chronological feed containing daily updates, news summaries, and monthly PDF booklets tailored for TNPSC prep, paired with quick daily retention quizzes.
+              </p>
+            </div>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>🛒</span>
+              <h3 className={styles.moduleTitle}>Book Store &amp; Coupons</h3>
+              <p className={styles.moduleDesc}>
+                E-commerce portal for physical books and courses, integrated with discount coupon validations, purchase histories, and access provisioning.
+              </p>
+            </div>
+            <div className={styles.moduleCard}>
+              <span className={styles.moduleIcon}>🙋</span>
+              <h3 className={styles.moduleTitle}>Doubt Management</h3>
+              <p className={styles.moduleDesc}>
+                Allows students to raise questions directly from any screen or video, feeding a centralized admin queue where instructors reply with text/images.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. Technical Architecture */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Technical Architecture &amp; Stack</h2>
           <div className={styles.contentBlock}>
             <p>
-              The platform utilizes a decoupled microservices architecture designed for high availability during mock exam schedules:
+              The platform utilizes a decoupled microservices architecture deployed to AWS EC2 using Docker containers behind an Nginx reverse proxy.
             </p>
 
             <div className={styles.skillsList} style={{ marginTop: "1.5rem" }}>
-              <span className={styles.skillBadge}>Flutter Client</span>
-              <span className={styles.skillBadge}>React.js Admin</span>
-              <span className={styles.skillBadge}>Node.js / Express API</span>
-              <span className={styles.skillBadge}>Prisma ORM</span>
+              <span className={styles.skillBadge}>Flutter / Dart</span>
+              <span className={styles.skillBadge}>better_player_enhanced</span>
+              <span className={styles.skillBadge}>React 19 / TypeScript</span>
+              <span className={styles.skillBadge}>Vite + Tailwind CSS 4</span>
+              <span className={styles.skillBadge}>Zustand</span>
+              <span className={styles.skillBadge}>TanStack Query</span>
+              <span className={styles.skillBadge}>Node.js / Express 5</span>
+              <span className={styles.skillBadge}>Prisma ORM 7.x</span>
               <span className={styles.skillBadge}>PostgreSQL Database</span>
               <span className={styles.skillBadge}>AWS EC2 &amp; S3</span>
-              <span className={styles.skillBadge}>Razorpay Gateway</span>
-              <span className={styles.skillBadge}>HLS Video Encryption</span>
+              <span className={styles.skillBadge}>Firebase Auth &amp; Hosting</span>
+              <span className={styles.skillBadge}>Firebase FCM Messaging</span>
+              <span className={styles.skillBadge}>Google Gemini AI API</span>
+              <span className={styles.skillBadge}>Docker &amp; Nginx</span>
+              <span className={styles.skillBadge}>Zod &amp; JWT Authorization</span>
             </div>
 
             <p style={{ marginTop: "1.5rem" }}>
-              State management in the Flutter mobile application was implemented using the BLoC pattern. This enabled clean event-driven handling of video playback states, test timers, and offline data sync without memory leaks.
+              To optimize resources and ensure high availability, administrative CRUD tasks are decoupled from student database transactions. By leveraging Zustand for local web state and Prisma ORM for structured database operations, Mayiliragu minimizes system overhead and ensures immediate loading times across web and mobile surfaces.
             </p>
           </div>
         </section>
 
-        {/* 4. Key Features Built */}
+        {/* 5. Key Features Built */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Key Features Built</h2>
           <div className={styles.gridTwo}>
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Secure Adaptive Video Player</h3>
+              <h3 className={styles.cardTitle}>Secure Gated Streaming</h3>
               <p className={styles.cardDesc}>
-                Custom Flutter video player with playback speed controls, resolution switching, auto-resume watch history, and DRM security flags preventing screen capture.
+                Uses short-lived tokenized stream URLs generated on-demand to protect premium lectures. Disables native screen recording and sharing features on mobile devices.
               </p>
             </div>
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Interactive Mock Exam Engine</h3>
+              <h3 className={styles.cardTitle}>Real-Exam Test Simulator</h3>
               <p className={styles.cardDesc}>
-                Timed test engine with question flagging, instant answer keys, detailed explanation sheets, and nationwide leaderboard scoring calculations.
+                Replicates the exact testing screen used in TNPSC examinations, including a detailed question palette and a robust auto-save mechanism protecting student progress.
               </p>
             </div>
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Offline Materials &amp; PDF Reader</h3>
+              <h3 className={styles.cardTitle}>AI Recommendations</h3>
               <p className={styles.cardDesc}>
-                Encrypted local device storage allowing students to download study notes and read offline without requiring active internet connectivity.
+                Integrated with Google Gemini AI to analyze incorrect mock test responses and recommend specific course chapters, video lectures, or practice materials to review.
               </p>
             </div>
             <div className={styles.card}>
-              <h3 className={styles.cardTitle}>Automated Course Subscriptions</h3>
+              <h3 className={styles.cardTitle}>Automatic PDF Certificates</h3>
               <p className={styles.cardDesc}>
-                Integrated Razorpay payment gateway handling course purchases, promo discount codes, instant invoice generation, and automated access provisioning.
+                Generates stylized course completion and test completion certificates programmatically on the backend using `pdfkit`, which can be viewed or printed by students.
               </p>
             </div>
           </div>
         </section>
 
-        {/* 5. Results & Impact */}
+        {/* 6. Results & Impact */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Results &amp; Impact</h2>
           <div className={styles.contentBlock}>
             <ul style={{ listStyle: "disc", paddingLeft: "1.5rem", lineHeight: "1.8", color: "#a1a1aa" }}>
-              <li><strong style={{ color: "#a3e635" }}>1,000+ Active Students:</strong> Successfully onboarded and served over a thousand active learners with seamless daily course access.</li>
-              <li><strong style={{ color: "#a3e635" }}>99.9% Uptime on AWS:</strong> Maintained zero downtime during peak exam window traffic spikes.</li>
-              <li><strong style={{ color: "#a3e635" }}>Sub-200ms Test Scoring:</strong> Optimized Prisma SQL queries process test results and rank updates instantaneously.</li>
+              <li><strong style={{ color: "#ff3b3b" }}>1,000+ Active Students:</strong> Deployed successfully to production, serving thousands of exam takers across multiple examination tiers.</li>
+              <li><strong style={{ color: "#ff3b3b" }}>15 Feature Modules:</strong> A complete, end-to-end e-learning suite replacing various third-party services with a single custom interface.</li>
+              <li><strong style={{ color: "#ff3b3b" }}>4-Layer Architecture:</strong> Clean, maintainable separation of student apps, admin interfaces, backend APIs, and internal encoding utilities.</li>
             </ul>
           </div>
         </section>
 
-        {/* 6. What I Learned */}
+        {/* 7. What I Learned */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>What I Learned</h2>
           <div className={styles.contentBlock}>
             <p>
-              Building Mayiliragu Academy highlighted the importance of media delivery optimization in EdTech platforms. Encrypting video streams using HLS protocols while maintaining fast buffer start times requires careful CDN edge configuration. Additionally, designing database indexes specifically around test result write transactions prevents locking issues during synchronous exam completions.
+              Designing and building Mayiliragu was a major milestone in EdTech development. I learned how to implement custom media gates to protect premium video libraries, and how to build resilient local cache systems in Flutter to preserve student quiz states during network dropouts. Additionally, integrating Gemini AI models to analyze student performance metrics highlighted how modern API layers can turn static logs into actionable tutoring advice.
             </p>
           </div>
         </section>
 
-        {/* 7. CTA */}
+        {/* 8. CTA */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Building an EdTech or E-Learning Platform?</h2>
           <p className={styles.subtitle}>
-            Let&apos;s collaborate to design a high-capacity mobile learning app and web platform for your academy or EdTech startup.
+            Let&apos;s collaborate to design and develop your custom LMS dashboard, cross-platform mobile apps, or smart educational APIs.
           </p>
           <div className={styles.ctaGrid} style={{ marginTop: "1.5rem" }}>
-            <Link href="/contact" className={styles.primaryBtn}>
-              Discuss Your EdTech App &rarr;
+            <Link href="/contact" className={styles.primaryBtn} style={{ backgroundColor: "#ff3b3b", color: "#fff" }}>
+              Discuss Your EdTech Project &rarr;
             </Link>
             <Link href="/work" className={styles.secondaryBtn}>
               Explore More Case Studies

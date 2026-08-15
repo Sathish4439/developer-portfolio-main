@@ -177,7 +177,7 @@
   box-shadow: 0 0 25px rgba(163, 230, 53, 0.4);
 }
 
-/* Upgraded layout classes for module showcase and CTAs */
+/* Additional elements used in other case studies */
 .gridTwo {
   display: grid;
   grid-template-columns: 1fr;
@@ -214,60 +214,6 @@
 .cardDesc {
   font-family: 'Londrina Solid', Helvetica, sans-serif;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.5;
-}
-
-.gridThree {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .gridThree {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .gridThree {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.moduleCard {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.01);
-  transition: all 0.25s ease;
-}
-
-.moduleCard:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.02);
-  transform: translateY(-2px);
-}
-
-.moduleIcon {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  display: block;
-}
-
-.moduleTitle {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-
-.moduleDesc {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 15px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
 }

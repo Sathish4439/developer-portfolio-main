@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import styles from "../mayiliragu-academy/page.module.css";
+import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
 
 export const metadata: Metadata = {
-  title: "Judah Food Delivery — Flutter 3-App Ecosystem Case Study | Sathish G",
+  title: "Judah Food Delivery App — Flutter 4-App Ecosystem Case Study | Sathish G",
   description:
-    "Detailed technical case study by Sathish G, premier flutter food delivery app developer india. How I engineered a complete 3-app ecosystem using Flutter, Socket.io real-time GPS tracking, Node.js backend, and Google Maps API.",
+    "Technical case study of Judah Food Delivery App by Sathish G, premier flutter food delivery app developer in India. Features 4-app ecosystem and Socket.io GPS.",
   alternates: {
     canonical: "https://www.sathishdev.in/work/judah-food-delivery",
   },
   openGraph: {
-    title: "Judah Food Delivery — Flutter 3-App Ecosystem Case Study | Sathish G",
+    title: "Judah Food Delivery App — Flutter 4-App Ecosystem Case Study | Sathish G",
     description:
-      "Real-time food delivery 3-app suite built with Flutter, Socket.io, Node.js, and Google Maps API.",
+      "A real-time Judah Food Delivery app suite comprising 3 Flutter applications and a Node.js API backend.",
     url: "https://www.sathishdev.in/work/judah-food-delivery",
   },
 };
@@ -27,14 +27,28 @@ export default function JudahFoodDeliveryCaseStudy() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "name": "Judah Food Delivery Platform — 3-App Flutter Ecosystem",
-            "description": "Comprehensive technical case study of a 3-app real-time food delivery platform engineered with Flutter, Socket.io, Node.js, and Google Maps API by Sathish G, a leading flutter food delivery app developer in India.",
+            "name": "Judah Food Delivery — Real-Time 4-App Flutter Ecosystem",
+            "description": "Comprehensive technical case study of the Judah Food Delivery app suite engineered with a Customer App, Restaurant App, Admin Web App, and Node.js backend API using Socket.io and Prisma.",
             "author": {
               "@type": "Person",
               "name": "Sathish G",
               "url": "https://www.sathishdev.in"
             },
-            "url": "https://www.sathishdev.in/work/judah-food-delivery"
+            "url": "https://www.sathishdev.in/work/judah-food-delivery",
+            "sameAs": [
+              "https://play.google.com/store/apps/details?id=com.judah.fooddelivery"
+            ],
+            "keywords": [
+              "judah food delivery",
+              "judah app",
+              "judah food delivery india",
+              "flutter food delivery app developer india",
+              "Socket.io food delivery",
+              "real-time GPS delivery",
+              "razorpay flutter integration",
+              "food delivery app developer",
+              "Node.js food delivery backend"
+            ]
           })
         }}
       />
@@ -50,11 +64,11 @@ export default function JudahFoodDeliveryCaseStudy() {
         <div className={styles.badge}>CASE STUDY — MULTI-APP ECOSYSTEM</div>
 
         <AnimeReveal direction="fade" duration={800}>
-          <h1 className={styles.title}>JUDAH FOOD DELIVERY PLATFORM</h1>
+          <h1 className={styles.title}>JUDAH FOOD DELIVERY APP</h1>
         </AnimeReveal>
 
         <p className={styles.subtitle}>
-          Engineering a high-concurrency 3-app mobile ecosystem for food delivery in India. Built with Flutter, real-time Socket.io GPS tracking, custom Node.js microservices, and Google Maps API SDK.
+          Engineering a high-concurrency 4-component software ecosystem for food delivery in India. Built with Flutter, real-time Socket.io GPS tracking, custom Node.js microservices, and Google Maps API SDK.
         </p>
 
         <div className={styles.ctaGrid} style={{ marginBottom: "2rem" }}>
@@ -86,7 +100,7 @@ export default function JudahFoodDeliveryCaseStudy() {
           </div>
           <div>
             <div className={styles.metaLabel}>ECOSYSTEM</div>
-            <div className={styles.metaValue}>Customer, Vendor &amp; Rider Apps</div>
+            <div className={styles.metaValue}>4 Distinct Code Repositories</div>
           </div>
         </div>
 
@@ -95,15 +109,10 @@ export default function JudahFoodDeliveryCaseStudy() {
           <h2 className={styles.sectionTitle}>The Challenge</h2>
           <div className={styles.contentBlock}>
             <p>
-              Food delivery platforms are among the most technically demanding mobile applications to engineer. Unlike traditional e-commerce apps where interactions are asynchronous, food delivery requires instantaneous state synchronization across three distinct user roles simultaneously:
+              Food delivery platforms are among the most technically demanding mobile applications to engineer. Unlike traditional e-commerce apps where interactions are asynchronous, the Judah Food Delivery app requires instantaneous state synchronization across multiple distinct user roles simultaneously.
             </p>
-            <ul style={{ listStyle: "disc", paddingLeft: "1.5rem", marginTop: "1rem", lineHeight: "1.8", color: "#a1a1aa" }}>
-              <li><strong style={{ color: "#fff" }}>The Hungry Customer:</strong> Expects real-time cart validation, instant order placement, live status updates (Order Placed → Accepted → Preparing → Out for Delivery), and smooth 60fps driver tracking on an interactive Google Map.</li>
-              <li><strong style={{ color: "#fff" }}>The Restaurant Partner:</strong> Needs instant loud audio alerts for incoming orders in busy kitchen environments, menu item availability toggles, and prep-time estimation controls.</li>
-              <li><strong style={{ color: "#fff" }}>The Delivery Rider:</strong> Requires a reliable background location streaming service that continues sending lat/long coordinates even when the mobile screen is locked or network signals flicker.</li>
-            </ul>
             <p style={{ marginTop: "1rem" }}>
-              Building this requires an experienced <strong>flutter food delivery app developer in India</strong> capable of handling real-time WebSockets, background mobile isolates, and sub-100ms API endpoints under load.
+              Customers expect real-time cart validation, instant order placement, live status updates, and smooth driver tracking on an interactive Google Map. Restaurant vendors need instant loud audio alerts for incoming orders in busy kitchen environments, menu item availability toggles, and prep-time estimation controls. Delivery riders require a reliable background location streaming service that continues sending coordinates even when the mobile screen is locked or network signals flicker. Building this requires an experienced flutter food delivery app developer in India capable of handling real-time WebSockets, background mobile isolates, and sub-100ms API endpoints under load.
             </p>
           </div>
         </section>
@@ -113,32 +122,32 @@ export default function JudahFoodDeliveryCaseStudy() {
           <h2 className={styles.sectionTitle}>The Solution I Built</h2>
           <div className={styles.contentBlock}>
             <p>
-              I architected and developed a unified 3-app Flutter mobile ecosystem connected to a centralized Node.js backend:
+              To address these requirements, I designed and developed a unified 4-app software ecosystem connecting clients, vendors, and admins:
             </p>
 
             <div className={styles.gridTwo} style={{ marginTop: "1.5rem" }}>
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>1. Consumer Ordering App</h3>
                 <p className={styles.cardDesc}>
-                  Features location auto-detection, restaurant filtering by delivery radius, menu customizations with variant add-ons, Razorpay online payment integration, cash-on-delivery validation, and real-time order status tracking with animated driver markers on Google Maps.
+                  A customer-facing Flutter mobile application (v4.0.0+77) featuring location auto-detection, restaurant filtering by delivery radius, menu customizations, Razorpay online payment integration, and real-time order status tracking with animated driver markers on Google Maps. Uses Riverpod for state management.
                 </p>
               </div>
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>2. Restaurant Vendor App</h3>
                 <p className={styles.cardDesc}>
-                  Designed for Android tablet and phone screens in kitchens. Includes auto-accept order flows, kitchen prep timer controls, item stock toggles, order history analytics, and daily payout summaries.
+                  Designed for Android tablet and phone screens in kitchens (v4.2.5+82). Includes auto-accept order flows, kitchen prep timer controls, item stock toggles, order history analytics, and loud sound alert channels to prevent kitchen staff from missing new orders.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>3. Rider Dispatch App</h3>
+                <h3 className={styles.cardTitle}>3. Admin Web Portal</h3>
                 <p className={styles.cardDesc}>
-                  Engineered with Flutter background isolates. Broadcasts rider GPS location every 3 seconds to the Socket.io server while conserving battery through adaptive distance filters. Includes trip turn-by-turn navigation links and earnings logs.
+                  A web-based admin control panel built with Flutter Web (v1.0.0+13) allowing managers to monitor paired active driver heartbeats, manage database API keys, track order volumes via charts, and handle bulk item CSV imports using a custom file picker.
                 </p>
               </div>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>4. Central Microservice API</h3>
+                <h3 className={styles.cardTitle}>4. Central Backend API</h3>
                 <p className={styles.cardDesc}>
-                  High-throughput Node.js microservice handling user authentication, order state machine persistence, distance matrix calculations, payment webhooks, and push notification triggers via Firebase Cloud Messaging.
+                  A high-throughput Node.js Express 5 API using Prisma 6.19.x and PostgreSQL. Implements Socket.io 4.8.1 with a Redis adapter for horizontal cluster scaling, AWS S3/SES/SNS for notifications, Razorpay webhooks, and Winston structured logging.
                 </p>
               </div>
             </div>
@@ -155,18 +164,24 @@ export default function JudahFoodDeliveryCaseStudy() {
 
             <div className={styles.skillsList} style={{ marginTop: "1.5rem" }}>
               <span className={styles.skillBadge}>Flutter 3.x / Dart</span>
-              <span className={styles.skillBadge}>Socket.io Real-Time</span>
+              <span className={styles.skillBadge}>Riverpod State</span>
               <span className={styles.skillBadge}>Google Maps SDK</span>
-              <span className={styles.skillBadge}>Node.js &amp; Express</span>
-              <span className={styles.skillBadge}>Prisma ORM</span>
+              <span className={styles.skillBadge}>Socket.io Client</span>
+              <span className={styles.skillBadge}>Socket.io Redis Adapter</span>
+              <span className={styles.skillBadge}>Redis / ioredis</span>
+              <span className={styles.skillBadge}>Node.js / Express 5</span>
+              <span className={styles.skillBadge}>Prisma 6.19.x</span>
               <span className={styles.skillBadge}>PostgreSQL Database</span>
               <span className={styles.skillBadge}>Razorpay Gateway</span>
-              <span className={styles.skillBadge}>Firebase FCM Push</span>
-              <span className={styles.skillBadge}>Background Isolate</span>
+              <span className={styles.skillBadge}>Firebase Auth &amp; FCM</span>
+              <span className={styles.skillBadge}>AWS S3 / SES / SNS</span>
+              <span className={styles.skillBadge}>Winston Logger</span>
+              <span className={styles.skillBadge}>node-cron</span>
+              <span className={styles.skillBadge}>Helmet &amp; Joi</span>
             </div>
 
             <p style={{ marginTop: "1.5rem" }}>
-              State management within the mobile apps was implemented using BLoC (Business Logic Component). This separated UI rendering completely from Socket.io event streams, preventing unnecessary widget rebuilds when high-frequency GPS coordinate packages were received.
+              The Judah app leverages Riverpod for local state management in the mobile applications. This separates UI rendering completely from Socket.io event streams, preventing unnecessary widget rebuilds when high-frequency GPS coordinate packages are received.
             </p>
           </div>
         </section>
@@ -219,10 +234,10 @@ export default function JudahFoodDeliveryCaseStudy() {
           <h2 className={styles.sectionTitle}>Results &amp; Impact</h2>
           <div className={styles.contentBlock}>
             <ul style={{ listStyle: "disc", paddingLeft: "1.5rem", lineHeight: "1.8", color: "#a1a1aa" }}>
-              <li><strong style={{ color: "#a3e635" }}>Live Store Publication:</strong> Successfully published customer, restaurant partner, and delivery rider apps to Google Play Store.</li>
-              <li><strong style={{ color: "#a3e635" }}>Sub-100ms GPS Synchronization:</strong> Smooth live rider map updates without battery drain issues on driver devices.</li>
-              <li><strong style={{ color: "#a3e635" }}>Zero Order Loss Rate:</strong> Resilient socket reconnect mechanisms achieved a 99.9% order delivery fulfillment reliability.</li>
-              <li><strong style={{ color: "#a3e635" }}>Production Scaling:</strong> Engineered to handle high meal-time traffic spikes with lightweight Node.js event-loop microservices.</li>
+              <li><strong style={{ color: "#4CAF50" }}>Live on Google Play Store:</strong> The consumer application has been published successfully and is accessible to users.</li>
+              <li><strong style={{ color: "#4CAF50" }}>Sub-100ms GPS Sync:</strong> Active Socket.io communication delivers smooth driver marker movement on consumer screens.</li>
+              <li><strong style={{ color: "#4CAF50" }}>3 Flutter Apps + 1 Backend:</strong> Complete separation of concerns, providing dedicated interfaces for customers, kitchens, and coordinators.</li>
+              <li><strong style={{ color: "#4CAF50" }}>99.9% Zero Order Loss:</strong> Reconnection queues and state validation handshakes ensure orders remain transactionally secure.</li>
             </ul>
           </div>
         </section>
@@ -232,10 +247,7 @@ export default function JudahFoodDeliveryCaseStudy() {
           <h2 className={styles.sectionTitle}>What I Learned</h2>
           <div className={styles.contentBlock}>
             <p>
-              Engineering the Judah Food Delivery platform reinforced critical architectural lessons for real-time mobile apps:
-            </p>
-            <p style={{ marginTop: "1rem" }}>
-              First, mobile background isolates are vital for battery preservation when tracking GPS continuously. Blindly listening to location streams in main UI threads drains battery in hours; distance-filtered native isolates preserve power while keeping maps accurate. Second, real-time WebSocket state machines must always be backed by persistent database fallback polls to guarantee transactional integrity during network handoffs.
+              Developing the Judah Food Delivery app taught me how to manage real-time state streams at scale. By using Riverpod instead of older frameworks, I could easily filter and handle high-frequency driver coordinates. Setting up a Socket.io Redis adapter allowed the Node.js API to run horizontally across servers without splitting client namespaces, and using AWS SES/SNS ensured that transactional alerts reach users instantly even when offline.
             </p>
           </div>
         </section>

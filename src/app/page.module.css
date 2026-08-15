@@ -426,7 +426,7 @@
   backdrop-filter: blur(20px);
   padding: clamp(1.5rem, 4vw, 3.5rem);
   display: grid;
-  grid-template-columns: 320px minmax(280px, 460px) 1fr;
+  grid-template-columns: 1.3fr 1fr auto;
   gap: 2.5rem;
   align-items: start;
 }
@@ -496,7 +496,7 @@
   font-weight: 300;
   line-height: 1.45;
   color: rgba(255, 255, 255, 0.7);
-  max-width: 420px;
+  max-width: 100%;
 }
 
 .introDesc {
@@ -505,7 +505,7 @@
   font-weight: 300;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.4);
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .introCta {

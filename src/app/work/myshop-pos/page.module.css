@@ -1,0 +1,328 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding-top: 72px;
+  padding-bottom: 5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.backLinkWrap {
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.backIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.backLink:hover .backIcon {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  transform: translateX(-4px);
+}
+
+.backText {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.backLink:hover .backText {
+  color: #10b981;
+}
+
+.badge {
+  display: inline-block;
+  background: #006c49;
+  border: 1px solid #10b981;
+  padding: 0.35rem 1.25rem;
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #ffffff;
+  transform: rotate(-1deg);
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.title {
+  font-family: 'League Gothic', Helvetica, sans-serif;
+  font-size: clamp(44px, 7.5vw, 92px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 860px;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 20px;
+  background: rgba(0, 108, 73, 0.06);
+}
+
+.metaLabel {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: 16px;
+  color: #10b981;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+
+.metaValue {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Hero Showcase Banner */
+.heroBannerWrap {
+  margin: 3rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 108, 73, 0.2);
+  background: #0d1612;
+}
+
+.heroBannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.section {
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+}
+
+.sectionTitle {
+  font-family: 'Anton', Helvetica, sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  color: #10b981;
+  margin-bottom: 1.5rem;
+}
+
+.contentBlock {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.contentBlock p {
+  margin-bottom: 1.25rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skillBadge {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34d399;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gridTwo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gridThree {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .gridThree {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridThree {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(0, 108, 73, 0.05);
+}
+
+.cardTitle {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.cardDesc {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+
+/* Gallery Showcase */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.galleryCard {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0f1613;
+  transition: all 0.3s ease;
+}
+
+.galleryCard:hover {
+  border-color: #10b981;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 108, 73, 0.3);
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.galleryCaption {
+  padding: 1rem;
+}
+
+.galleryTitle {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.galleryDesc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+.primaryBtn {
+  display: inline-block;
+  background: #006c49;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s;
+  border: 1px solid #10b981;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: #00875a;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+}
+
+.secondaryBtn {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  border-color: #10b981;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.ctaGrid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}

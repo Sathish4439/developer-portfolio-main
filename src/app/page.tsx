@@ -32,7 +32,7 @@ const services = [
   { title: "AWS & DevOps", desc: "Cloud infra, Docker, Nginx, CI/CD pipelines." },
 ];
 
-const brands = ["Dhigrowth", "Elanoxtech", "Befhue", "Mayiliragu Academy", "Premium Parts", "akirva"];
+const brands = ["Dhigrowth", "Elanoxtech", "Befhue", "MyShop POS", "Mayiliragu Academy", "Premium Parts", "akirva"];
 
 export default function Home() {
   return (
@@ -250,7 +250,7 @@ export default function Home() {
                 <span className={styles.loc}>Coimbatore &amp; Karur, TN</span>
               </div>
               <p className={styles.timelineDesc}>
-                Designed custom client applications including the Premium Parts ERP with offline SQLite synchronization and Mayiliragu Academy learning portal.
+                Architected enterprise systems including MyShop Grocery POS with Drift offline SQLite synchronization, Premium Parts ERP, and Mayiliragu Academy learning portal.
               </p>
             </div>
           </AnimeReveal>

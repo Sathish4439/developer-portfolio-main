@@ -1,5 +1,36 @@
 export const projectsData = [
   {
+    id: 17,
+    name: "MyShop — Grocery Business Manager POS & ERP",
+    description:
+      "An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Built with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, a high-throughput Node.js/Prisma backend, and a Next.js 14 Super Admin Portal.",
+    problem: "Retail grocery checkout counters face severe downtime during internet outages. Cloud-dependent POS software freezes during peak hours, and store owners face stock discrepancies, barcode scanning delays, and flaky thermal receipt printing.",
+    solution: "Architected a 100% offline-first POS using Flutter and Drift SQLite with Write-Ahead Logging (WAL) for 0ms network latency checkout. Integrated direct ESC/POS byte printing for Bluetooth thermal printers, sub-second camera barcode scanning, and atomic double-entry bookkeeping syncing with a Node.js/PostgreSQL backend and Next.js 14 Super Admin portal.",
+    impact: [
+      "Achieved 100% offline resilience with 0ms dependency on external cloud connectivity during rush-hour checkout",
+      "Delivered sub-300ms ESC/POS thermal receipt printing and instantaneous barcode lookup",
+      "Eliminated inventory and cash discrepancies through strict atomic double-entry balance journals"
+    ],
+    tools: [
+      "Flutter",
+      "Dart",
+      "Drift ORM (SQLite)",
+      "Node.js",
+      "TypeScript",
+      "Express 5",
+      "Prisma",
+      "PostgreSQL",
+      "Next.js 14",
+      "Tailwind CSS",
+      "ESC/POS Thermal Printing",
+      "Barcode Scanner"
+    ],
+    role: "Principal Architect & Lead Full-Stack Engineer",
+    code: "",
+    demo: "/work/myshop-pos",
+    featured: true,
+  },
+  {
     id: 12,
     name: "Mayiliragu Academy LMS",
     description:
@@ -24,7 +55,7 @@ export const projectsData = [
     ],
     role: "Lead Full Stack Engineer",
     code: "",
-    demo: "",
+    demo: "https://play.google.com/store/apps/details?id=com.learning.mayiliragu.mayiliragu&pcampaignid=web_share",
     featured: true,
   },
   {

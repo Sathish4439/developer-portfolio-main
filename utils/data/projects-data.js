@@ -1,5 +1,46 @@
 export const projectsData = [
     {
+      id: 17,
+      name: "MyShop — Grocery Business Manager POS & ERP",
+      description:
+        "MyShop is an enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. It features a Flutter desktop & mobile app with Drift SQLite reactive architecture, sub-second barcode billing, Bluetooth ESC/POS thermal printing, and double-entry stock/cash ledgers, connected to a robust Node.js/Prisma sync backend and Next.js 14 Super Admin Portal.",
+      tools: [
+        "Flutter",
+        "Dart",
+        "Drift (SQLite)",
+        "Node.js",
+        "TypeScript",
+        "Express 5",
+        "Prisma",
+        "PostgreSQL",
+        "Next.js 14",
+        "ESC/POS Thermal Printing",
+        "Barcode Scanner",
+      ],
+      role: "Principal Architect & Lead Full-Stack Engineer",
+      code: "",
+      demo: "/work/myshop-pos",
+    },
+    {
+      id: 12,
+      name: "Mayiliragu Academy LMS",
+      description:
+        "An enterprise-grade Learning Management System (LMS) designed to scale for thousands of aspirants preparing for competitive examinations. Engineered with a cross-platform Flutter client, a robust React administrative dashboard, and a high-performance Node.js backend.",
+      tools: [
+        "Flutter",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Prisma",
+        "PostgreSQL",
+        "AWS EC2",
+        "Docker",
+      ],
+      role: "Lead Full Stack Engineer",
+      code: "",
+      demo: "https://play.google.com/store/apps/details?id=com.learning.mayiliragu.mayiliragu&pcampaignid=web_share",
+    },
+    {
       id: 1,
       name: "Virtual to Live",
       description:

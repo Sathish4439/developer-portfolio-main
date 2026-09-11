@@ -35,6 +35,9 @@ export default function MayiliraguAcademyCaseStudy() {
               "url": "https://www.sathishdev.in"
             },
             "url": "https://www.sathishdev.in/work/mayiliragu-academy",
+            "sameAs": [
+              "https://play.google.com/store/apps/details?id=com.learning.mayiliragu.mayiliragu"
+            ],
             "keywords": [
               "Flutter LMS",
               "EdTech developer India",
@@ -65,6 +68,21 @@ export default function MayiliraguAcademyCaseStudy() {
           An enterprise-grade Learning Management System (LMS) custom-built by an expert e-learning app developer in India. Engineered to support 1,000+ active concurrent learners with a modular Flutter LMS client, serving aspirants preparing for competitive government examinations like TNPSC, UPSC, SSC, and Banking.
         </p>
 
+        <div className={styles.ctaGrid} style={{ marginBottom: "2rem" }}>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.learning.mayiliragu.mayiliragu&pcampaignid=web_share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.primaryBtn}
+            style={{ backgroundColor: "#ff3b3b", color: "#fff" }}
+          >
+            View on Google Play &rarr;
+          </a>
+          <Link href="/contact" className={styles.secondaryBtn}>
+            Hire App Developer
+          </Link>
+        </div>
+
         <div className={styles.metaGrid}>
           <div>
             <div className={styles.metaLabel}>ROLE</div>
@@ -76,7 +94,7 @@ export default function MayiliraguAcademyCaseStudy() {
           </div>
           <div>
             <div className={styles.metaLabel}>METRIC</div>
-            <div className={styles.metaValue}>1,000+ Active Learners</div>
+            <div className={styles.metaValue}>Live on Google Play (1,000+ Learners)</div>
           </div>
           <div>
             <div className={styles.metaLabel}>STACK</div>
@@ -251,6 +269,7 @@ export default function MayiliraguAcademyCaseStudy() {
           <h2 className={styles.sectionTitle}>Results &amp; Impact</h2>
           <div className={styles.contentBlock}>
             <ul style={{ listStyle: "disc", paddingLeft: "1.5rem", lineHeight: "1.8", color: "#a1a1aa" }}>
+              <li><strong style={{ color: "#ff3b3b" }}>Live on Google Play:</strong> Successfully deployed to production and active on the Google Play Store, providing reliable performance for thousands of competitive exam aspirants.</li>
               <li><strong style={{ color: "#ff3b3b" }}>1,000+ Active Students:</strong> Deployed successfully to production, serving thousands of exam takers across multiple examination tiers.</li>
               <li><strong style={{ color: "#ff3b3b" }}>15 Feature Modules:</strong> A complete, end-to-end e-learning suite replacing various third-party services with a single custom interface.</li>
               <li><strong style={{ color: "#ff3b3b" }}>4-Layer Architecture:</strong> Clean, maintainable separation of student apps, admin interfaces, backend APIs, and internal encoding utilities.</li>

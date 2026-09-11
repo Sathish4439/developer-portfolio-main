@@ -9,6 +9,17 @@ const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
 const projects = [
   {
+    id: "myshop-pos",
+    title: "MyShop — Grocery Business Manager POS",
+    category: "Full Stack",
+    year: "2025-2026",
+    tags: ["Flutter", "Drift SQLite", "Node.js", "TypeScript", "Express 5", "Prisma", "PostgreSQL", "Next.js 14", "ESC/POS Thermal", "Barcode Scanner"],
+    description: "An offline-first enterprise grocery Point of Sale (POS) and inventory management ERP with sub-second barcode checkout, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, Drift SQLite offline sync, and Next.js 14 Super Admin Portal.",
+    accent: "#006c49",
+    metrics: "100% Offline-First POS",
+    caseStudyUrl: "/work/myshop-pos",
+  },
+  {
     id: "mayiliragu-lms",
     title: "Mayiliragu Academy LMS",
     category: "Full Stack",
@@ -16,7 +27,8 @@ const projects = [
     tags: ["Flutter", "React 19", "Node.js", "Prisma", "PostgreSQL", "AWS EC2", "Firebase", "Docker"],
     description: "An enterprise-grade Learning Management System (LMS) serving 1,000+ active learners with a 4-tier architecture — Flutter student app, React 19 admin portal, Node.js/Prisma backend on AWS EC2, and a Flutter desktop video processor.",
     accent: "#ff3b3b",
-    metrics: "1,000+ Active Learners",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.learning.mayiliragu.mayiliragu&pcampaignid=web_share",
+    metrics: "Live on Google Play",
     caseStudyUrl: "/work/mayiliragu-academy",
   },
   {

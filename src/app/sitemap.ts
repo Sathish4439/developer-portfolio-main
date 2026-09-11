@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/mvp-development", changeFrequency: "monthly" as const, priority: 0.85 },
 
     // Case study pages
+    { path: "/work/myshop-pos", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/work/mayiliragu-academy", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/work/judah-food-delivery", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/work/premium-parts", changeFrequency: "monthly" as const, priority: 0.85 },

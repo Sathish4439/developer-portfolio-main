@@ -116,6 +116,22 @@
   color: #fff;
 }
 
+.heroBannerWrap {
+  margin: 3rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 59, 59, 0.25);
+  box-shadow: 0 20px 50px rgba(255, 59, 59, 0.15);
+  background: #110d0d;
+}
+
+.heroBannerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .section {
   margin-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -297,4 +313,51 @@
 .secondaryBtn:hover {
   border-color: #fff;
   background: rgba(255, 255, 255, 0.05);
+}
+
+/* Gallery Showcase */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.galleryCard {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #120e0e;
+  transition: all 0.3s ease;
+}
+
+.galleryCard:hover {
+  border-color: #ff3b3b;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 59, 59, 0.25);
+}
+
+.galleryImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.galleryCaption {
+  padding: 1rem;
+}
+
+.galleryTitle {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.galleryDesc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
 }

@@ -1,6 +1,9 @@
 const path = require('path')
  
 module.exports = {
+  experimental: {
+    cpus: 2,
+  },
   allowedDevOrigins: ['192.168.31.86', 'localhost'],
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

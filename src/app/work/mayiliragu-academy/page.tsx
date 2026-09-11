@@ -18,6 +18,59 @@ export const metadata: Metadata = {
   },
 };
 
+const screenshots = [
+  {
+    src: "/projects/mayiliragu/01_login.jpg",
+    title: "Secure Student Authentication",
+    desc: "JWT-based authentication with device session limits, preventing unauthorized credential sharing across multiple devices.",
+  },
+  {
+    src: "/projects/mayiliragu/02_home_dashboard.jpg",
+    title: "Executive Student Dashboard",
+    desc: "Personalized greeting, live batch announcements, quick actions for Practice Tests & Daily Quizzes, and enrolled courses.",
+  },
+  {
+    src: "/projects/mayiliragu/03_course_progress.jpg",
+    title: "Curriculum & Enrolled Courses",
+    desc: "Granular syllabus tracking with progress meters, subject-wise lesson breakdown, and one-tap lesson resumption.",
+  },
+  {
+    src: "/projects/mayiliragu/04_video_player.jpg",
+    title: "Protected Video Lecture Player",
+    desc: "DRM-protected video streaming with anti-screen recording flags, integrated time-stamped study notes, and completion tracking.",
+  },
+  {
+    src: "/projects/mayiliragu/05_live_exam.jpg",
+    title: "Interactive Live Examination",
+    desc: "Full TNPSC-grade test engine with real-time countdown timer, marking schemes (+1 / -0.25 penalty), and instant question caching.",
+  },
+  {
+    src: "/projects/mayiliragu/06_question_navigator.jpg",
+    title: "150-Question Palette & Navigator",
+    desc: "Quick jump grid categorizing questions into Answered, Flagged, Visited, and Skipped states with instant progress validation.",
+  },
+  {
+    src: "/projects/mayiliragu/07_test_analytics.jpg",
+    title: "Performance Analytics & Scorecard",
+    desc: "Detailed post-test scorecard displaying total marks, accuracy percentage, time spent, leaderboard rank, and subject breakdown.",
+  },
+  {
+    src: "/projects/mayiliragu/08_current_affairs.jpg",
+    title: "Daily Current Affairs Hub",
+    desc: "Weekly preparation score, categorised magazines, government welfare schemes, calendar dates, and daily updates feed.",
+  },
+  {
+    src: "/projects/mayiliragu/09_bilingual_notes.jpg",
+    title: "Bilingual Study & Prelims Notes",
+    desc: "Seamless English and Tamil tabs with Exam Importance facts, Prelims highlights, and embedded daily MCQ challenges.",
+  },
+  {
+    src: "/projects/mayiliragu/10_library_hub.jpg",
+    title: "Digital Question Paper Repository",
+    desc: "Downloadable PDF question papers, archive revision versions, categorized study materials, and offline reading support.",
+  },
+];
+
 export default function MayiliraguAcademyCaseStudy() {
   return (
     <main className={`${styles.wrapper} fadeIn`}>
@@ -100,6 +153,16 @@ export default function MayiliraguAcademyCaseStudy() {
             <div className={styles.metaLabel}>STACK</div>
             <div className={styles.metaValue}>Flutter, React 19, Node.js, AWS EC2</div>
           </div>
+        </div>
+
+        {/* Hero Showcase Graphic */}
+        <div className={styles.heroBannerWrap}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/projects/mayiliragu/mayiliragu_showcase_hero.jpg"
+            alt="Mayiliragu Academy LMS App Showcase"
+            className={styles.heroBannerImg}
+          />
         </div>
 
         {/* 1. The Challenge */}
@@ -264,7 +327,28 @@ export default function MayiliraguAcademyCaseStudy() {
           </div>
         </section>
 
-        {/* 6. Results & Impact */}
+        {/* 6. Application Interface Showcase */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Application Interface Showcase</h2>
+          <p className={styles.contentBlock}>
+            Explore the live production mobile interface built with Flutter, optimized for sub-second page transitions, high-concurrency mock exams, and rich multimedia learning:
+          </p>
+
+          <div className={styles.galleryGrid}>
+            {screenshots.map((s) => (
+              <div key={s.title} className={styles.galleryCard}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.src} alt={s.title} className={styles.galleryImg} />
+                <div className={styles.galleryCaption}>
+                  <div className={styles.galleryTitle}>{s.title}</div>
+                  <div className={styles.galleryDesc}>{s.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* 7. Results & Impact */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Results &amp; Impact</h2>
           <div className={styles.contentBlock}>

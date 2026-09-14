@@ -1,33 +1,37 @@
 export const projectsData = [
   {
-    id: 17,
-    name: "MyShop — Grocery Business Manager POS & ERP",
+    id: 18,
+    name: "FlatSMS — Android SMS Gateway & Control Plane",
     description:
-      "An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Built with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, a high-throughput Node.js/Prisma backend, and a Next.js 14 Super Admin Portal.",
-    problem: "Retail grocery checkout counters face severe downtime during internet outages. Cloud-dependent POS software freezes during peak hours, and store owners face stock discrepancies, barcode scanning delays, and flaky thermal receipt printing.",
-    solution: "Architected a 100% offline-first POS using Flutter and Drift SQLite with Write-Ahead Logging (WAL) for 0ms network latency checkout. Integrated direct ESC/POS byte printing for Bluetooth thermal printers, sub-second camera barcode scanning, and atomic double-entry bookkeeping syncing with a Node.js/PostgreSQL backend and Next.js 14 Super Admin portal.",
+      "A high-throughput cloud control plane and real-time WebSocket gateway transforming commodity Android devices with domestic SIM cards into programmable, API-addressable 2-way SMS telecommunication infrastructure. Built with Node.js 22, Express 5, WebSocket, BullMQ, Redis, Prisma ORM, Kotlin Android, and React 19.",
+    problem:
+      "Traditional CPaaS providers (like Twilio) charge exorbitant per-segment rates ($0.015+), carrier surcharges, and require complex A2P 10DLC registrations. Bootstrapped startups and local businesses face unsustainable communication costs for transactional SMS alerts and OTPs.",
+    solution:
+      "Architected a full-duplex cellular bridge connecting a Node.js/TypeScript cloud control plane with native Kotlin Android daemons via persistent WebSockets. Engineered a Redis-backed BullMQ engine for sub-5s outbound dispatch, AES-256 database payload encryption, HMAC-SHA256 signed webhooks, and a React 19 administrative console.",
     impact: [
-      "Achieved 100% offline resilience with 0ms dependency on external cloud connectivity during rush-hour checkout",
-      "Delivered sub-300ms ESC/POS thermal receipt printing and instantaneous barcode lookup",
-      "Eliminated inventory and cash discrepancies through strict atomic double-entry balance journals"
+      "Eliminated 100% of CPaaS per-segment platform markups by utilizing flat domestic SIM carrier bundles",
+      "Delivered < 5s outbound dispatch latency from API invocation to physical cellular tower transmission",
+      "Guaranteed zero-loss message ingestion with Redis BullMQ durability queues and automatic exponential retries"
     ],
     tools: [
-      "Flutter",
-      "Dart",
-      "Drift ORM (SQLite)",
-      "Node.js",
+      "Node.js 22",
       "TypeScript",
       "Express 5",
-      "Prisma",
+      "WebSocket (ws)",
+      "BullMQ",
+      "Redis",
+      "Prisma ORM",
       "PostgreSQL",
-      "Next.js 14",
-      "Tailwind CSS",
-      "ESC/POS Thermal Printing",
-      "Barcode Scanner"
+      "Kotlin Android",
+      "React 19",
+      "Vite",
+      "Tailwind CSS 4",
+      "HMAC-SHA256",
+      "AES-256-GCM"
     ],
-    role: "Principal Architect & Lead Full-Stack Engineer",
+    role: "Principal Architect & Lead Engineer",
     code: "",
-    demo: "/work/myshop-pos",
+    demo: "/work/flatsms-sms-gateway",
     featured: true,
   },
   {
@@ -59,6 +63,64 @@ export const projectsData = [
     featured: true,
   },
   {
+    id: 17,
+    name: "MyShop — Grocery Business Manager POS & ERP",
+    description:
+      "An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Built with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, a high-throughput Node.js/Prisma backend, and a Next.js 14 Super Admin Portal.",
+    problem: "Retail grocery checkout counters face severe downtime during internet outages. Cloud-dependent POS software freezes during peak hours, and store owners face stock discrepancies, barcode scanning delays, and flaky thermal receipt printing.",
+    solution: "Architected a 100% offline-first POS using Flutter and Drift SQLite with Write-Ahead Logging (WAL) for 0ms network latency checkout. Integrated direct ESC/POS byte printing for Bluetooth thermal printers, sub-second camera barcode scanning, and atomic double-entry bookkeeping syncing with a Node.js/PostgreSQL backend and Next.js 14 Super Admin portal.",
+    impact: [
+      "Achieved 100% offline resilience with 0ms dependency on external cloud connectivity during rush-hour checkout",
+      "Delivered sub-300ms ESC/POS thermal receipt printing and instantaneous barcode lookup",
+      "Eliminated inventory and cash discrepancies through strict atomic double-entry balance journals"
+    ],
+    tools: [
+      "Flutter",
+      "Dart",
+      "Drift ORM (SQLite)",
+      "Node.js",
+      "TypeScript",
+      "Express 5",
+      "Prisma",
+      "PostgreSQL",
+      "Next.js 14",
+      "Tailwind CSS",
+      "ESC/POS Thermal Printing",
+      "Barcode Scanner"
+    ],
+    role: "Principal Architect & Lead Full-Stack Engineer",
+    code: "",
+    demo: "/work/myshop-pos",
+    featured: true,
+  },
+  {
+    id: 9,
+    name: "Judah Restaurant & Food Delivery Ecosystem",
+    description:
+      "A complete food delivery infrastructure powering three distinct applications (Consumer, Delivery Agent, Vendor) with real-time order dispatching and dynamic routing.",
+    problem: "Local restaurants experienced severe delivery bottlenecks and poor order visibility during peak hours due to manual dispatching workflows.",
+    solution: "Engineered a highly scalable Flutter application suite interacting with a Node.js/Prisma backend. Utilized Socket.io for instantaneous bidirectional communication and Google Maps API for dispatching.",
+    impact: [
+      "Accelerated restaurant order fulfillment speed by automating vendor dispatching",
+      "Scaled infrastructure to support high-concurrency workloads on AWS EC2",
+      "Achieved sub-second real-time tracking visibility for customers"
+    ],
+    tools: [
+      "Flutter",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Socket.io",
+      "AWS EC2",
+      "Docker",
+      "Google Maps API"
+    ],
+    code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
+    role: "Lead Software Engineer",
+    featured: true,
+  },
+  {
     id: 14,
     name: "WhatsApp Sender Automation",
     description:
@@ -76,52 +138,6 @@ export const projectsData = [
     ],
     role: "Full Stack Developer",
     code: "https://github.com/Sathish4439/whatsapp-sender-api",
-    demo: "",
-    featured: true,
-  },
-  {
-    id: 15,
-    name: "akirva Auto Rider & Driver Ecosystem",
-    description:
-      "A real-time ride-hailing ecosystem comprising interconnected Flutter applications for passengers and drivers, backed by a scalable real-time synchronization backend.",
-    problem: "Local auto-rickshaw ecosystems suffered from high platform fees, inefficient dispatching, and lack of real-time tracking transparency.",
-    solution: "Engineered high-performance Flutter applications utilizing Firebase Firestore listeners for sub-second state synchronization and Google Maps API for optimized route mapping.",
-    impact: [
-      "Reduced ride dispatching and order processing time by 45%",
-      "Engineered real-time delivery tracking achieving sub-100ms latency",
-      "Optimized database reads to support 500+ concurrent real-time connections reliably"
-    ],
-    tools: [
-      "Flutter",
-      "Dart",
-      "Firebase Firestore",
-      "Node.js",
-      "Express",
-      "Google Maps API"
-    ],
-    role: "Flutter Developer & UI Architect",
-    code: "",
-    demo: "",
-    featured: true,
-  },
-  {
-    id: 16,
-    name: "Splendour Park Management",
-    description:
-      "An enterprise-level operations and business management software custom-built to handle menswear manufacturing, billing, wholesale distribution, bulk purchasing, labor tracking, and customer management.",
-    problem: "Fragmented systems for tracking bulk cloth rolls, piece-rate labor attendance, wholesale invoices, and customer accounts.",
-    solution: "Developed an offline-first management application with custom database sync via SQLite, supporting multiple Git branches, automated PDF invoices, and detailed worker logs.",
-    tools: [
-      "Flutter",
-      "Dart",
-      "SQLite",
-      "Node.js",
-      "Express",
-      "AWS S3",
-      "PDF Generation"
-    ],
-    role: "Full Stack Developer",
-    code: "",
     demo: "",
     featured: true,
   },
@@ -149,6 +165,59 @@ export const projectsData = [
     code: "",
     demo: "",
     role: "Full Stack Developer",
+    featured: true,
+  },
+  {
+    id: 4,
+    name: "Nest Pilot Hostel SaaS",
+    description:
+      "An offline-first facility management SaaS application designed to digitize rent tracking, automated billing, and maintenance operations for hostel and PG providers.",
+    problem: "Facility operators relied on fragmented manual ledgers for rent collection and maintenance tracking, leading to revenue leakage and poor tenant satisfaction.",
+    solution: "Developed an offline-first Flutter application with local SQLite caching that synchronizes with a centralized PostgreSQL database. Built a React web dashboard for administrative oversight.",
+    impact: [
+      "Automated monthly billing cycles, reducing administrative overhead by 70%",
+      "Decreased maintenance ticket resolution time by centralizing communications",
+      "Implemented resilient offline-first architecture ensuring uninterrupted operations"
+    ],
+    tools: [
+      "Flutter",
+      "SQLite",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "AWS EC2",
+      "Docker"
+    ],
+    code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.nestpilot.dhigrowth&pcampaignid=web_share",
+    role: "Full Stack Engineer",
+    featured: true,
+  },
+  // ─────────────── 2025 PROJECTS ───────────────
+  {
+    id: 8,
+    name: "Premium Parts",
+    description:
+      "An enterprise Resource Planning (ERP) application engineered to automate payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
+    problem: "Distributors faced significant revenue leakage due to manual timesheets, offline fleet tracking, and error-prone commission calculations.",
+    solution: "Architected a comprehensive Flutter client connected to a secure Node.js/Prisma backend. Implemented QR-based inventory scanning and automated PDF invoice generation.",
+    impact: [
+      "Reduced monthly payroll processing time by 80% through automated reporting",
+      "Improved inventory tracking accuracy to 99% via QR code integration",
+      "Eliminated manual attendance fraud using strict geo-fencing algorithms"
+    ],
+    tools: [
+      "Flutter",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Google Maps API",
+      "PDF Generation"
+    ],
+    code: "",
+    demo: "/work/premium-parts",
+    role: "Full Stack Developer",
     featured: false,
   },
   {
@@ -172,26 +241,6 @@ export const projectsData = [
     featured: false,
   },
   {
-    id: 2,
-    name: "Ovantica",
-    description:
-      "India’s leading trusted re-commerce mobile application facilitating the assessment, valuation, purchase, and sale of refurbished/renewed smartphones, laptops, and gadgets.",
-    problem: "The secondhand electronics market suffers from lack of transparency, inaccurate valuations, and insecure transactions for buyers and sellers.",
-    solution: "Built a highly responsive Flutter application using GetX architecture, implementing a 47-point quality check catalog, secure payment integration, and a streamlined device trade-in workflow.",
-    tools: [
-      "Flutter",
-      "Getx",
-      "Firebase",
-      "Google Maps",
-      "razorpay",
-      "Live tracking",
-    ],
-    role: "Flutter Developer",
-    code: "",
-    demo: "https://play.google.com/store/apps/details?id=pro.network.ovantica&pcampaignid=web_share",
-    featured: false,
-  },
-  {
     id: 3,
     name: "lalassa",
     description:
@@ -209,29 +258,71 @@ export const projectsData = [
     featured: false,
   },
   {
-    id: 4,
-    name: "Nest Pilot",
+    id: 15,
+    name: "akirva Auto Rider & Driver Ecosystem",
     description:
-      "An offline-first facility management SaaS application designed to digitize rent tracking, automated billing, and maintenance operations for hostel and PG providers.",
-    problem: "Facility operators relied on fragmented manual ledgers for rent collection and maintenance tracking, leading to revenue leakage and poor tenant satisfaction.",
-    solution: "Developed an offline-first Flutter application with local SQLite caching that synchronizes with a centralized PostgreSQL database. Built a React web dashboard for administrative oversight.",
+      "A real-time ride-hailing ecosystem comprising interconnected Flutter applications for passengers and drivers, backed by a scalable real-time synchronization backend.",
+    problem: "Local auto-rickshaw ecosystems suffered from high platform fees, inefficient dispatching, and lack of real-time tracking transparency.",
+    solution: "Engineered high-performance Flutter applications utilizing Firebase Firestore listeners for sub-second state synchronization and Google Maps API for optimized route mapping.",
     impact: [
-      "Automated monthly billing cycles, reducing administrative overhead by 70%",
-      "Decreased maintenance ticket resolution time by centralizing communications",
-      "Implemented resilient offline-first architecture ensuring uninterrupted operations"
+      "Reduced ride dispatching and order processing time by 45%",
+      "Engineered real-time delivery tracking achieving sub-100ms latency",
+      "Optimized database reads to support 500+ concurrent real-time connections reliably"
     ],
     tools: [
       "Flutter",
-      "SQLite",
-      "React",
+      "Dart",
+      "Firebase Firestore",
       "Node.js",
-      "PostgreSQL",
-      "AWS EC2",
-      "Docker"
+      "Express",
+      "Google Maps API"
     ],
+    role: "Flutter Developer & UI Architect",
     code: "",
-    demo: "https://play.google.com/store/apps/details?id=com.nestpilot.dhigrowth&pcampaignid=web_share",
-    role: "Full Stack Engineer",
+    demo: "",
+    featured: false,
+  },
+
+  // ─────────────── 2024 PROJECTS ───────────────
+  {
+    id: 16,
+    name: "Splendour Park Management",
+    description:
+      "An enterprise-level operations and business management software custom-built to handle menswear manufacturing, billing, wholesale distribution, bulk purchasing, labor tracking, and customer management.",
+    problem: "Fragmented systems for tracking bulk cloth rolls, piece-rate labor attendance, wholesale invoices, and customer accounts.",
+    solution: "Developed an offline-first management application with custom database sync via SQLite, supporting multiple Git branches, automated PDF invoices, and detailed worker logs.",
+    tools: [
+      "Flutter",
+      "Dart",
+      "SQLite",
+      "Node.js",
+      "Express",
+      "AWS S3",
+      "PDF Generation"
+    ],
+    role: "Full Stack Developer",
+    code: "",
+    demo: "",
+    featured: false,
+  },
+  {
+    id: 2,
+    name: "Ovantica",
+    description:
+      "India’s leading trusted re-commerce mobile application facilitating the assessment, valuation, purchase, and sale of refurbished/renewed smartphones, laptops, and gadgets.",
+    problem: "The secondhand electronics market suffers from lack of transparency, inaccurate valuations, and insecure transactions for buyers and sellers.",
+    solution: "Built a highly responsive Flutter application using GetX architecture, implementing a 47-point quality check catalog, secure payment integration, and a streamlined device trade-in workflow.",
+    tools: [
+      "Flutter",
+      "Getx",
+      "Firebase",
+      "Google Maps",
+      "razorpay",
+      "Live tracking",
+    ],
+    role: "Flutter Developer",
+    code: "",
+    demo: "https://play.google.com/store/apps/details?id=pro.network.ovantica&pcampaignid=web_share",
     featured: false,
   },
   {
@@ -281,58 +372,5 @@ export const projectsData = [
     demo: "",
     role: "Full Stack Developer",
     featured: false,
-  },
-  {
-    id: 8,
-    name: "Premium Parts",
-    description:
-      "An enterprise Resource Planning (ERP) application engineered to automate payroll, geo-fenced attendance tracking, and multi-tier retail commissions for automotive parts distributors.",
-    problem: "Distributors faced significant revenue leakage due to manual timesheets, offline fleet tracking, and error-prone commission calculations.",
-    solution: "Architected a comprehensive Flutter client connected to a secure Node.js/Prisma backend. Implemented QR-based inventory scanning and automated PDF invoice generation.",
-    impact: [
-      "Reduced monthly payroll processing time by 80% through automated reporting",
-      "Improved inventory tracking accuracy to 99% via QR code integration",
-      "Eliminated manual attendance fraud using strict geo-fencing algorithms"
-    ],
-    tools: [
-      "Flutter",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Prisma",
-      "Google Maps API",
-      "PDF Generation"
-    ],
-    code: "",
-    demo: "",
-    role: "Full Stack Developer",
-    featured: false,
-  },
-  {
-    id: 9,
-    name: "Judah Restaurant Ecosystem",
-    description:
-      "A complete food delivery infrastructure powering three distinct applications (Consumer, Delivery Agent, Vendor) with real-time order dispatching and dynamic routing.",
-    problem: "Local restaurants experienced severe delivery bottlenecks and poor order visibility during peak hours due to manual dispatching workflows.",
-    solution: "Engineered a highly scalable Flutter application suite interacting with a Node.js/Prisma backend. Utilized Socket.io for instantaneous bidirectional communication and Google Maps API for dispatching.",
-    impact: [
-      "Accelerated restaurant order fulfillment speed by automating vendor dispatching",
-      "Scaled infrastructure to support high-concurrency workloads on AWS EC2",
-      "Achieved sub-second real-time tracking visibility for customers"
-    ],
-    tools: [
-      "Flutter",
-      "Node.js",
-      "Prisma",
-      "PostgreSQL",
-      "Socket.io",
-      "AWS EC2",
-      "Docker",
-      "Google Maps API"
-    ],
-    code: "",
-    demo: "https://play.google.com/store/apps/details?id=com.judah.fooddelivery&pcampaignid=web_share",
-    role: "Lead Software Engineer",
-    featured: true,
   },
 ];

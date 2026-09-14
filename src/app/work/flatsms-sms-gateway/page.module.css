@@ -1,246 +1,914 @@
+/* ==========================================================================
+   FLATSMS CASE STUDY — LUXURY EDITORIAL PRODUCT PRESENTATION SYSTEM
+   Art Direction: Apple Keynote + Linear + Vercel + Stripe + Awwwards Studio
+   Base Palette: Obsidian Near-Black (#060709), Polished Amber (#F59E0B)
+   ========================================================================== */
+
 .wrapper {
   min-height: 100vh;
   width: 100%;
-  background: #000;
-  color: #fff;
+  background: #060709;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(245, 158, 11, 0.08), transparent 70%),
+    radial-gradient(circle at 100% 40%, rgba(245, 158, 11, 0.03), transparent 50%),
+    radial-gradient(circle at 0% 70%, rgba(245, 158, 11, 0.02), transparent 40%);
+  color: #ededed;
   overflow-x: hidden;
-  padding-top: 72px;
-  padding-bottom: 5rem;
+  padding-top: 80px;
+  padding-bottom: 7rem;
+  font-family: var(--font-body, 'Inter', -apple-system, sans-serif);
+  position: relative;
+}
+
+/* Subtle background fine grid */
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
+/* Navigation Back Link */
 .backLinkWrap {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .backLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .backIcon {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.6);
-  transition: all 0.2s;
+  font-size: 16px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .backLink:hover .backIcon {
-  border-color: #a3e635;
-  background: rgba(163, 230, 53, 0.1);
-  color: #a3e635;
+  border-color: #F59E0B;
+  background: rgba(245, 158, 11, 0.12);
+  color: #F59E0B;
   transform: translateX(-4px);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
 }
 
 .backText {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 0.05em;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
   transition: color 0.2s;
 }
 
 .backLink:hover .backText {
-  color: #a3e635;
+  color: #F59E0B;
 }
 
+/* Category Eyebrow Pill */
 .badge {
-  display: inline-block;
-  background: #a3e635;
-  padding: 0.25rem 1rem;
-  font-family: 'League Gothic', Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 3px;
-  color: #000;
-  transform: rotate(-1deg);
-  margin-bottom: 1rem;
-  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.4rem 1.1rem;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #F59E0B;
+  border-radius: 9999px;
+  margin-bottom: 1.75rem;
+  backdrop-filter: blur(8px);
 }
 
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F59E0B;
+  box-shadow: 0 0 8px #F59E0B;
+}
+
+/* Hero Typography */
 .title {
-  font-family: 'League Gothic', Helvetica, sans-serif;
-  font-size: clamp(48px, 8vw, 96px);
+  font-family: var(--font-heading, 'League Gothic', sans-serif);
+  font-size: clamp(52px, 8.5vw, 108px);
   font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: 2px;
-  color: #fff;
+  line-height: 0.98;
+  letter-spacing: 0.02em;
+  color: #ffffff;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.titleAccent {
+  color: #F59E0B;
+  background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: clamp(18px, 2.5vw, 24px);
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 800px;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 820px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
 }
 
+/* Metadata Grid */
 .metaGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 4rem;
-  padding: 1.5rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 4.5rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.02);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.005) 100%);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
 }
 
 .metaLabel {
-  font-family: 'Anton', Helvetica, sans-serif;
-  font-size: 16px;
-  color: #a3e635;
-  letter-spacing: 1px;
-  margin-bottom: 0.25rem;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 600;
+  color: #F59E0B;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
 }
 
 .metaValue {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 18px;
-  color: #fff;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.4;
 }
 
+/* ==========================================================================
+   LUXURY BROWSER & VIEWPORT FRAME SYSTEM
+   ========================================================================== */
+
+.browserFrame {
+  position: relative;
+  background: #0D1017;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 30px 80px -20px rgba(0, 0, 0, 0.9),
+    0 12px 32px -10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.browserFrame:hover {
+  border-color: rgba(245, 158, 11, 0.25);
+  box-shadow: 
+    0 0 0 1px rgba(245, 158, 11, 0.15),
+    0 35px 90px -20px rgba(0, 0, 0, 0.95),
+    0 0 40px -10px rgba(245, 158, 11, 0.12);
+}
+
+.browserBar {
+  height: 42px;
+  background: #090B10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  user-select: none;
+}
+
+.browserControls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 70px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotClose { background: #FF5F56; opacity: 0.8; }
+.dotMin { background: #FFBD2E; opacity: 0.8; }
+.dotMax { background: #27C93F; opacity: 0.8; }
+
+.browserAddress {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 4px 14px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.lockIcon {
+  width: 10px;
+  height: 10px;
+  color: #10B981;
+}
+
+.browserStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 11px;
+  font-weight: 500;
+  color: #10B981;
+  letter-spacing: 0.04em;
+  width: 70px;
+  justify-content: flex-end;
+}
+
+.statusPulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+}
+
+.browserViewport {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshotImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Ambient Backlight Glow */
+.ambientWrap {
+  position: relative;
+}
+
+.ambientGlow {
+  position: absolute;
+  top: -20px;
+  left: 5%;
+  right: 5%;
+  bottom: -20px;
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(245, 158, 11, 0.12), transparent 75%);
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   01 — HERO SHOWCASE (Scale 1: Dominant Full-Width Elevated Viewport)
+   ========================================================================== */
+
+.heroShowcaseWrap {
+  position: relative;
+  margin-bottom: 7rem;
+  z-index: 1;
+}
+
+.heroTagline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  padding: 0 0.5rem;
+}
+
+.heroCaption {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.02em;
+}
+
+.heroBadgeSpec {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 12px;
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   EDITORIAL SECTION STRUCTURE
+   ========================================================================== */
+
 .section {
-  margin-top: 4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 3rem;
+  position: relative;
+  margin-top: 6.5rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  max-width: 820px;
+  margin-bottom: 3rem;
+}
+
+.sectionNumber {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #F59E0B;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
 .sectionTitle {
-  font-family: 'Anton', Helvetica, sans-serif;
-  font-size: clamp(28px, 4vw, 42px);
-  color: #a3e635;
-  margin-bottom: 1.5rem;
-}
-
-.contentBlock {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.contentBlock p {
+  font-family: var(--font-heading, 'League Gothic', sans-serif);
+  font-size: clamp(36px, 5.5vw, 64px);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: #ffffff;
   margin-bottom: 1.25rem;
+  text-transform: uppercase;
 }
 
-.skillsList {
+.sectionLead {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   02 — PRODUCT OVERVIEW (Scale 2 & 5: Asymmetric Pairing & Floating Inset)
+   ========================================================================== */
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .overviewGrid {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3.5rem;
+  }
+}
+
+.overviewPrimaryFrame {
+  position: relative;
+}
+
+.overviewFloatingFrame {
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 
+    0 25px 60px -15px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(245, 158, 11, 0.15);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.overviewFloatingFrame:hover {
+  transform: translateY(-6px);
+}
+
+.featureHighlightCard {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.005) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.featureHighlightTitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featureHighlightDesc {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   03 — CORE EXPERIENCE (Scale 4: Offset Wide Narrative & Metric Telemetry)
+   ========================================================================== */
+
+.wideShowcaseWrap {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.telemetryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.telemetryCard {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0.005) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.telemetryCard:hover {
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.telemetryMetric {
+  font-family: var(--font-heading, 'League Gothic', sans-serif);
+  font-size: 44px;
+  color: #F59E0B;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.telemetryTitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.telemetryDesc {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   04 — PRODUCT DETAILS (Scale 3 & 7: Layered Inventory & Focused Modal)
+   ========================================================================== */
+
+.layeredSecurityWrap {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.layeredBaseFrame {
+  width: 100%;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease;
+}
+
+.layeredBaseFrame:hover {
+  filter: brightness(0.95);
+}
+
+.layeredModalFloating {
+  max-width: 620px;
+  margin: -18% auto 0 auto;
+  position: relative;
+  z-index: 10;
+  box-shadow: 
+    0 30px 90px -20px rgba(0, 0, 0, 0.95),
+    0 0 0 1px rgba(245, 158, 11, 0.25),
+    0 0 40px rgba(245, 158, 11, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.layeredModalFloating:hover {
+  transform: translateY(-8px) scale(1.01);
+}
+
+.calloutBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  border-radius: 12px;
+  padding: 1.25rem 1.75rem;
+  margin-top: 3.5rem;
+}
+
+.calloutText {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+.calloutBadge {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 11px;
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.12);
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   05 — SYSTEM / DASHBOARD (Scale 6: Expansive Developer Workstation)
+   ========================================================================== */
+
+.docsWorkstationWrap {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.docsTabStrip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #090B10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0 16px;
+  overflow-x: auto;
+}
+
+.docsTab {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 12px;
+  padding: 10px 14px;
+  color: rgba(255, 255, 255, 0.45);
+  border-bottom: 2px solid transparent;
+  cursor: default;
+}
+
+.docsTabActive {
+  color: #F59E0B;
+  border-bottom-color: #F59E0B;
+  font-weight: 600;
+}
+
+.specsPillsGrid {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
-.skillBadge {
-  background: rgba(163, 230, 53, 0.1);
-  border: 1px solid rgba(163, 230, 53, 0.3);
-  color: #a3e635;
-  padding: 0.4rem 1rem;
-  border-radius: 9999px;
-  font-size: 15px;
+.specPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.specPillDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F59E0B;
+}
+
+/* ==========================================================================
+   06 — RESPONSIVE / MULTI-SCREEN (Scale 8: Symmetrical Dual Studio)
+   ========================================================================== */
+
+.dualStudioGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 960px) {
+  .dualStudioGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.studioColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.studioCaption {
+  margin-top: 1.25rem;
+}
+
+.studioTitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.studioDesc {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ==========================================================================
+   07 — FINAL SHOWCASE (Scale 9: Cinema-Grade Master Viewport)
+   ========================================================================== */
+
+.masterShowcaseWrap {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.masterFrameBorder {
+  position: relative;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.3) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(245, 158, 11, 0.15) 100%);
+  box-shadow: 
+    0 40px 100px -20px rgba(0, 0, 0, 0.95),
+    0 0 50px -10px rgba(245, 158, 11, 0.15);
+}
+
+.masterFrameInner {
+  border-radius: 19px;
+  overflow: hidden;
+  background: #0D1017;
+}
+
+.kpiBar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.005) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.kpiItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpiValue {
+  font-family: var(--font-heading, 'League Gothic', sans-serif);
+  font-size: 38px;
+  color: #F59E0B;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.kpiLabel {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   TECHNICAL ARCHITECTURE CARDS
+   ========================================================================== */
+
+.archGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.archCard {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0.005) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.archCard:hover {
+  border-color: rgba(245, 158, 11, 0.3);
+  transform: translateY(-3px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.archTitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.archDesc {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   CALL TO ACTION
+   ========================================================================== */
+
+.ctaSection {
+  margin-top: 6rem;
+  padding: 4.5rem 2.5rem;
+  background: radial-gradient(ellipse 70% 60% at 50% 120%, rgba(245, 158, 11, 0.12), transparent 75%), #090B10;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading, 'League Gothic', sans-serif);
+  font-size: clamp(36px, 5.5vw, 68px);
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.ctaSubtitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 620px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .primaryBtn {
-  display: inline-block;
-  background: #a3e635;
-  color: #000;
-  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #F59E0B;
+  color: #060709;
+  padding: 0.95rem 2.25rem;
   border-radius: 9999px;
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 400;
-  transition: all 0.2s;
-  border: none;
-  cursor: pointer;
-  margin-top: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
 }
 
 .primaryBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(163, 230, 53, 0.4);
-}
-
-/* Additional elements used in other case studies */
-.gridTwo {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .gridTwo {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.01);
-  transition: all 0.25s ease;
-}
-
-.card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.cardTitle {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-
-.cardDesc {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.5;
-}
-
-.ctaGrid {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+  background: #FBBF24;
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.45);
 }
 
 .secondaryBtn {
-  display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.95rem 2.25rem;
   border-radius: 9999px;
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 15px;
+  font-weight: 500;
   text-decoration: none;
-  font-weight: 400;
-  transition: all 0.2s;
-  cursor: pointer;
-  margin-top: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .secondaryBtn:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .metaGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+  
+  .browserBar {
+    height: 36px;
+    padding: 0 12px;
+  }
+  
+  .browserAddress {
+    font-size: 9px;
+    padding: 2px 8px;
+  }
+  
+  .browserStatus {
+    display: none;
+  }
+  
+  .layeredModalFloating {
+    margin: 1.5rem auto 0 auto;
+    max-width: 100%;
+  }
+
+  .calloutBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .kpiBar {
+    grid-template-columns: 1fr;
+  }
 }

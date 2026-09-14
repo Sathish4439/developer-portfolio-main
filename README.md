@@ -378,7 +378,7 @@ Retrieval-Augmented Generation pipeline using Playwright scraping, Qdrant Cloud 
 - Developed **Nest Pilot** (hostel management SaaS) and **akirva** (auto-rickshaw ride-hailing network) with containerized AWS backends.
 
 ### 2. Flutter Mobile Developer
-**Elanoxtech** | Chennai, TN (On-site) | *July 2024 – September 2025*
+**Elanoxtech** | Coimbatore, TN (On-site) | *July 2024 – September 2025*
 - Built consumer mobile applications including **Virtual to Live** (360° virtual reality tours) and **Ovantica** (gadget re-commerce marketplace).
 - Integrated Google Maps live navigation, Firestore real-time listeners, and Razorpay transactional payment flows.
 - Optimized mobile rendering pipelines and memory overhead across diverse Android device tiers.

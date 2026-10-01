@@ -17,26 +17,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/hire-flutter-developer", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/flutter-developer-india", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/flutter-developer-coimbatore", changeFrequency: "monthly" as const, priority: 0.9 },
+    { path: "/app-developer-karur", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/freelance-flutter-developer", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/full-stack-developer", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/nodejs-developer", changeFrequency: "monthly" as const, priority: 0.85 },
 
     // Service sub-pages
-    { path: "/services/custom-software-development", changeFrequency: "monthly" as const, priority: 0.9 },
-    { path: "/services/erp-development", changeFrequency: "monthly" as const, priority: 0.9 },
-    { path: "/services/crm-development", changeFrequency: "monthly" as const, priority: 0.9 },
-    { path: "/services/web-development", changeFrequency: "monthly" as const, priority: 0.9 },
-    { path: "/services/mobile-app-development", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/services/flutter-development", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/backend-development", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/nodejs-development", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/services/full-stack-development", changeFrequency: "monthly" as const, priority: 0.85 },
+    { path: "/services/nodejs-development", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/services/react-development", changeFrequency: "monthly" as const, priority: 0.85 },
     { path: "/services/saas-development", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/api-development", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/admin-dashboard-development", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/business-automation", changeFrequency: "monthly" as const, priority: 0.85 },
-    { path: "/services/mvp-development", changeFrequency: "monthly" as const, priority: 0.85 },
 
     // Case study pages
     { path: "/work/myshop-pos", changeFrequency: "monthly" as const, priority: 0.9 },

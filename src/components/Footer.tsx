@@ -10,6 +10,7 @@ const footerNav = {
   ],
   "Locations & Hiring": [
     { label: "Flutter Dev Coimbatore", href: "/flutter-developer-coimbatore" },
+    { label: "App Developer Karur", href: "/app-developer-karur" },
     { label: "Hire Flutter Dev", href: "/hire-flutter-developer" },
     { label: "Flutter Dev India", href: "/flutter-developer-india" },
     { label: "Freelance Flutter Dev", href: "/freelance-flutter-developer" },

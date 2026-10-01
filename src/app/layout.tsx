@@ -8,32 +8,42 @@ import MobileStickyBar from "src/components/MobileStickyBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sathishdev.in"),
-  title: "Flutter Developer in Coimbatore | Sathish G",
+  title: "Sathish G | Flutter & Mobile App Developer — Coimbatore & Karur",
   description:
-    "Hire Sathish G — Flutter & Node.js full-stack developer in Coimbatore. 2+ years, 15+ shipped apps. Available for freelance, startup MVPs & remote roles.",
+    "Hire Sathish G — premier Flutter developer, mobile app engineer & full stack architect serving Coimbatore, Karur, and Tamil Nadu. 15+ shipped apps, custom web & cloud systems.",
   keywords: [
     "Sathish G",
     "Flutter Developer Coimbatore",
     "Flutter Developer in Coimbatore",
+    "Mobile App Developer Coimbatore",
+    "Software Developer Coimbatore",
     "Web Developer Coimbatore",
+    "Hire Flutter Developer Coimbatore",
+    "App Developer Karur",
+    "Mobile App Developer Karur",
+    "Software Developer Karur",
+    "Flutter Developer Karur",
+    "Web Developer Karur",
+    "Hire App Developer Karur",
     "Hire Flutter Developer",
     "Hire Full Stack Developer",
     "Full Stack Engineer Tamil Nadu",
-    "Mobile App Developer Coimbatore",
     "React Developer Coimbatore",
     "Node.js Developer Coimbatore",
     "AWS DevOps Coimbatore",
     "Freelance Developer India",
     "Freelance Flutter Developer",
     "Freelance Web Developer Coimbatore",
+    "Freelance App Developer Tamil Nadu",
   ],
   authors: [{ name: "Sathish G" }],
   alternates: {
     canonical: "https://www.sathishdev.in",
   },
   openGraph: {
-    title: "Flutter Developer in Coimbatore | Sathish G",
-    description: "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
+    title: "Sathish G | Flutter & Mobile App Developer — Coimbatore & Karur",
+    description:
+      "Full Stack Engineer & Mobile Systems Architect specializing in Flutter cross-platform apps, Node.js microservices, and cloud systems across Coimbatore, Karur, and Tamil Nadu.",
     url: "https://www.sathishdev.in",
     siteName: "Sathish G Portfolio",
     type: "website",
@@ -42,14 +52,15 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/og-banner.png",
         width: 1200,
         height: 630,
-        alt: "Sathish G - Flutter Developer in Coimbatore",
+        alt: "Sathish G - Flutter & Mobile App Developer in Coimbatore & Karur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flutter Developer in Coimbatore | Sathish G",
-    description: "Hire Sathish G, a top Flutter Developer and Full Stack Engineer based in Coimbatore, Tamil Nadu. Specializing in cross-platform mobile apps and scalable web platforms.",
+    title: "Sathish G | Flutter & Mobile App Developer — Coimbatore & Karur",
+    description:
+      "Full Stack Engineer & Mobile Systems Architect specializing in Flutter cross-platform apps, Node.js microservices, and cloud systems across Coimbatore, Karur, and Tamil Nadu.",
     images: ["https://www.sathishdev.in/og-banner.png"],
   },
 };
@@ -71,7 +82,7 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "@id": "https://www.sathishdev.in/#website",
-                "name": "Sathish G — Flutter Developer & Full Stack Engineer Portfolio",
+                "name": "Sathish G — Flutter & Full Stack Developer Portfolio",
                 "url": "https://www.sathishdev.in",
                 "potentialAction": {
                   "@type": "SearchAction",
@@ -89,20 +100,32 @@ export default function RootLayout({
                 "name": "Sathish G",
                 "url": "https://www.sathishdev.in",
                 "image": "https://www.sathishdev.in/sathish.png",
-                "jobTitle": "Full Stack Engineer & Flutter Developer",
+                "jobTitle": "Full Stack Engineer & Mobile Systems Architect",
                 "address": {
                   "@type": "PostalAddress",
                   "addressLocality": "Coimbatore",
                   "addressRegion": "Tamil Nadu",
                   "addressCountry": "IN"
                 },
+                "workLocation": [
+                  {
+                    "@type": "City",
+                    "name": "Coimbatore"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Karur"
+                  }
+                ],
                 "knowsAbout": [
                   "Flutter Mobile App Development",
+                  "Cross-Platform iOS & Android Apps",
                   "React & Next.js Frontend",
-                  "Node.js Backend & microservices",
+                  "Node.js Backend & Microservices",
                   "AWS Deployment & DevOps",
                   "Docker Containerization",
-                  "PostgreSQL & Prisma ORM"
+                  "PostgreSQL & Prisma ORM",
+                  "Offline-First SQLite Architecture"
                 ],
                 "sameAs": [
                   "https://github.com/Sathish4439",
@@ -111,77 +134,42 @@ export default function RootLayout({
               },
               {
                 "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                "name": "Sathish G — Flutter Developer & Full Stack Services",
+                "@type": "ProfessionalService",
+                "@id": "https://www.sathishdev.in/#service",
+                "name": "Sathish G — Mobile App & Software Development",
                 "image": "https://www.sathishdev.in/sathish.png",
-                "@id": "https://www.sathishdev.in/#localbusiness",
                 "url": "https://www.sathishdev.in",
                 "telephone": "+91-7868031207",
                 "priceRange": "$$",
+                "provider": {
+                  "@id": "https://www.sathishdev.in/#person"
+                },
                 "address": {
                   "@type": "PostalAddress",
                   "addressLocality": "Coimbatore",
                   "addressRegion": "Tamil Nadu",
                   "addressCountry": "IN"
                 },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 11.0168,
-                  "longitude": 76.9558
-                },
-                "founder": {
-                  "@id": "https://www.sathishdev.in/#person"
-                },
                 "areaServed": [
                   {
-                    "@type": "AdministrativeArea",
-                    "name": "Coimbatore"
+                    "@type": "City",
+                    "name": "Coimbatore",
+                    "sameAs": "https://en.wikipedia.org/wiki/Coimbatore"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Karur",
+                    "sameAs": "https://en.wikipedia.org/wiki/Karur"
                   },
                   {
                     "@type": "AdministrativeArea",
-                    "name": "Tamil Nadu"
+                    "name": "Tamil Nadu",
+                    "sameAs": "https://en.wikipedia.org/wiki/Tamil_Nadu"
                   },
                   {
                     "@type": "Country",
-                    "name": "India"
-                  }
-                ]
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Who is the best Flutter developer in Coimbatore?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Sathish G is a leading Flutter Developer in Coimbatore, Tamil Nadu, specializing in creating high-performance, cross-platform mobile apps with native capabilities."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Are there Full Stack Engineers available for hire in Tamil Nadu?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes, Sathish G provides professional Full Stack engineering services in Tamil Nadu, specializing in React, Next.js, Node.js backends, and AWS deployment infrastructures."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Does Sathish G accept freelance Flutter projects?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes, Sathish G is available for freelance contracts, MVP development, and full-time remote opportunities for businesses globally and locally in India."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What mobile app development services are available in Coimbatore?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Sathish G offers comprehensive mobile app development services in Coimbatore, including custom UI/UX design, state management integration, database synchronization, API deployment, and App Store publishing."
-                    }
+                    "name": "India",
+                    "sameAs": "https://en.wikipedia.org/wiki/India"
                   }
                 ]
               }

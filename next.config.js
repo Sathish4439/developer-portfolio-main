@@ -27,4 +27,23 @@ module.exports = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/mobile-app-development-in-karur',
+        destination: '/app-developer-karur',
+        permanent: true,
+      },
+      {
+        source: '/software-development-in-karur',
+        destination: '/app-developer-karur',
+        permanent: true,
+      },
+      {
+        source: '/mobile-app-developer-karur',
+        destination: '/app-developer-karur',
+        permanent: true,
+      },
+    ];
+  },
 }

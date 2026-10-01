@@ -83,7 +83,7 @@ const staticArticles: Article[] = [
 
 export default function Blogs() {
   const [articles, setArticles] = useState<Article[]>(staticArticles);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fetchBlogs() {

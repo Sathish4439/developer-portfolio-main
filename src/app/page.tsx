@@ -54,7 +54,7 @@ export default function Home() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/sathish.png"
-                alt="Sathish G"
+                alt="Sathish G — Full Stack Engineer and Mobile App Developer"
                 className={styles.heroImg}
               />
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
           {/* Profile image */}
           <div className={styles.heroMobileImg}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/sathish.png" alt="Sathish G" className={styles.heroImg} />
+            <img src="/sathish.png" alt="Sathish G — Full Stack Engineer and Mobile App Developer" className={styles.heroImg} />
           </div>
           {/* PORTFOLIO text */}
           <div className={styles.heroMobileTitle}>

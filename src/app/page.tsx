@@ -15,21 +15,22 @@ const skills = [
   { name: "Prisma ORM", icon: "devicon-prisma-original" },
   { name: "Firebase", icon: "devicon-firebase-plain colored" },
   { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+  { name: "Redis", icon: "devicon-redis-plain colored" },
   { name: "REST APIs", icon: "devicon-network-wired" },
 ];
 
 const stats = [
   { value: "2+", label: "Years Experience" },
-  { value: "15+", label: "Projects Done" },
-  { value: "1K+", label: "Users Served" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "15+", label: "Projects Completed" },
+  { value: "10+", label: "Production Apps" },
+  { value: "100%", label: "On-Time Delivery" },
 ];
 
 const services = [
-  { title: "Flutter App Dev", desc: "Cross-platform mobile apps for Android & iOS." },
-  { title: "React Web Dev", desc: "Modern, responsive web apps with Next.js." },
-  { title: "Node.js Backend", desc: "Scalable REST APIs & full-stack solutions." },
-  { title: "AWS & DevOps", desc: "Cloud infra, Docker, Nginx, CI/CD pipelines." },
+  { title: "Flutter App Dev", desc: "Cross-platform mobile apps for Android & iOS.", href: "/services/flutter-development" },
+  { title: "React Web Dev", desc: "Modern, responsive web apps with Next.js.", href: "/services/react-development" },
+  { title: "Node.js Backend", desc: "Scalable REST APIs & full-stack solutions.", href: "/services/nodejs-development" },
+  { title: "Full Stack & Cloud", desc: "Cloud infra, Docker, Nginx, CI/CD pipelines.", href: "/services/full-stack-development" },
 ];
 
 const brands = ["Dhigrowth", "Elanoxtech", "Befhue", "MyShop POS", "Mayiliragu Academy", "Premium Parts", "akirva"];
@@ -39,7 +40,7 @@ export default function Home() {
     <main className={`${styles.main} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <h1 className={styles.heroH1}>Sathish G — Flutter Developer &amp; Full Stack Engineer in Coimbatore</h1>
+        <h1 className={styles.heroH1}>Sathish G — Flutter &amp; Mobile App Developer — Coimbatore &amp; Karur</h1>
 
         {/* ── DESKTOP HERO: PORT | image | FOLIO (hidden on mobile) ── */}
         <div className={`${styles.heroTitleRow} ${styles.heroDesktop}`}>
@@ -74,7 +75,7 @@ export default function Home() {
               <AnimeReveal direction="fade" duration={600} delay={650}>
                 <div className={styles.locationBadge}>
                   <span className={styles.locationPin}>📍</span>
-                  <span className={styles.locationText}>Based in Coimbatore, Tamil Nadu</span>
+                  <span className={styles.locationText}>Based in Coimbatore &amp; Karur, Tamil Nadu</span>
                 </div>
               </AnimeReveal>
             </div>
@@ -98,7 +99,7 @@ export default function Home() {
           {/* Location */}
           <div className={styles.heroMobileLocation}>
             <span>📍</span>
-            <span>Coimbatore, Tamil Nadu</span>
+            <span>Coimbatore &amp; Karur, Tamil Nadu</span>
           </div>
         </div>
 
@@ -136,10 +137,10 @@ export default function Home() {
                 <span className={styles.accent}>G. </span>Sathish
               </h2>
               <p className={styles.introTagline}>
-                Senior Flutter Developer &amp; Full-Stack Engineer based in Coimbatore, Tamil Nadu — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js web platforms.
+                Full-Stack Mobile Engineer &amp; Flutter Specialist based in Coimbatore &amp; Karur, Tamil Nadu — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js web platforms.
               </p>
               <p className={styles.introDesc}>
-                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, sub-100ms API latencies, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, a full-stack engineer for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, or a dedicated Node.js microservice architect, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
+                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, responsive API architecture, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need an experienced <Link href="/app-developer-karur" className={styles.inlineLink}>mobile app developer in Karur</Link>, a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, or a dedicated partner for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
               </p>
               <Link href="/about" className={styles.introCta}>
                 Learn More &rarr;
@@ -192,7 +193,7 @@ export default function Home() {
         <AnimeReveal stagger={100} direction="fade" delay={150}>
           <div className={styles.servicesGrid}>
             {services.map((svc) => (
-              <Link key={svc.title} href="/services" className={styles.serviceCard}>
+              <Link key={svc.title} href={svc.href} className={styles.serviceCard}>
                 <h3 className={styles.serviceTitle}>{svc.title}</h3>
                 <p className={styles.serviceDesc}>{svc.desc}</p>
               </Link>

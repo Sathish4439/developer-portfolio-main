@@ -44,6 +44,26 @@ module.exports = {
         destination: '/app-developer-karur',
         permanent: true,
       },
+      {
+        source: '/flutter-developer-karur',
+        destination: '/app-developer-karur',
+        permanent: true,
+      },
+      {
+        source: '/flutter-app-development-cost-in-coimbatore',
+        destination: '/flutter-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/app-development-cost-in-coimbatore',
+        destination: '/flutter-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/mobile-app-development-cost-in-karur',
+        destination: '/app-developer-karur',
+        permanent: true,
+      },
     ];
   },
 }

@@ -306,6 +306,47 @@ export default function AppDeveloperKarur() {
           </div>
         </section>
 
+        {/* Transparent Cost & Investment Breakdown */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Transparent App &amp; Software Development Cost in Karur</h2>
+          <div className={styles.contentBlock}>
+            <p>
+              Generic marketplace directories like IndiaMART often advertise &ldquo;₹10,000 app templates&rdquo; that are buggy, vulnerable to security leaks, and impossible to customize. Working directly with an experienced software engineer gives you clean, scalable code with honest, milestone-based pricing and zero hidden agency overheads:
+            </p>
+          </div>
+
+          <div className={styles.gridTwo} style={{ marginTop: "1.5rem" }}>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Starter MVP / Custom Tool</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹25,000 – ₹50,000</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Ideal for internal factory logs, single-store retail billing, barcode lookup tools, or focused MVP apps. Delivered in 2 to 4 weeks with local SQLite offline storage.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Commercial Business System / ERP</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹50,000 – ₹1,20,000</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Custom textile production tracking, multi-warehouse inventory management, GST invoice generation, and customer portals with Node.js backend on AWS. Delivered in 4 to 8 weeks.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Full Multi-Role Platform</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹1,20,000+</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Complete multi-app ecosystem (Customer App + Vendor App + Rider/Staff App + Web Admin Dashboard) with real-time Socket.io GPS tracking and payment gateway integration. Delivered in 8 to 12 weeks.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Monthly Engineering Retainer</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>Flexible / Dedicated</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Dedicated engineering capacity for continuous feature development, Play Store updates, server DevOps monitoring, and database optimizations.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 4. Proven Systems & Real Case Studies */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Proven Systems &amp; Real Case Studies</h2>

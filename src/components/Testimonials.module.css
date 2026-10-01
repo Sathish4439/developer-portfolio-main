@@ -87,3 +87,19 @@
   font-size: 0.85rem;
   color: #71717a;
 }
+
+.caseStudyLink {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a3e635;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.caseStudyLink:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+

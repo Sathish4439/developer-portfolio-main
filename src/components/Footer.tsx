@@ -4,9 +4,9 @@ import styles from "./Footer.module.css";
 const footerNav = {
   Services: [
     { label: "Flutter Dev", href: "/services/flutter-development" },
-    { label: "Full Stack", href: "/services/full-stack-development" },
+    { label: "React Web Dev", href: "/services/react-development" },
     { label: "Node.js Backend", href: "/services/nodejs-development" },
-    { label: "AWS & DevOps", href: "/services/full-stack-development" },
+    { label: "Full Stack & Cloud", href: "/services/full-stack-development" },
   ],
   "Locations & Hiring": [
     { label: "Flutter Dev Coimbatore", href: "/flutter-developer-coimbatore" },

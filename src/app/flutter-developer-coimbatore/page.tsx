@@ -216,7 +216,48 @@ export default function FlutterDeveloperCoimbatore() {
           </div>
         </section>
 
-        {/* 3. Projects Built for Tamil Nadu Businesses */}
+        {/* 3. Flutter App Development Cost in Coimbatore */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Flutter App Development Cost in Coimbatore (Agency vs Direct)</h2>
+          <div className={styles.contentBlock}>
+            <p>
+              Traditional IT agencies in Coimbatore often quote between ₹3,00,000 to ₹10,00,000+ for cross-platform mobile apps because of high corporate overheads, office rents, and layers of non-technical management. When you hire an independent senior full-stack engineer directly, you get higher technical velocity, 100% direct communication, and save 50% to 65% in capital:
+            </p>
+          </div>
+
+          <div className={styles.gridTwo} style={{ marginTop: "1.5rem" }}>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Startup MVP Mobile App</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹35,000 – ₹60,000</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Single-codebase Flutter app for iOS and Android with clean UI, REST API integration, authentication, and core workflow. Perfect for seed-stage startups testing product-market fit. Shipped in 3 to 4 weeks.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Commercial Business Platform</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹60,000 – ₹1,30,000</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Feature-rich mobile application with real-time push notifications, payment gateway (Razorpay/Stripe), offline SQLite caching, and a dedicated Node.js/PostgreSQL backend on AWS. Shipped in 5 to 8 weeks.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Multi-App Delivery / SaaS Ecosystem</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>₹1,30,000+</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Complete ecosystem comprising customer mobile app, partner/driver mobile app, and Next.js admin dashboard with live Socket.io location tracking and automated dispatching. Shipped in 8 to 14 weeks.
+              </p>
+            </div>
+            <div className={styles.card} style={{ borderTop: "3px solid #a3e635" }}>
+              <div style={{ color: "#a3e635", fontSize: "0.85rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em" }}>Hire Dedicated / Monthly Retainer</div>
+              <h3 className={styles.cardTitle} style={{ marginTop: "0.4rem" }}>Flexible Terms</h3>
+              <p className={styles.cardDesc} style={{ marginTop: "0.5rem" }}>
+                Contract-based engagement for established product teams needing a dedicated Flutter &amp; Node.js engineer. Read my detailed technical guides on <a href="https://dev.to/5119__sathishg_d4ba94816" target="_blank" rel="noopener noreferrer" style={{ color: "#a3e635", textDecoration: "underline" }}>DEV Community</a> for hiring checklists and architectural patterns.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. Projects Built for Tamil Nadu Businesses */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Projects Built for Tamil Nadu Businesses</h2>
           <div className={styles.contentBlock}>

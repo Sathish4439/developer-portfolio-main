@@ -5,15 +5,17 @@ import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development in Karur | App & Software Developer — Sathish G",
+  title: "Software Development in Karur | Mobile App & Custom Software — Sathish G",
   description:
-    "Looking for mobile app development in Karur? Sathish G builds custom Flutter iOS & Android apps, business software, and textile ERP systems for Karur businesses. Direct developer pricing, no agency middlemen.",
+    "Looking for custom software development in Karur? Sathish G builds high-performance business software, Flutter iOS & Android apps, and textile ERP systems for Karur businesses. Direct developer pricing.",
   keywords: [
+    "software development in karur",
+    "software development karur",
+    "software company in karur",
+    "software developer in karur",
     "mobile app development in karur",
     "mobile app development company in karur",
     "app developer in karur",
-    "software company in karur",
-    "software development in karur",
     "flutter developer in karur",
     "android app development karur",
     "ios app development karur",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
     "ICBM": "10.9601, 78.0766",
   },
   openGraph: {
-    title: "Mobile App Development in Karur | Flutter & Software Developer — Sathish G",
+    title: "Software Development & Mobile App Services in Karur — Sathish G",
     description:
-      "Expert mobile app and software development services for Karur businesses. Cross-platform Flutter apps, Node.js backends, and custom business management software.",
+      "Expert software development and mobile app engineering services for Karur businesses. Cross-platform Flutter apps, Node.js backends, and custom business management software.",
     url: "https://www.sathishdev.in/app-developer-karur",
     type: "website",
     images: [
@@ -41,15 +43,15 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/sathish.png",
         width: 800,
         height: 800,
-        alt: "Sathish G — Mobile App & Software Developer in Karur",
+        alt: "Sathish G — Software Development & Mobile App Developer in Karur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile App Development in Karur | Sathish G",
+    title: "Software Development & App Developer in Karur | Sathish G",
     description:
-      "Custom Flutter mobile apps, Node.js backends, and business software engineered for Karur enterprises and startups.",
+      "Custom business software, Flutter mobile apps, and Node.js backends engineered for Karur enterprises and startups.",
     images: ["https://www.sathishdev.in/sathish.png"],
   },
 };
@@ -87,13 +89,13 @@ export default function AppDeveloperKarur() {
             {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Sathish G — App & Software Developer",
+              "name": "Sathish G — Software & Mobile App Development Karur",
               "image": "https://www.sathishdev.in/sathish.png",
               "url": "https://www.sathishdev.in/app-developer-karur",
               "telephone": "+91-7868031207",
               "priceRange": "$$",
               "description":
-                "Professional mobile app development and custom software engineering services serving Karur, Tamil Nadu. Specializing in Flutter iOS & Android apps, Node.js backends, and cloud deployment.",
+                "Professional software development and mobile app engineering services in Karur, Tamil Nadu. Specializing in custom business software, Flutter iOS & Android apps, Node.js backends, and cloud deployment.",
               "areaServed": [
                 {
                   "@type": "City",
@@ -107,9 +109,10 @@ export default function AppDeveloperKarur() {
                 }
               ],
               "knowsAbout": [
+                "Software Development in Karur",
+                "Custom Software Development",
                 "Mobile App Development in Karur",
                 "Flutter iOS & Android Development",
-                "Custom Software Development",
                 "Textile ERP & Production Tracking",
                 "Retail POS & Billing Software",
                 "Full Stack Web Development",
@@ -147,7 +150,7 @@ export default function AppDeveloperKarur() {
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "App Developer Karur",
+                  "name": "Software & App Development Karur",
                   "item": "https://www.sathishdev.in/app-developer-karur"
                 }
               ]
@@ -167,7 +170,7 @@ export default function AppDeveloperKarur() {
         <div className={styles.badge}>KARUR &amp; TAMIL NADU</div>
 
         <AnimeReveal direction="fade" duration={800}>
-          <h1 className={styles.title}>MOBILE APP &amp; SOFTWARE DEVELOPER IN KARUR</h1>
+          <h1 className={styles.title}>SOFTWARE DEVELOPMENT &amp; APP DEVELOPER IN KARUR</h1>
         </AnimeReveal>
 
         <p className={styles.subtitle}>

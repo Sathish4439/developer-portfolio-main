@@ -139,6 +139,18 @@ export default function MyShopCaseStudy() {
           An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Architected with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, a Node.js/Prisma sync backend, and a Next.js 14 Super Admin Portal.
         </p>
 
+        <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "2rem" }}>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.primaryBtn}
+            style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
+          >
+            <span>📱</span> Get on Google Play &rarr;
+          </a>
+        </div>
+
         <div className={styles.metaGrid}>
           <div>
             <div className={styles.metaLabel}>ROLE</div>
@@ -312,7 +324,15 @@ export default function MyShopCaseStudy() {
               Whether you require high-speed offline-first mobile applications, custom hardware integrations (printers/scanners), or high-concurrency Node.js backend architectures, I deliver production-ready software.
             </p>
             <div className={styles.ctaGrid} style={{ justifyContent: "center" }}>
-              <Link href="/contact" className={styles.primaryBtn}>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.primaryBtn}
+              >
+                Install from Google Play &rarr;
+              </a>
+              <Link href="/contact" className={styles.secondaryBtn}>
                 Hire Sathish G &rarr;
               </Link>
               <Link href="/work" className={styles.secondaryBtn}>

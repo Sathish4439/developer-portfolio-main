@@ -77,6 +77,15 @@ export default function Navbar() {
             >
               <i className="devicon-linkedin-plain" />
             </a>
+            <a
+              href="https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Google Play Store Developer Profile"
+            >
+              <i className="devicon-google-plain" />
+            </a>
           </div>
         </div>
 

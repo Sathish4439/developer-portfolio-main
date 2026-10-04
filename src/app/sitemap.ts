@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/work/flatsms-sms-gateway", changeFrequency: "monthly" as const, priority: 0.85 },
 
     // Blog article pages
+    { path: "/blogs/textile-erp-software-karur", changeFrequency: "weekly" as const, priority: 0.85 },
     { path: "/blogs/flutter-vs-react-native", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/blogs/flutter-performance-optimization", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/blogs/how-i-built-a-food-delivery-app", changeFrequency: "monthly" as const, priority: 0.8 },

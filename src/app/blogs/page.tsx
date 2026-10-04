@@ -20,6 +20,16 @@ interface Article {
 
 const staticArticles: Article[] = [
   {
+    id: "textile-erp-software-karur",
+    title: "Textile ERP Software in Karur: What Home Textile Exporters Must Look For (2026)",
+    description: "Why off-the-shelf ERPs fail Karur textile exporters, and how custom Flutter + Node.js platforms streamline multi-stage job-work, weaving, dyeing, and container dispatch.",
+    url: "/blogs/textile-erp-software-karur",
+    published_at: "2026-10-04T00:00:00Z",
+    reading_time_minutes: 8,
+    tag_list: ["karur", "textile-erp", "manufacturing"],
+    isInternal: true,
+  },
+  {
     id: "flutter-vs-react-native",
     title: "Flutter vs React Native in 2025: An Honest Comparison",
     description: "A practical, developer-driven comparison of Flutter vs React Native in 2025 covering rendering performance, state management, ecosystem maturity, and time-to-market.",

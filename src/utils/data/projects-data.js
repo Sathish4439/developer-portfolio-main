@@ -90,7 +90,7 @@ export const projectsData = [
     ],
     role: "Principal Architect & Lead Full-Stack Engineer",
     code: "",
-    demo: "/work/myshop-pos",
+    demo: "https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share",
     featured: true,
   },
   {

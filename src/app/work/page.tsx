@@ -40,7 +40,8 @@ const projects = [
     tags: ["Flutter", "Drift SQLite", "Node.js", "TypeScript", "Express 5", "Prisma", "PostgreSQL", "Next.js 14", "ESC/POS Thermal", "Barcode Scanner"],
     description: "An offline-first enterprise grocery Point of Sale (POS) and inventory management ERP with sub-second barcode checkout, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, Drift SQLite offline sync, and Next.js 14 Super Admin Portal.",
     accent: "#006c49",
-    metrics: "100% Offline-First POS",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share",
+    metrics: "Live on Google Play",
     caseStudyUrl: "/work/myshop-pos",
   },
   {

@@ -24,6 +24,7 @@ const footerNav = {
     { label: "Email Me", href: "mailto:sathishg.dev@gmail.com" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/sathishgobi/" },
     { label: "GitHub", href: "https://github.com/Sathish4439" },
+    { label: "Google Play Store", href: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN" },
     { label: "LeetCode", href: "https://leetcode.com/Sathish4439" },
   ],
 };
@@ -31,6 +32,7 @@ const footerNav = {
 const socials = [
   { label: "GitHub", href: "https://github.com/Sathish4439" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/sathishgobi/" },
+  { label: "PlayStore", href: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN" },
   { label: "Hashnode", href: "https://hashnode.com/@Sathish4439" },
   { label: "LeetCode", href: "https://leetcode.com/Sathish4439" },
   { label: "Email", href: "mailto:sathishg.dev@gmail.com" },

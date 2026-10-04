@@ -129,7 +129,8 @@ export default function RootLayout({
                 ],
                 "sameAs": [
                   "https://github.com/Sathish4439",
-                  "https://www.linkedin.com/in/sathishgobi/"
+                  "https://www.linkedin.com/in/sathishgobi/",
+                  "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN"
                 ]
               },
               {

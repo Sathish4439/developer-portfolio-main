@@ -19,6 +19,7 @@ export const personalData = {
   devTo: "https://dev.to/5119__sathishg_d4ba94816",
   hashnode: "https://hashnode.com/@sathish4439",
   medium: "https://medium.com/@aravindsathish0885",
+  playStore: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN",
   resume: "/Sathish_G_Resume.pdf"
 };
 

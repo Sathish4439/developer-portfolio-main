@@ -7,5 +7,6 @@ export const contactsData = {
     linkedIn: 'https://www.linkedin.com/in/sathishgobi/',
     twitter: '',
     stackOverflow: '',
+    playStore: 'https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN',
     devUsername: "Sathish4439"
 }

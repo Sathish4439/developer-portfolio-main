@@ -5,10 +5,21 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 
-const categories = ["All", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
+const categories = ["All", "AI & Voice", "Flutter", "Full Stack", "Web Apps", "Cloud & SaaS"];
 
 const projects = [
   // ─────────────── 2026 PROJECTS ───────────────
+  {
+    id: "voice-vertick-ai",
+    title: "VoiceVertick AI — Autonomous Voice Telephony & Lead CRM",
+    category: "AI & Voice",
+    year: "2026",
+    tags: ["Node.js", "WebSocket", "Twilio Media Streams", "Sarvam AI", "Cartesia Sonic", "GPT-4o-mini", "Prisma", "PostgreSQL", "Razorpay"],
+    description: "An ultra-low latency (<800ms) autonomous voice-AI telephony platform built for regional & Indic business communication. Features live bidirectional audio streaming, no-code Agent Studio, continuous self-learning objection engine, sub-second lead qualification (HOT/WARM/COLD), and per-second double-entry ledger billing.",
+    accent: "#8B5CF6",
+    metrics: "Flagship / Active Dev",
+    caseStudyUrl: "/work/voice-vertick",
+  },
   {
     id: "flatsms-sms-gateway",
     title: "FlatSMS — Android SMS Gateway SaaS",

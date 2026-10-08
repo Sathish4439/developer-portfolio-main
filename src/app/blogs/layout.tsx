@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Technical Articles & Blogs | Sathish G",
-  description: "Read publications by Sathish G covering Flutter performance optimization, Express microservice scaling with Docker, and sub-100ms real-time synchronization pipelines.",
+  title: "Dev Blog | Sathish G — Flutter, Node.js, AWS & ERP Engineering Insights",
+  description: "In-depth technical articles and engineering guides by Sathish G covering Flutter optimization, Node.js microservices, Docker DevOps, and custom ERP systems.",
+  alternates: {
+    canonical: "https://www.sathishdev.in/blogs",
+  },
 };
 
 export default function BlogsLayout({

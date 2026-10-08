@@ -44,6 +44,44 @@ export default function FlutterDevelopmentService() {
             },
             {
               "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why choose Flutter over native iOS and Android?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Flutter allows you to ship to both iOS and Android simultaneously from a single unified codebase, cutting total development cost and time-to-market by up to 50% while delivering native 60fps performance."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can Flutter mobile apps operate offline?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. I integrate embedded SQLite databases (Drift) and Hive stores to enable 100% offline data entry and automatic background synchronization when network connectivity resumes."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is the typical cost and timeline for Flutter app development?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Startup MVP applications typically take 4 to 6 weeks and range between ₹35,000 and ₹65,000. Full-scale commercial platforms with custom microservice backends take 8 to 14 weeks."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you assist with publishing to Google Play Store and Apple App Store?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. I manage the entire release pipeline including Google Play Store console setups, Apple Developer Account configurations, app signing, store compliance reviews, and post-launch updates."
+                  }
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
                 {
@@ -137,6 +175,12 @@ export default function FlutterDevelopmentService() {
             <div className={styles.faqQuestion}>Can Flutter handle offline capabilities?</div>
             <div className={styles.faqAnswer}>
               Yes! I integrate local SQLite databases and Hive key-value stores to enable offline data synchronization when network connectivity is lost.
+            </div>
+          </div>
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion}>What is the typical cost and timeline for Flutter app development?</div>
+            <div className={styles.faqAnswer}>
+              Startup MVP applications typically take 4 to 6 weeks and range between ₹35,000 and ₹65,000. Full-scale commercial platforms with custom microservice backends take 8 to 14 weeks.
             </div>
           </div>
           <div className={styles.faqItem}>

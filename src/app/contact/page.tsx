@@ -105,26 +105,38 @@ export default function Contact() {
                     </a>
                   </div>
                   <div className={styles.detailItem}>
+                    <span className={styles.detailLabel}>WhatsApp</span>
+                    <a
+                      href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.detailVal}
+                      style={{ color: "#25D366" }}
+                    >
+                      +91 78680 31207 (Instant Chat)
+                    </a>
+                  </div>
+                  <div className={styles.detailItem}>
                     <span className={styles.detailLabel}>Phone</span>
                     <a href="tel:+917868031207" className={styles.detailVal}>
                       +91 78680 31207
                     </a>
                   </div>
                   <div className={styles.detailItem}>
-                    <span className={styles.detailLabel}>Location</span>
-                    <span className={styles.detailVal}>Coimbatore, Tamil Nadu, India</span>
+                    <span className={styles.detailLabel}>Availability</span>
+                    <span className={styles.detailVal}>Remote Worldwide • Hybrid • Base: Tamil Nadu, India</span>
                   </div>
                 </div>
               </div>
 
-              {/* Trust & Guarantee Box */}
+              {/* Trust & Remote Ready Box */}
               <div className={styles.infoBlock} style={{ background: "rgba(163, 230, 53, 0.03)", border: "1px solid rgba(163, 230, 53, 0.2)", borderRadius: "12px", padding: "1.25rem" }}>
-                <p style={{ color: "#a3e635", fontWeight: "700", marginBottom: "0.5rem" }}>⚡ Response Guarantee</p>
+                <p style={{ color: "#a3e635", fontWeight: "700", marginBottom: "0.5rem" }}>⚡ International &amp; Remote Readiness</p>
                 <p style={{ color: "#d4d4d8", fontSize: "0.92rem", lineHeight: "1.5", marginBottom: "0.75rem" }}>
-                  I respond to all recruiter inquiries and project briefs within 24 hours.
+                  Active timezone overlap with US (EST), Europe (GMT), and APAC. High-clarity asynchronous communication with daily standups.
                 </p>
                 <p style={{ color: "#71717a", fontSize: "0.85rem" }}>
-                  🔒 Direct to Sathish G — no assistants, no middleman agencies.
+                  🔒 Direct engineering collaboration — zero middleman markup. Invoicing &amp; contracts ready.
                 </p>
               </div>
 
@@ -194,9 +206,9 @@ export default function Contact() {
                       className={styles.input}
                       style={{ background: "#000", color: "#fff" }}
                     >
-                      <option value="Recruiter">Recruiter / Hiring Manager</option>
-                      <option value="Founder">Founder / Business Owner</option>
-                      <option value="Agency">Agency Partner</option>
+                      <option value="Founder">Founder / Business Owner (Domestic / Global)</option>
+                      <option value="Recruiter">Recruiter / Engineering Hiring Manager</option>
+                      <option value="Agency">Agency / Studio Partner</option>
                       <option value="Individual">Individual Client</option>
                     </select>
                   </div>

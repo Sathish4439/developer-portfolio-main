@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
+# Master Sitemap Index
 Sitemap: https://www.sathishdev.in/sitemap.xml
+
+# Categorized Sitemaps
+Sitemap: https://www.sathishdev.in/sitemap-pages.xml
+Sitemap: https://www.sathishdev.in/sitemap-projects.xml
+Sitemap: https://www.sathishdev.in/sitemap-blogs.xml

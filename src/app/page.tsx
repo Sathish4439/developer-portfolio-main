@@ -40,7 +40,7 @@ export default function Home() {
     <main className={`${styles.main} fadeIn`}>
       {/* ─────────── HERO ─────────── */}
       <section className={styles.heroSection}>
-        <h1 className={styles.heroH1}>Sathish G — Flutter &amp; Mobile App Developer — Coimbatore &amp; Karur</h1>
+        <h1 className={styles.heroH1}>Sathish G — Full-Stack &amp; Mobile App Engineer — Scalable Digital Products</h1>
 
         {/* ── DESKTOP HERO: PORT | image | FOLIO (hidden on mobile) ── */}
         <div className={`${styles.heroTitleRow} ${styles.heroDesktop}`}>
@@ -68,14 +68,14 @@ export default function Home() {
               <AnimeReveal direction="fade" duration={600} delay={500}>
                 <div className={styles.heroBadgeWrap}>
                   <div className={styles.heroBadgeBg} />
-                  <div className={styles.heroBadgeText}>Full Stack &amp; Flutter Engineer</div>
+                  <div className={styles.heroBadgeText}>Full Stack &amp; Mobile Engineer</div>
                 </div>
               </AnimeReveal>
-              {/* Geo Location Badge */}
+              {/* Geo Location & Remote Badge */}
               <AnimeReveal direction="fade" duration={600} delay={650}>
                 <div className={styles.locationBadge}>
-                  <span className={styles.locationPin}>📍</span>
-                  <span className={styles.locationText}>Based in Coimbatore &amp; Karur, Tamil Nadu</span>
+                  <span className={styles.locationPin}>🌐</span>
+                  <span className={styles.locationText}>Available Worldwide • India (IST) • Remote / Contract</span>
                 </div>
               </AnimeReveal>
             </div>
@@ -95,27 +95,35 @@ export default function Home() {
             <span className={styles.heroWordMobile}>FOLIO</span>
           </div>
           {/* Role badge */}
-          <div className={styles.heroMobileBadge}>Full Stack &amp; Flutter Engineer</div>
+          <div className={styles.heroMobileBadge}>Full Stack &amp; Mobile Engineer</div>
           {/* Location */}
           <div className={styles.heroMobileLocation}>
-            <span>📍</span>
-            <span>Coimbatore &amp; Karur, Tamil Nadu</span>
+            <span>🌐</span>
+            <span>Available Worldwide • India (IST) • Remote</span>
           </div>
         </div>
 
         {/* Hero CTA & Availability */}
         <div className={styles.heroCta}>
           <a
+            href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.heroWaBtn}
+          >
+            💬 Chat on WhatsApp
+          </a>
+          <Link href="/contact" className={styles.heroContactBtn}>
+            📅 Book a Discovery Call
+          </Link>
+          <a
             href="/Sathish_G_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.heroResumeBtn}
           >
-            Download Resume &rarr;
+            Resume &rarr;
           </a>
-          <Link href="/contact" className={styles.heroContactBtn}>
-            Hire Me
-          </Link>
         </div>
 
         {/* Scroll indicator */}
@@ -137,10 +145,10 @@ export default function Home() {
                 <span className={styles.accent}>G. </span>Sathish
               </h2>
               <p className={styles.introTagline}>
-                Full-Stack Mobile Engineer &amp; Flutter Specialist based in Coimbatore &amp; Karur, Tamil Nadu — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js web platforms.
+                Full-Stack Mobile Engineer &amp; Product Architect collaborating with startups and growing businesses worldwide — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js platforms.
               </p>
               <p className={styles.introDesc}>
-                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, responsive API architecture, pixel-perfect interfaces, and robust state management (BLoC, Provider, Redux). Whether you need an experienced <Link href="/app-developer-karur" className={styles.inlineLink}>mobile app developer in Karur</Link>, a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, or a dedicated partner for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, I deliver scalable software engineered for enterprise reliability and seamless user experiences.
+                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, responsive API architecture, pixel-perfect interfaces, and robust state management. Whether you are an international founder building a scalable MVP, a hiring team needing seamless timezone overlap (US/EU/APAC), an experienced <Link href="/app-developer-karur" className={styles.inlineLink}>mobile app developer in Karur</Link>, a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, or a partner for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, I deliver production-ready software engineered for enterprise reliability and measurable business impact.
               </p>
               <Link href="/about" className={styles.introCta}>
                 Learn More &rarr;
@@ -349,16 +357,24 @@ export default function Home() {
               <a href="mailto:sathishg.dev@gmail.com" className={styles.contactPill}>
                 📧 sathishg.dev@gmail.com
               </a>
-              <a href="tel:+917868031207" className={styles.contactPill}>
-                📞 +91 7868031207
+              <a href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" className={styles.contactPill}>
+                💬 WhatsApp: +91 7868031207
               </a>
               <span className={styles.contactPill}>
-                📍 Coimbatore, TN, India
+                🌐 Remote Worldwide • IST (US/EU Overlap)
               </span>
             </div>
 
-            <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center" }}>
-              <Link href="/contact" className={styles.ctaBtn}>Contact Me</Link>
+            <div style={{ marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+              <a
+                href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.heroWaBtn}
+              >
+                💬 Instant WhatsApp
+              </a>
+              <Link href="/contact" className={styles.ctaBtn}>Book A Discovery Call / Email</Link>
               <a href="/Sathish_G_Resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.resumeCtaBtn}>Download Resume</a>
             </div>
           </div>

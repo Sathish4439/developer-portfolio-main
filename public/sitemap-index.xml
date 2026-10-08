@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Website & Service Landing Pages -->
+  <sitemap>
+    <loc>https://www.sathishdev.in/sitemap-pages.xml</loc>
+    <lastmod>2026-10-08</lastmod>
+  </sitemap>
+
+  <!-- Portfolio Projects & Case Studies (With Google Images) -->
+  <sitemap>
+    <loc>https://www.sathishdev.in/sitemap-projects.xml</loc>
+    <lastmod>2026-10-08</lastmod>
+  </sitemap>
+
+  <!-- Technical Articles & Blog Guides -->
+  <sitemap>
+    <loc>https://www.sathishdev.in/sitemap-blogs.xml</loc>
+    <lastmod>2026-10-08</lastmod>
+  </sitemap>
+</sitemapindex>

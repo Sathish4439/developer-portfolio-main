@@ -1,204 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- =================================================== -->
+  <!-- 1. CORE WEBSITE PAGES                               -->
+  <!-- =================================================== -->
   <url>
     <loc>https://www.sathishdev.in/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/about</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/services</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/blogs</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/contact</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/blogs</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
   </url>
 
-  <!-- Location & Hiring Pages -->
+  <!-- =================================================== -->
+  <!-- 2. HIGH-INTENT HIRING & LOCATION LANDING PAGES     -->
+  <!-- =================================================== -->
+  <url>
+    <loc>https://www.sathishdev.in/web-developer-coimbatore</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/web-developer-karur</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/hire-flutter-developer-coimbatore</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
   <url>
     <loc>https://www.sathishdev.in/app-developer-karur</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/flutter-developer-coimbatore</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/flutter-app-development-coimbatore</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/erp-software-developer-coimbatore</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/custom-software-development-coimbatore</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.sathishdev.in/windows-desktop-app-developer</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/hire-flutter-developer</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/flutter-developer-india</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/freelance-flutter-developer</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/full-stack-developer</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/nodejs-developer</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Service Subpages -->
+  <!-- =================================================== -->
+  <!-- 3. SERVICE SUB-PAGES                                -->
+  <!-- =================================================== -->
   <url>
     <loc>https://www.sathishdev.in/services/flutter-development</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/services/full-stack-development</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/services/nodejs-development</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/services/react-development</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/services/saas-development</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Portfolio Projects -->
+  <!-- =================================================== -->
+  <!-- 4. SELECTED WORK & CASE STUDIES (WITH GOOGLE IMAGES)-->
+  <!-- =================================================== -->
+  <url>
+    <loc>https://www.sathishdev.in/work/voice-vertick</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/voicevertick/08_call_intelligence_hub.png</image:loc>
+      <image:title>Voice Vertick AI Voice Calling Platform</image:title>
+      <image:caption>Autonomous Voice AI calling infrastructure with sub-800ms latency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/voicevertick/03_agent_studio_overview.png</image:loc>
+      <image:title>Voice Vertick Agent Studio Pipeline</image:title>
+      <image:caption>Visual prompt flow editor and webhook integration hub</image:caption>
+    </image:image>
+  </url>
   <url>
     <loc>https://www.sathishdev.in/work/myshop-pos</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/myshop/myshop_showcase_hero.jpg</image:loc>
+      <image:title>MyShop POS Offline-First Retail System</image:title>
+      <image:caption>Cross-platform Flutter and Drift SQLite retail billing POS</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/myshop/02_pos_billing.jpg</image:loc>
+      <image:title>MyShop POS Fast Barcode Checkout Counter</image:title>
+      <image:caption>Sub-5ms SQLite billing with thermal receipt printer integration</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/mayiliragu-academy</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/mayiliragu/mayiliragu_showcase_hero.jpg</image:loc>
+      <image:title>Mayiliragu Academy LMS Platform</image:title>
+      <image:caption>E-learning mobile app supporting 1000+ active students</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/mayiliragu/02_home_dashboard.jpg</image:loc>
+      <image:title>Mayiliragu Academy Student Dashboard</image:title>
+      <image:caption>Interactive video player and offline exam test analytics</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/judah-food-delivery</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Judah Food Delivery Multi-App Ecosystem</image:title>
+      <image:caption>Real-time 4-app on-demand delivery ecosystem with Socket.io GPS tracking</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/premium-parts</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Premium Parts Automotive Distribution ERP</image:title>
+      <image:caption>Offline-capable ERP with geo-fenced staff attendance and payroll</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/virtual-2-live</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Virtual 2 Live Re-commerce Platform</image:title>
+      <image:caption>Mobile trade-in platform with automated device grading</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/akirva-rider</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>akirva Rider Real-Time Mobility App</image:title>
+      <image:caption>Live GPS vehicle tracking and driver proximity dispatching</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sathishdev.in/work/flatsms-sms-gateway</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/flatsms/01_system_overview.png</image:loc>
+      <image:title>FlatSMS High-Throughput SMS Cloud Gateway</image:title>
+      <image:caption>Distributed SMS routing engine built with BullMQ, Redis, and Node.js</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/flatsms/06_webhooks.png</image:loc>
+      <image:title>FlatSMS Real-Time Webhook Pipeline</image:title>
+      <image:caption>Automated delivery receipts and webhook event streaming</image:caption>
+    </image:image>
   </url>
 
-  <!-- Technical Articles -->
+  <!-- =================================================== -->
+  <!-- 5. TECHNICAL ARTICLES & BLOGS                       -->
+  <!-- =================================================== -->
   <url>
     <loc>https://www.sathishdev.in/blogs/textile-erp-software-karur</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/flutter-vs-react-native</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/flutter-performance-optimization</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/how-i-built-a-food-delivery-app</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/devops-aws-docker-guide</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/flutter-state-management-bloc-provider</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/blogs/nodejs-microservices-architecture</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
 </urlset>

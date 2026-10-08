@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Voice Vertick AI Voice Calling -->
+  <url>
+    <loc>https://www.sathishdev.in/work/voice-vertick</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/voicevertick/08_call_intelligence_hub.png</image:loc>
+      <image:title>Voice Vertick AI Voice Calling Platform</image:title>
+      <image:caption>Autonomous Voice AI calling infrastructure with sub-800ms latency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/voicevertick/03_agent_studio_overview.png</image:loc>
+      <image:title>Voice Vertick Agent Studio Pipeline</image:title>
+      <image:caption>Visual prompt flow editor and webhook integration hub</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MyShop POS & Inventory -->
+  <url>
+    <loc>https://www.sathishdev.in/work/myshop-pos</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/myshop/myshop_showcase_hero.jpg</image:loc>
+      <image:title>MyShop POS Offline-First Retail System</image:title>
+      <image:caption>Cross-platform Flutter and Drift SQLite retail billing POS</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/myshop/02_pos_billing.jpg</image:loc>
+      <image:title>MyShop POS Fast Barcode Checkout Counter</image:title>
+      <image:caption>Sub-5ms SQLite billing with thermal receipt printer integration</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Mayiliragu Academy LMS -->
+  <url>
+    <loc>https://www.sathishdev.in/work/mayiliragu-academy</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/mayiliragu/mayiliragu_showcase_hero.jpg</image:loc>
+      <image:title>Mayiliragu Academy LMS Platform</image:title>
+      <image:caption>E-learning mobile app supporting 1000+ active students</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/mayiliragu/02_home_dashboard.jpg</image:loc>
+      <image:title>Mayiliragu Academy Student Dashboard</image:title>
+      <image:caption>Interactive video player and offline exam test analytics</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Judah Food Delivery Platform -->
+  <url>
+    <loc>https://www.sathishdev.in/work/judah-food-delivery</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Judah Food Delivery Multi-App Ecosystem</image:title>
+      <image:caption>Real-time 4-app on-demand delivery ecosystem with Socket.io GPS tracking</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Premium Parts Automotive Distribution ERP -->
+  <url>
+    <loc>https://www.sathishdev.in/work/premium-parts</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Premium Parts Automotive Distribution ERP</image:title>
+      <image:caption>Offline-capable ERP with geo-fenced staff attendance and payroll</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Virtual 2 Live Re-commerce Platform -->
+  <url>
+    <loc>https://www.sathishdev.in/work/virtual-2-live</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>Virtual 2 Live Re-commerce Platform</image:title>
+      <image:caption>Mobile trade-in platform with automated device grading</image:caption>
+    </image:image>
+  </url>
+
+  <!-- akirva Rider Real-Time Mobility App -->
+  <url>
+    <loc>https://www.sathishdev.in/work/akirva-rider</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/sathish.png</image:loc>
+      <image:title>akirva Rider Real-Time Mobility App</image:title>
+      <image:caption>Live GPS vehicle tracking and driver proximity dispatching</image:caption>
+    </image:image>
+  </url>
+
+  <!-- FlatSMS Cloud SMS Gateway -->
+  <url>
+    <loc>https://www.sathishdev.in/work/flatsms-sms-gateway</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/flatsms/01_system_overview.png</image:loc>
+      <image:title>FlatSMS High-Throughput SMS Cloud Gateway</image:title>
+      <image:caption>Distributed SMS routing engine built with BullMQ, Redis, and Node.js</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sathishdev.in/projects/flatsms/06_webhooks.png</image:loc>
+      <image:title>FlatSMS Real-Time Webhook Pipeline</image:title>
+      <image:caption>Automated delivery receipts and webhook event streaming</image:caption>
+    </image:image>
+  </url>
+</urlset>

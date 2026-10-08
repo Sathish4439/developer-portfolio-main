@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hire Sathish G — Flutter Developer for Project Inquiry | Coimbatore",
-  description: "Discuss project proposals, freelance contracts, or technical architectures directly with Sathish G, a top-rated Flutter and Full Stack Developer based in Coimbatore, Tamil Nadu.",
+  title: "Hire Sathish G — Flutter, Web & ERP Developer | WhatsApp · Email · Coimbatore",
+  description: "Hire Sathish G directly for Flutter apps, React/Next.js web platforms, and custom ERP systems. Direct communication via WhatsApp (+91 78680 31207) or email. Fast response.",
+  alternates: {
+    canonical: "https://www.sathishdev.in/contact",
+  },
 };
 
 export default function ContactLayout({

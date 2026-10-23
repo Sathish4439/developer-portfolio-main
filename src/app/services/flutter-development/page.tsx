@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "Flutter App Development Services in Coimbatore | Sathish G",
@@ -190,6 +191,27 @@ export default function FlutterDevelopmentService() {
             </div>
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Coimbatore Services &amp; Case Studies"
+          items={[
+            {
+              title: "Flutter App Development in Coimbatore",
+              description: "Dedicated cross-platform iOS & Android mobile application development services for Coimbatore businesses.",
+              href: "/flutter-app-development-coimbatore",
+            },
+            {
+              title: "Flutter Developer in Coimbatore",
+              description: "Senior freelance Flutter developer available for direct hire, hybrid sprints, and dedicated retainer contracts.",
+              href: "/flutter-developer-coimbatore",
+            },
+            {
+              title: "MyShop Grocery POS Case Study",
+              description: "Production offline-first Flutter desktop & mobile application with Drift SQLite and ESC/POS thermal printing.",
+              href: "/work/myshop-pos",
+            },
+          ]}
+        />
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Start Your Mobile App Project</h2>

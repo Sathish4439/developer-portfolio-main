@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "../flutter-development/page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "Node.js Backend Development Services in Coimbatore | Sathish G",
@@ -135,6 +136,27 @@ export default function NodejsDevelopmentService() {
             </div>
           </div>
         </section>
+
+        <RelatedItems
+          title="Backend Architectures &amp; Production Systems"
+          items={[
+            {
+              title: "FlatSMS — High-Throughput Node.js Gateway",
+              description: "Distributed Express 5 backend with WebSocket concurrency, Redis BullMQ queues, and Kotlin daemons.",
+              href: "/work/flatsms-sms-gateway",
+            },
+            {
+              title: "VoiceVertick AI — Low-Latency Voice Engine",
+              description: "Live WebSocket audio streaming with Twilio, Sarvam AI, and real-time ledger accounting.",
+              href: "/work/voice-vertick",
+            },
+            {
+              title: "MyShop Grocery POS & ERP Backend",
+              description: "Node.js & Prisma ORM database synchronization backend serving offline-first Flutter clients.",
+              href: "/work/myshop-pos",
+            },
+          ]}
+        />
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Build a Scalable Backend</h2>

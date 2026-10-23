@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "FlatSMS — Android SMS Gateway SaaS Case Study | Sathish G",
@@ -638,6 +639,27 @@ export default function FlatSmsCaseStudy() {
             </div>
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Production Case Studies &amp; Architecture"
+          items={[
+            {
+              title: "VoiceVertick AI — Autonomous Voice Telephony",
+              description: "Sub-800ms low-latency bidirectional telephony engine with Twilio, Sarvam AI, and live ledgers.",
+              href: "/work/voice-vertick",
+            },
+            {
+              title: "MyShop — Grocery POS & Inventory ERP",
+              description: "Cross-platform Flutter application with Drift SQLite offline synchronization and thermal printing.",
+              href: "/work/myshop-pos",
+            },
+            {
+              title: "SaaS Platform Development Services",
+              description: "Full-stack SaaS architecture engineering, multi-tenancy, and scalable microservices in Coimbatore.",
+              href: "/services/saas-development",
+            },
+          ]}
+        />
 
         {/* ==================================================================
             CALL TO ACTION SECTION

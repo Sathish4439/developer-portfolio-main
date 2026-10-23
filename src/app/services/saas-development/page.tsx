@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "SaaS Platform Development Services in Coimbatore | Sathish G",
@@ -115,6 +116,27 @@ export default function SaaSDevelopmentService() {
             </div>
           </div>
         </section>
+
+        <RelatedItems
+          title="Flagship SaaS Case Studies &amp; Architectures"
+          items={[
+            {
+              title: "FlatSMS — Android Cellular SMS Gateway SaaS",
+              description: "High-throughput cloud control plane and real-time WebSocket telecommunication gateway with BullMQ and Kotlin.",
+              href: "/work/flatsms-sms-gateway",
+            },
+            {
+              title: "VoiceVertick AI — Autonomous Voice Telephony",
+              description: "Low-latency (<800ms) voice AI agent platform with Twilio Media Streams, Sarvam AI, and live billing ledgers.",
+              href: "/work/voice-vertick",
+            },
+            {
+              title: "Custom Software Development in Coimbatore",
+              description: "Tailor-made software engineering, ERP architectures, and web application development for growing businesses.",
+              href: "/custom-software-development-coimbatore",
+            },
+          ]}
+        />
 
         <div className={styles.cta}>
           <h2 className={styles.ctaTitle}>Ready to Build Your SaaS Product?</h2>

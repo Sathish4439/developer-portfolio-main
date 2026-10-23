@@ -35,6 +35,33 @@ const services = [
 
 const brands = ["Dhigrowth", "Elanoxtech", "Befhue", "MyShop POS", "Mayiliragu Academy", "Premium Parts", "akirva"];
 
+const featuredProjects = [
+  {
+    title: "VoiceVertick AI — Autonomous Voice Telephony Platform",
+    tagline: "Sub-800ms Latency • Twilio Media Streams • Sarvam AI • Indic LLMs",
+    desc: "An ultra-low latency voice-AI telephony platform built for regional & Indic business communication. Features live bidirectional WebSocket audio streaming, sub-second objection handling, and per-second ledger billing.",
+    href: "/work/voice-vertick",
+    badge: "Flagship AI Architecture",
+    tags: ["Node.js", "WebSocket", "Sarvam AI", "GPT-4o-mini", "Prisma"],
+  },
+  {
+    title: "FlatSMS — Android Cellular SMS Gateway SaaS",
+    tagline: "Durable BullMQ Queues • Real-Time WebSockets • Kotlin Daemon",
+    desc: "A high-throughput cloud SaaS and real-time WebSocket gateway transforming commodity Android devices with domestic SIM cards into programmable, API-addressable 2-way SMS telecommunication infrastructure.",
+    href: "/work/flatsms-sms-gateway",
+    badge: "Cloud SaaS Platform",
+    tags: ["Node.js", "Express 5", "WebSocket", "BullMQ", "React 19", "Kotlin"],
+  },
+  {
+    title: "MyShop — Grocery POS & Inventory Management ERP",
+    tagline: "Offline-First Drift SQLite • Sub-Second Barcode Billing • Thermal Printing",
+    desc: "An enterprise-grade offline-first retail Point of Sale (POS) and inventory management ecosystem engineered for supermarkets. Sub-5ms SQLite checkout, Bluetooth thermal receipt printing, and Next.js Super Admin portal.",
+    href: "/work/myshop-pos",
+    badge: "Enterprise Flutter & ERP",
+    tags: ["Flutter", "Drift SQLite", "Node.js", "Prisma", "Thermal Printing"],
+  },
+];
+
 export default function Home() {
   return (
     <main className={`${styles.main} fadeIn`}>
@@ -148,7 +175,7 @@ export default function Home() {
                 Full-Stack Mobile Engineer &amp; Product Architect collaborating with startups and growing businesses worldwide — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js platforms.
               </p>
               <p className={styles.introDesc}>
-                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, responsive API architecture, pixel-perfect interfaces, and robust state management. Whether you are an international founder building a scalable MVP, a hiring team needing seamless timezone overlap (US/EU/APAC), an experienced <Link href="/app-developer-karur" className={styles.inlineLink}>mobile app developer in Karur</Link>, a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, or a partner for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, I deliver production-ready software engineered for enterprise reliability and measurable business impact.
+                With 2+ years of production engineering experience across fast-growing tech startups (Dhigrowth, Elanoxtech, Befhue), I design, build, and deploy end-to-end digital software. From architecting offline-first SQLite databases with background location synchronization to deploying Docker containers on AWS EC2 behind Nginx reverse proxies with SSL termination, I focus on clean code, responsive API architecture, pixel-perfect interfaces, and robust state management. Whether you are an international founder building a scalable MVP, a hiring team needing seamless timezone overlap (US/EU/APAC), seeking <Link href="/flutter-app-development-coimbatore" className={styles.inlineLink}>Flutter app development in Coimbatore</Link>, an experienced <Link href="/app-developer-karur" className={styles.inlineLink}>mobile app developer in Karur</Link>, a <Link href="/flutter-developer-coimbatore" className={styles.inlineLink}>freelance Flutter developer in Coimbatore</Link>, or a partner for <Link href="/freelance-flutter-developer" className={styles.inlineLink}>freelance MVP development</Link>, I deliver production-ready software engineered for enterprise reliability and measurable business impact.
               </p>
               <Link href="/about" className={styles.introCta}>
                 Learn More &rarr;
@@ -204,6 +231,39 @@ export default function Home() {
               <Link key={svc.title} href={svc.href} className={styles.serviceCard}>
                 <h3 className={styles.serviceTitle}>{svc.title}</h3>
                 <p className={styles.serviceDesc}>{svc.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </AnimeReveal>
+      </section>
+
+      {/* ─────────── FEATURED CASE STUDIES & ARCHITECTURES ─────────── */}
+      <section className={styles.featuredSection}>
+        <AnimeReveal direction="fade" duration={800}>
+          <div className={styles.sectionTop}>
+            <h2 className={styles.sectionTitle}>Featured Systems</h2>
+            <Link href="/work" className={styles.viewAllBtn}>All 15+ Case Studies &rarr;</Link>
+          </div>
+        </AnimeReveal>
+        <AnimeReveal stagger={100} direction="fade" delay={150}>
+          <div className={styles.featuredGrid}>
+            {featuredProjects.map((p) => (
+              <Link key={p.title} href={p.href} className={styles.featuredCard}>
+                <div>
+                  <span className={styles.featuredBadge}>{p.badge}</span>
+                  <h3 className={styles.featuredTitle}>{p.title}</h3>
+                  <div className={styles.featuredTagline}>{p.tagline}</div>
+                  <p className={styles.featuredDesc}>{p.desc}</p>
+                  <div className={styles.featuredTags}>
+                    {p.tags.map((t) => (
+                      <span key={t} className={styles.featuredTag}>{t}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className={styles.featuredCta}>
+                  <span>Read Technical Case Study</span>
+                  <span>&rarr;</span>
+                </div>
               </Link>
             ))}
           </div>

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Sathish G" }],
   alternates: {
-    canonical: "https://www.sathishdev.in",
+    canonical: "https://www.sathishdev.in/",
   },
   openGraph: {
     title: "Sathish G | Web, Flutter & Software Developer — 15+ Apps Shipped · Coimbatore, India",

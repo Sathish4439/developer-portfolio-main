@@ -29,6 +29,58 @@ module.exports = {
   },
   async redirects() {
     return [
+      // Legacy Service Route Canonical 301 Redirects
+      {
+        source: '/services/crm-development',
+        destination: '/erp-software-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/backend-development',
+        destination: '/services/nodejs-development',
+        permanent: true,
+      },
+      {
+        source: '/services/web-development',
+        destination: '/web-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/api-development',
+        destination: '/services/nodejs-development',
+        permanent: true,
+      },
+      {
+        source: '/services/business-automation',
+        destination: '/erp-software-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/custom-software-development',
+        destination: '/custom-software-development-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/erp-development',
+        destination: '/erp-software-developer-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/mobile-app-development',
+        destination: '/flutter-app-development-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/mvp-development',
+        destination: '/freelance-flutter-developer',
+        permanent: true,
+      },
+      {
+        source: '/services/admin-dashboard-development',
+        destination: '/services/react-development',
+        permanent: true,
+      },
+      // Regional & Keyword Redirects
       {
         source: '/mobile-app-development-in-karur',
         destination: '/app-developer-karur',
@@ -63,6 +115,28 @@ module.exports = {
         source: '/mobile-app-development-cost-in-karur',
         destination: '/app-developer-karur',
         permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*(sitemap.*\\.xml)',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, follow',
+          },
+        ],
+      },
+      {
+        source: '/favicon.ico',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
       },
     ];
   },

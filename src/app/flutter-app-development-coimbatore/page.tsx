@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../app-developer-karur/page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
+import RelatedItems from "../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "Flutter App Development in Coimbatore | Sathish G — iOS & Android",
@@ -321,6 +322,27 @@ export default function FlutterAppDevelopmentCoimbatore() {
             ))}
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Coimbatore Developer Profiles &amp; Case Studies"
+          items={[
+            {
+              title: "Freelance Flutter Developer in Coimbatore",
+              description: "Direct hire senior Flutter specialist for dedicated sprints, code reviews, and MVP delivery in Coimbatore.",
+              href: "/flutter-developer-coimbatore",
+            },
+            {
+              title: "Hire Flutter Developer in Coimbatore",
+              description: "Explore flexible hiring models (milestone, monthly retainer) and transparent pricing for startups.",
+              href: "/hire-flutter-developer-coimbatore",
+            },
+            {
+              title: "MyShop Grocery POS & ERP Case Study",
+              description: "Flagship cross-platform Flutter application with Drift SQLite offline sync and thermal receipt printing.",
+              href: "/work/myshop-pos",
+            },
+          ]}
+        />
 
         {/* 6. Consultation CTA */}
         <section className={styles.section}>

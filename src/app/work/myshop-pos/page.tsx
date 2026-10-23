@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "MyShop — Grocery Business Manager POS & ERP Case Study | Sathish G",
@@ -313,6 +314,27 @@ export default function MyShopCaseStudy() {
             ))}
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Production Case Studies &amp; Mobile Services"
+          items={[
+            {
+              title: "Flutter App Development in Coimbatore",
+              description: "Turnkey iOS & Android mobile engineering and offline-first database systems for Tamil Nadu businesses.",
+              href: "/flutter-app-development-coimbatore",
+            },
+            {
+              title: "FlatSMS — Android Cellular SMS Gateway SaaS",
+              description: "High-throughput cloud control plane and real-time WebSocket telecommunication gateway with BullMQ and Kotlin.",
+              href: "/work/flatsms-sms-gateway",
+            },
+            {
+              title: "VoiceVertick AI — Autonomous Voice Telephony",
+              description: "Sub-800ms low-latency bidirectional telephony engine with Twilio Media Streams, Sarvam AI, and live ledgers.",
+              href: "/work/voice-vertick",
+            },
+          ]}
+        />
 
         {/* 7. Call To Action */}
         <section className={styles.section}>

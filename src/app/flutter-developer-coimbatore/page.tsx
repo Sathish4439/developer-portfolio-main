@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../hire-flutter-developer/page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
+import RelatedItems from "../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "Flutter Developer in Coimbatore | Sathish G — Local & Remote",
@@ -340,6 +341,27 @@ export default function FlutterDeveloperCoimbatore() {
             ))}
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Flutter Engineering Services &amp; Projects"
+          items={[
+            {
+              title: "Flutter App Development in Coimbatore",
+              description: "Turnkey iOS & Android app engineering for Coimbatore startups and retail enterprises.",
+              href: "/flutter-app-development-coimbatore",
+            },
+            {
+              title: "Hire Flutter Developer in Coimbatore",
+              description: "Direct hire rates, retainer contracts, and engagement models for senior engineering talent.",
+              href: "/hire-flutter-developer-coimbatore",
+            },
+            {
+              title: "MyShop Grocery POS & ERP Case Study",
+              description: "Offline-first Flutter desktop & mobile POS with Drift SQLite and ESC/POS thermal printing.",
+              href: "/work/myshop-pos",
+            },
+          ]}
+        />
 
         {/* 7. Book a Free Consultation */}
         <section className={styles.section}>

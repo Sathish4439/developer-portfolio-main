@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
 import AnimeReveal from "../../../components/AnimeReveal";
+import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
   title: "VoiceVertick AI — Autonomous Voice Telephony & Lead Qualification Platform Case Study | Sathish G",
@@ -542,6 +543,27 @@ export default function VoiceVertickCaseStudy() {
             </p>
           </div>
         </section>
+
+        <RelatedItems
+          title="Related Production Systems &amp; Case Studies"
+          items={[
+            {
+              title: "FlatSMS — Android SMS Gateway SaaS",
+              description: "Distributed cellular telecommunication gateway and real-time WebSocket infrastructure with BullMQ and Kotlin.",
+              href: "/work/flatsms-sms-gateway",
+            },
+            {
+              title: "MyShop — Grocery POS & ERP Platform",
+              description: "Offline-first Flutter desktop/mobile POS with Drift SQLite and Bluetooth ESC/POS thermal printing.",
+              href: "/work/myshop-pos",
+            },
+            {
+              title: "SaaS Platform Development Services",
+              description: "Custom multi-tenant cloud engineering, subscription workflows, and scalable Node.js microservices.",
+              href: "/services/saas-development",
+            },
+          ]}
+        />
 
         {/* CTA Footer Box */}
         <div className={styles.ctaBox}>

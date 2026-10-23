@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /favicon.ico?*
 
 # Master Sitemap Index
 Sitemap: https://www.sathishdev.in/sitemap.xml

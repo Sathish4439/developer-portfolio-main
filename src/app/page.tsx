@@ -53,12 +53,12 @@ const featuredProjects = [
     tags: ["Node.js", "Express 5", "WebSocket", "BullMQ", "React 19", "Kotlin"],
   },
   {
-    title: "MyShop — Grocery POS & Inventory Management ERP",
-    tagline: "Offline-First Drift SQLite • Sub-Second Barcode Billing • Thermal Printing",
-    desc: "An enterprise-grade offline-first retail Point of Sale (POS) and inventory management ecosystem engineered for supermarkets. Sub-5ms SQLite checkout, Bluetooth thermal receipt printing, and Next.js Super Admin portal.",
+    title: "MyShop — Grocery POS, Website & Growth Ecosystem",
+    tagline: "Offline Drift SQLite • Next.js Website • WhatsApp Khata • Instagram Growth",
+    desc: "An enterprise-grade offline-first retail POS & ERP ecosystem for supermarkets. Features 0ms offline SQLite billing, ESC/POS Bluetooth printing, production merchant website (myshop.sathishdev.in), in-browser simulator, and WhatsApp/Instagram merchant acquisition.",
     href: "/work/myshop-pos",
-    badge: "Enterprise Flutter & ERP",
-    tags: ["Flutter", "Drift SQLite", "Node.js", "Prisma", "Thermal Printing"],
+    badge: "Enterprise Flutter & Ecosystem",
+    tags: ["Flutter", "Drift SQLite", "Next.js 14", "WhatsApp API", "Instagram Growth"],
   },
 ];
 

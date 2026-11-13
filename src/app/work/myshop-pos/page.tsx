@@ -5,21 +5,41 @@ import AnimeReveal from "../../../components/AnimeReveal";
 import RelatedItems from "../../../components/RelatedItems";
 
 export const metadata: Metadata = {
-  title: "MyShop — Grocery Business Manager POS & ERP Case Study | Sathish G",
+  title: "MyShop — Grocery Business Manager POS, Website & Growth Ecosystem | Sathish G",
   description:
-    "Technical case study of MyShop — Grocery Business Manager POS by Sathish G, lead Flutter & Full-Stack engineer. Featuring offline-first Drift SQLite, ESC/POS Bluetooth thermal printing, Node.js sync engine, and Next.js 14 Super Admin Portal.",
+    "Technical case study of MyShop — Grocery Business Manager POS by Sathish G, lead Flutter & Full-Stack engineer. Featuring offline-first Drift SQLite, ESC/POS Bluetooth thermal printing, production Next.js 14 website (myshop.sathishdev.in), Instagram Reels growth engine (@myshop.billing), and automated WhatsApp customer Khata dispatcher.",
   alternates: {
     canonical: "https://www.sathishdev.in/work/myshop-pos",
   },
   openGraph: {
-    title: "MyShop — Grocery Business Manager POS & ERP Case Study | Sathish G",
+    title: "MyShop — Grocery Business Manager POS, Website & Growth Ecosystem | Sathish G",
     description:
-      "An offline-first enterprise grocery Point of Sale (POS) and inventory management ERP with sub-second barcode checkout, Bluetooth thermal receipt printing, double-entry stock/cash ledgers, and cloud sync.",
+      "An offline-first enterprise grocery Point of Sale (POS) and inventory management ERP with sub-second barcode checkout, Bluetooth thermal receipt printing, production Next.js website, Instagram campaign (@myshop.billing), and WhatsApp Khata integration.",
     url: "https://www.sathishdev.in/work/myshop-pos",
   },
 };
 
 const screenshots = [
+  {
+    src: "/projects/myshop/myshop_website_dashboard.png",
+    title: "Official Production Website (myshop.sathishdev.in)",
+    desc: "Next.js 14 marketing portal with high-conversion landing page, live Play Store QR conversion, and hardware guides.",
+  },
+  {
+    src: "/projects/myshop/myshop_website_simulator.png",
+    title: "Interactive In-Browser POS Simulator (/demo)",
+    desc: "Zero-install web sandbox letting merchants test sub-second camera barcode scanning, itemization, and thermal receipts.",
+  },
+  {
+    src: "/projects/myshop/myshop_instagram_carousel_01.png",
+    title: "Instagram Marketing Campaign (@myshop.billing)",
+    desc: "High-contrast visual carousel deck educating grocers on replacing ₹25,000 desktop POS setups with Android phones.",
+  },
+  {
+    src: "/projects/myshop/myshop_whatsapp_khata_slide.png",
+    title: "WhatsApp Customer Khata & Balance Reminders",
+    desc: "1-Click automated WhatsApp customer credit reminders with Tamil & English balance statements and UPI QR codes.",
+  },
   {
     src: "/projects/myshop/01_dashboard.jpg",
     title: "Executive Store Dashboard",
@@ -59,6 +79,11 @@ const screenshots = [
     src: "/projects/myshop/08_store_expenses.jpg",
     title: "Store Expenses & Cash Flow",
     desc: "Daily operational expense categorization, register cash drawer reconciliation, and net profit deductions.",
+  },
+  {
+    src: "/projects/myshop/myshop_playstore_qr_card.png",
+    title: "Instant Play Store QR Onboarding",
+    desc: "Camera-scannable merchant acquisition card enabling immediate desktop-to-mobile app installation.",
   },
 ];
 
@@ -107,9 +132,17 @@ export default function MyShopCaseStudy() {
               "url": "https://www.sathishdev.in",
             },
             "url": "https://www.sathishdev.in/work/myshop-pos",
+            "sameAs": [
+              "https://myshop.sathishdev.in",
+              "https://www.instagram.com/myshop.billing/",
+              "https://play.google.com/store/apps/details?id=com.sathishdev.myshop"
+            ],
             "keywords": [
               "MyShop grocery POS",
               "grocery business manager",
+              "myshop website",
+              "myshop instagram",
+              "myshop billing",
               "flutter POS developer india",
               "offline-first flutter app",
               "Drift SQLite flutter",
@@ -117,6 +150,7 @@ export default function MyShopCaseStudy() {
               "retail inventory management ERP",
               "Node.js sync backend",
               "Next.js 14 admin portal",
+              "WhatsApp khata billing",
             ],
           }),
         }}
@@ -130,25 +164,62 @@ export default function MyShopCaseStudy() {
           </Link>
         </div>
 
-        <div className={styles.badge}>CASE STUDY — OFFLINE-FIRST ENTERPRISE POS</div>
+        <div className={styles.badge}>CASE STUDY — OFFLINE-FIRST ENTERPRISE POS &amp; GROWTH ECOSYSTEM</div>
 
         <AnimeReveal direction="fade" duration={800}>
           <h1 className={styles.title}>MYSHOP — GROCERY BUSINESS MANAGER</h1>
         </AnimeReveal>
 
         <p className={styles.subtitle}>
-          An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Architected with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, a Node.js/Prisma sync backend, and a Next.js 14 Super Admin Portal.
+          An enterprise-grade offline-first Point of Sale (POS) and inventory management ecosystem engineered for supermarkets and retail grocery stores. Architected with Flutter, Drift SQLite, ESC/POS Bluetooth thermal printing, a Node.js/Prisma sync backend, a Next.js 14 Super Admin Portal, a production merchant website with interactive web simulator, and an omnichannel Instagram &amp; WhatsApp acquisition pipeline.
         </p>
 
-        <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginBottom: "2rem" }}>
+        {/* Action Buttons: Web, Demo, Play Store, Instagram, WhatsApp */}
+        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", marginBottom: "2.5rem" }}>
+          <a
+            href="https://myshop.sathishdev.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.omniBtn} ${styles.btnWebsite}`}
+            style={{ fontSize: "16px", padding: "0.75rem 1.4rem", borderRadius: "9999px" }}
+          >
+            <span>🌐</span> Official Website &rarr;
+          </a>
+          <a
+            href="https://myshop.sathishdev.in/demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.omniBtn} ${styles.omniBtnPrimary}`}
+            style={{ fontSize: "16px", padding: "0.75rem 1.4rem", borderRadius: "9999px" }}
+          >
+            <span>⚡</span> Try Web POS Simulator &rarr;
+          </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.primaryBtn}
-            style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
+            className={`${styles.omniBtn} ${styles.omniBtnSecondary}`}
+            style={{ fontSize: "16px", padding: "0.75rem 1.4rem", borderRadius: "9999px" }}
           >
-            <span>📱</span> Get on Google Play &rarr;
+            <span>📱</span> Google Play &rarr;
+          </a>
+          <a
+            href="https://www.instagram.com/myshop.billing/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.omniBtn} ${styles.btnInstagram}`}
+            style={{ fontSize: "16px", padding: "0.75rem 1.4rem", borderRadius: "9999px" }}
+          >
+            <span>📸</span> Instagram @myshop.billing &rarr;
+          </a>
+          <a
+            href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20see%20a%20demo%20of%20MyShop%20Grocery%20POS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.omniBtn} ${styles.btnWhatsApp}`}
+            style={{ fontSize: "16px", padding: "0.75rem 1.4rem", borderRadius: "9999px" }}
+          >
+            <span>💬</span> WhatsApp Live Demo &rarr;
           </a>
         </div>
 
@@ -240,6 +311,232 @@ export default function MyShopCaseStudy() {
           </div>
         </section>
 
+        {/* ==================================================================
+            OMNICHANNEL GROWTH & DIGITAL ECOSYSTEM:
+            Website, Instagram, WhatsApp & Facebook
+            ================================================================== */}
+        <section className={styles.section}>
+          <div className={styles.badge} style={{ background: "rgba(14, 165, 233, 0.2)", borderColor: "#38bdf8", color: "#38bdf8" }}>
+            MERCHANT ACQUISITION &amp; DIGITAL PRESENCE
+          </div>
+          <h2 className={styles.sectionTitle} style={{ color: "#38bdf8" }}>
+            Omnichannel Ecosystem: Website, Instagram, WhatsApp &amp; Meta Feeds
+          </h2>
+          <div className={styles.contentBlock}>
+            <p>
+              Engineering enterprise offline-first software is only half the battle. Independent grocers and kirana store owners across India often stick with manual pen-and-paper ledgers because traditional desktop POS setups demand heavy capital expenditure (₹30,000+), cumbersome PC hardware, and complicated software licenses.
+            </p>
+            <p>
+              To drive real-world merchant adoption and build brand authority, I engineered an integrated digital presence and acquisition funnel covering a dedicated <strong>Next.js 14 merchant website</strong>, an active <strong>Instagram Reels &amp; carousel educational series</strong>, a native <strong>WhatsApp automated customer Khata &amp; outreach engine</strong>, and <strong>Facebook Reels/Meta merchant campaigns</strong>:
+            </p>
+          </div>
+
+          {/* Interactive Browser Frame: Official Website Showcase */}
+          <div className={styles.browserFrame}>
+            <div className={styles.browserBar}>
+              <div className={styles.browserControls}>
+                <span className={`${styles.dot} ${styles.dotClose}`}></span>
+                <span className={`${styles.dot} ${styles.dotMin}`}></span>
+                <span className={`${styles.dot} ${styles.dotMax}`}></span>
+              </div>
+              <div className={styles.browserAddress}>
+                <span>🔒</span>
+                <span>myshop.sathishdev.in</span>
+              </div>
+              <div className={styles.browserStatus}>
+                <span className={styles.statusPulse}></span>
+                <span>PRODUCTION WEB SERVICE</span>
+              </div>
+            </div>
+            <div className={styles.browserViewport}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/projects/myshop/myshop_website_dashboard.png"
+                alt="MyShop Official Website & Merchant Portal — myshop.sathishdev.in"
+              />
+            </div>
+          </div>
+
+          {/* 4 Omnichannel Pillar Cards */}
+          <div className={styles.omniGrid}>
+            {/* Card 1: Official Website & Web Simulator */}
+            <div className={`${styles.omniCard} ${styles.cardWebsite}`}>
+              <div>
+                <div className={styles.omniHeader}>
+                  <span className={`${styles.omniBadge} ${styles.badgeWebsite}`}>🌐 Official Web Portal</span>
+                  <span style={{ fontSize: "13px", color: "#38bdf8", fontFamily: "monospace" }}>myshop.sathishdev.in</span>
+                </div>
+                <h3 className={styles.omniTitle}>Next.js 14 Website &amp; Interactive Web POS Simulator</h3>
+                <p className={styles.omniDesc}>
+                  Engineered with Next.js 14 App Router, TypeScript, and Tailwind CSS. Acts as the primary digital anchor, merchant education hub, and Play Store conversion machine.
+                </p>
+                <ul className={styles.omniBulletList}>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>⚡</span>
+                    <span><strong>In-Browser POS Simulator (<code>/demo</code>):</strong> Full sandbox enabling store owners to test sub-second camera barcode scanning, touch billing, and live 80mm thermal receipt generation with zero install.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🖨️</span>
+                    <span><strong>Hardware Compatibility Guide (<code>/hardware</code>):</strong> Step-by-step buyer guide for certified 58mm/80mm ESC/POS Bluetooth printers (TVS, NGX, Everycom).</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>📊</span>
+                    <span><strong>Year-1 Savings Calculator:</strong> Interactive widget proving how smartphone POS saves ₹34,000+ vs legacy desktop systems.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🔒</span>
+                    <span><strong>Play Store Compliance:</strong> Complete policy documentation (<code>/privacy</code>, <code>/terms</code>, <code>/account-deletion</code>).</span>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.omniActions}>
+                <a
+                  href="https://myshop.sathishdev.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.omniBtn} ${styles.btnWebsite}`}
+                >
+                  Visit Website &rarr;
+                </a>
+                <a
+                  href="https://myshop.sathishdev.in/demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.omniBtn} ${styles.omniBtnSecondary}`}
+                >
+                  Try POS Simulator
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2: Instagram Growth Strategy */}
+            <div className={`${styles.omniCard} ${styles.cardInstagram}`}>
+              <div>
+                <div className={styles.omniHeader}>
+                  <span className={`${styles.omniBadge} ${styles.badgeInstagram}`}>📸 Instagram Strategy</span>
+                  <span style={{ fontSize: "13px", color: "#f472b6", fontFamily: "monospace" }}>@myshop.billing</span>
+                </div>
+                <h3 className={styles.omniTitle}>&ldquo;Smart Kadai&rdquo; Reels &amp; Viral Carousel Growth</h3>
+                <p className={styles.omniDesc}>
+                  Direct-to-merchant social acquisition system designed to reach independent grocers, provision, maligai, and kirana stores across South India and Bengaluru.
+                </p>
+                <ul className={styles.omniBulletList}>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🎬</span>
+                    <span><strong>15 Tamil Reels (&ldquo;Smart Kadai Series&rdquo;):</strong> Tailored vertical video scripts addressing pain points: peak-hour counter rush, misplaced credit notebooks, and late-night manual accounting.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>📈</span>
+                    <span><strong>3-Second Hold Rate Hooks:</strong> High-energy visual problem-first hooks designed to maximize Instagram algorithm distribution and store owner shares.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>📱</span>
+                    <span><strong>High-Contrast 7-Slide Carousels:</strong> Step-by-step swipeable decks demonstrating how a merchant&apos;s existing Android phone replaces heavy hardware.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🎯</span>
+                    <span><strong>Direct Bio Conversion:</strong> Zero-friction bio funnel directing viewers directly to Google Play Store.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.omniActions}>
+                <a
+                  href="https://www.instagram.com/myshop.billing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.omniBtn} ${styles.btnInstagram}`}
+                >
+                  Follow @myshop.billing &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3: WhatsApp Customer Khata & Dispatcher */}
+            <div className={`${styles.omniCard} ${styles.cardWhatsApp}`}>
+              <div>
+                <div className={styles.omniHeader}>
+                  <span className={`${styles.omniBadge} ${styles.badgeWhatsApp}`}>💬 WhatsApp Automation</span>
+                  <span style={{ fontSize: "13px", color: "#34d399", fontFamily: "monospace" }}>1-Click Messaging</span>
+                </div>
+                <h3 className={styles.omniTitle}>1-Click Customer Khata &amp; Merchant Outreach Dispatcher</h3>
+                <p className={styles.omniDesc}>
+                  Deep WhatsApp integration bridging daily customer credit recovery with an automated merchant onboarding pipeline.
+                </p>
+                <ul className={styles.omniBulletList}>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🧾</span>
+                    <span><strong>In-App Customer Khata Sharing:</strong> Cashiers can send formatted Tamil/English balance reminders and thermal PDF receipts directly to customer WhatsApp with a single tap.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🤖</span>
+                    <span><strong>Automated WhatsApp Dispatcher (Python):</strong> Built <code>auto_whatsapp_sender.py</code> and web dispatcher for high-throughput personalized outreach to retail grocers.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>💳</span>
+                    <span><strong>UPI Payment Integration:</strong> Automated WhatsApp invoices embed UPI QR links for instant customer credit settlement.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>📞</span>
+                    <span><strong>Instant Merchant Support:</strong> Direct live chat and remote onboarding support line for shopkeepers (+91 78680 31207).</span>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.omniActions}>
+                <a
+                  href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20see%20a%20demo%20of%20MyShop%20Grocery%20POS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.omniBtn} ${styles.btnWhatsApp}`}
+                >
+                  WhatsApp Live Demo &rarr;
+                </a>
+              </div>
+            </div>
+
+            {/* Card 4: Facebook & Meta Omnichannel Strategy */}
+            <div className={`${styles.omniCard} ${styles.cardFacebook}`}>
+              <div>
+                <div className={styles.omniHeader}>
+                  <span className={`${styles.omniBadge} ${styles.badgeFacebook}`}>👥 Facebook &amp; Meta Feeds</span>
+                  <span style={{ fontSize: "13px", color: "#60a5fa", fontFamily: "monospace" }}>Retail Ads &amp; Groups</span>
+                </div>
+                <h3 className={styles.omniTitle}>Meta Omnichannel Merchant Acquisition Campaigns</h3>
+                <p className={styles.omniDesc}>
+                  Cross-platform ad creatives and community engagement campaigns targeting traditional merchants across regional business communities.
+                </p>
+                <ul className={styles.omniBulletList}>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>📣</span>
+                    <span><strong>Facebook Feeds &amp; Reels:</strong> Video reels cross-posted across Facebook and YouTube Shorts targeting retail merchants aged 28–55 in Tamil Nadu and Karnataka.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🏷️</span>
+                    <span><strong>High-Converting Value Proposition:</strong> Creative positioning: &ldquo;₹0 Zero-Hardware Grocery POS — Turn Your Android Phone into a Billing Counter&rdquo;.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🤝</span>
+                    <span><strong>Retail Merchant Community Outreach:</strong> Structured outreach across local grocer WhatsApp and Facebook groups, sharing practical inventory tips and accounting guides.</span>
+                  </li>
+                  <li className={styles.omniBulletItem}>
+                    <span className={styles.omniBulletIcon}>🎨</span>
+                    <span><strong>Consistent Brand Identity:</strong> Unified emerald design palette (<code>#006c49</code>) across website, Google Play, social decks, and in-app interfaces.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.omniActions}>
+                <a
+                  href="https://myshop.sathishdev.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.omniBtn} ${styles.omniBtnSecondary}`}
+                >
+                  Explore Brand Hub &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 4. Visual Showcase Gallery */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Application Interface Showcase</h2>
@@ -301,7 +598,14 @@ export default function MyShopCaseStudy() {
               "Express 5",
               "Prisma ORM",
               "PostgreSQL",
-              "Next.js 14",
+              "Next.js 14 Production Website",
+              "In-Browser Web POS Simulator",
+              "ESC/POS Hardware Matrix Guide",
+              "1-Tap WhatsApp Khata Reminders",
+              "Automated Python WhatsApp Dispatcher",
+              "Instagram Reels Strategy (@myshop.billing)",
+              "Viral Carousel Content Architecture",
+              "Meta Multi-Channel Campaigns",
               "Tailwind CSS",
               "Recharts",
               "Double-Entry Bookkeeping",
@@ -340,25 +644,63 @@ export default function MyShopCaseStudy() {
         <section className={styles.section}>
           <div className={styles.card} style={{ textAlign: "center", padding: "3rem 2rem", borderColor: "rgba(16, 185, 129, 0.4)" }}>
             <h3 style={{ fontFamily: "League Gothic", fontSize: "42px", color: "#fff", letterSpacing: "1px", marginBottom: "0.75rem" }}>
-              NEED AN ENTERPRISE POS OR FULL-STACK SYSTEM?
+              NEED AN ENTERPRISE POS OR COMPLETE PRODUCT ECOSYSTEM?
             </h3>
-            <p className={styles.contentBlock} style={{ maxWidth: "650px", margin: "0 auto 1.5rem auto" }}>
-              Whether you require high-speed offline-first mobile applications, custom hardware integrations (printers/scanners), or high-concurrency Node.js backend architectures, I deliver production-ready software.
+            <p className={styles.contentBlock} style={{ maxWidth: "680px", margin: "0 auto 1.5rem auto" }}>
+              From offline-first Flutter mobile apps and hardware peripheral integration (Bluetooth printers/barcode scanners) to production Next.js marketing websites, WhatsApp automation pipelines, and social growth architectures — I build end-to-end commercial solutions.
             </p>
             <div className={styles.ctaGrid} style={{ justifyContent: "center" }}>
+              <a
+                href="https://myshop.sathishdev.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.omniBtn} ${styles.btnWebsite}`}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
+              >
+                🌐 Visit Website &rarr;
+              </a>
+              <a
+                href="https://myshop.sathishdev.in/demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.omniBtn} ${styles.omniBtnPrimary}`}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
+              >
+                ⚡ Try Web Simulator
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.primaryBtn}
+                className={`${styles.omniBtn} ${styles.omniBtnSecondary}`}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
               >
-                Install from Google Play &rarr;
+                📱 Google Play
               </a>
-              <Link href="/contact" className={styles.secondaryBtn}>
+              <a
+                href="https://www.instagram.com/myshop.billing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.omniBtn} ${styles.btnInstagram}`}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
+              >
+                📸 Instagram @myshop.billing
+              </a>
+              <a
+                href="https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20see%20a%20demo%20of%20MyShop%20Grocery%20POS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.omniBtn} ${styles.btnWhatsApp}`}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
+              >
+                💬 WhatsApp Demo
+              </a>
+              <Link
+                href="/contact"
+                className={styles.secondaryBtn}
+                style={{ fontSize: "16px", padding: "0.8rem 1.6rem", borderRadius: "9999px" }}
+              >
                 Hire Sathish G &rarr;
-              </Link>
-              <Link href="/work" className={styles.secondaryBtn}>
-                Explore Other Projects
               </Link>
             </div>
           </div>

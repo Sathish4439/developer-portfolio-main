@@ -326,3 +326,312 @@
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
+
+/* Browser Viewport Frame System */
+.browserFrame {
+  position: relative;
+  background: #0d1210;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 0 1px rgba(16, 185, 129, 0.1),
+    0 25px 60px -15px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+  margin: 2rem 0;
+}
+
+.browserFrame:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 
+    0 0 0 1px rgba(16, 185, 129, 0.3),
+    0 30px 80px -15px rgba(0, 108, 73, 0.4);
+}
+
+.browserBar {
+  height: 42px;
+  background: #070a08;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  user-select: none;
+}
+
+.browserControls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 70px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotClose { background: #FF5F56; opacity: 0.8; }
+.dotMin { background: #FFBD2E; opacity: 0.8; }
+.dotMax { background: #27C93F; opacity: 0.8; }
+
+.browserAddress {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #34d399;
+  letter-spacing: 0.02em;
+}
+
+.browserStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #34d399;
+  letter-spacing: 0.05em;
+}
+
+.statusPulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+}
+
+.browserViewport {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.browserViewport img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Omnichannel Growth Cards System */
+.omniGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .omniGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.omniCard {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.omniCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.cardWebsite:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  background: rgba(14, 165, 233, 0.04);
+}
+
+.cardInstagram:hover {
+  border-color: rgba(244, 114, 182, 0.6);
+  background: rgba(236, 72, 153, 0.04);
+}
+
+.cardWhatsApp:hover {
+  border-color: rgba(52, 211, 153, 0.6);
+  background: rgba(16, 185, 129, 0.04);
+}
+
+.cardFacebook:hover {
+  border-color: rgba(96, 165, 250, 0.6);
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.omniHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.omniBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badgeWebsite {
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+}
+
+.badgeInstagram {
+  background: rgba(236, 72, 153, 0.15);
+  border: 1px solid rgba(244, 114, 182, 0.4);
+  color: #f472b6;
+}
+
+.badgeWhatsApp {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  color: #34d399;
+}
+
+.badgeFacebook {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  color: #60a5fa;
+}
+
+.omniTitle {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.omniDesc {
+  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.omniBulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.omniBulletItem {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.45;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.omniBulletIcon {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.omniActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.omniBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.omniBtnPrimary {
+  background: #006c49;
+  border: 1px solid #10b981;
+  color: #fff;
+}
+
+.omniBtnPrimary:hover {
+  background: #00875a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.omniBtnSecondary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.omniBtnSecondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btnWebsite {
+  background: #0284c7;
+  border-color: #38bdf8;
+  color: #fff;
+}
+.btnWebsite:hover {
+  background: #0369a1;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.btnInstagram {
+  background: #be185d;
+  border-color: #f472b6;
+  color: #fff;
+}
+.btnInstagram:hover {
+  background: #9d174d;
+  box-shadow: 0 4px 15px rgba(244, 114, 182, 0.3);
+}
+
+.btnWhatsApp {
+  background: #047857;
+  border-color: #34d399;
+  color: #fff;
+}
+.btnWhatsApp:hover {
+  background: #065f46;
+  box-shadow: 0 4px 15px rgba(52, 211, 153, 0.3);
+}

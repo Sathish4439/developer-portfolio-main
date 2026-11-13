@@ -8,6 +8,8 @@ import AnimeReveal from "../../components/AnimeReveal";
 const socialLinks = [
   { name: "GitHub", handle: "@Sathish4439", url: "https://github.com/Sathish4439" },
   { name: "LinkedIn", handle: "Sathish Gobi", url: "https://www.linkedin.com/in/sathishgobi/" },
+  { name: "MyShop Website", handle: "myshop.sathishdev.in", url: "https://myshop.sathishdev.in" },
+  { name: "MyShop Instagram", handle: "@myshop.billing", url: "https://www.instagram.com/myshop.billing/" },
   { name: "Google Play Store", handle: "Sathish G", url: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN" },
   { name: "Hashnode", handle: "@sathish4439", url: "https://hashnode.com/@sathish4439" },
   { name: "LeetCode", handle: "aravindsathish0885", url: "https://leetcode.com/u/aravindsathish0885/" },

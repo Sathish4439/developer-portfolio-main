@@ -45,14 +45,27 @@ const projects = [
   },
   {
     id: "myshop-pos",
-    title: "MyShop — Grocery Business Manager POS",
+    title: "MyShop — Grocery Business Manager POS & ERP",
     category: "Full Stack",
     year: "2026",
-    tags: ["Flutter", "Drift SQLite", "Node.js", "TypeScript", "Express 5", "Prisma", "PostgreSQL", "Next.js 14", "ESC/POS Thermal", "Barcode Scanner"],
-    description: "An offline-first enterprise grocery Point of Sale (POS) and inventory management ERP with sub-second barcode checkout, ESC/POS Bluetooth thermal printing, double-entry stock/cash ledgers, Drift SQLite offline sync, and Next.js 14 Super Admin Portal.",
+    tags: [
+      "Flutter",
+      "Drift SQLite",
+      "Node.js",
+      "TypeScript",
+      "Next.js 14",
+      "Official Website",
+      "ESC/POS Thermal",
+      "WhatsApp Khata",
+      "Instagram Growth",
+      "Barcode Scanner"
+    ],
+    description: "An offline-first enterprise grocery Point of Sale (POS) and inventory management ecosystem. Features sub-second barcode billing, Bluetooth thermal receipts, double-entry ledgers, Next.js 14 marketing portal (myshop.sathishdev.in), in-browser POS simulator, Instagram reels strategy (@myshop.billing), and 1-click WhatsApp customer Khata statements.",
     accent: "#006c49",
     liveUrl: "https://play.google.com/store/apps/details?id=com.sathishdev.myshop&pcampaignid=web_share",
-    metrics: "Live on Google Play",
+    websiteUrl: "https://myshop.sathishdev.in",
+    instagramUrl: "https://www.instagram.com/myshop.billing/",
+    metrics: "Production Ecosystem",
     caseStudyUrl: "/work/myshop-pos",
   },
   {
@@ -303,6 +316,21 @@ export default function Work() {
                     </Link>
                   )}
 
+                  {proj.websiteUrl && (
+                    <a
+                      href={proj.websiteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.playStoreLink}
+                      style={{
+                        borderColor: `${proj.accent}40`,
+                        color: proj.accent,
+                      }}
+                    >
+                      Website 🌐
+                    </a>
+                  )}
+
                   {proj.liveUrl && (
                     <a
                       href={proj.liveUrl}
@@ -315,6 +343,21 @@ export default function Work() {
                       }}
                     >
                       Play Store &rarr;
+                    </a>
+                  )}
+
+                  {proj.instagramUrl && (
+                    <a
+                      href={proj.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.playStoreLink}
+                      style={{
+                        borderColor: `${proj.accent}40`,
+                        color: proj.accent,
+                      }}
+                    >
+                      Instagram 📸
                     </a>
                   )}
                 </div>

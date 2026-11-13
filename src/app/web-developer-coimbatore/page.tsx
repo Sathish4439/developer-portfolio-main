@@ -299,10 +299,19 @@ export default function WebDeveloperCoimbatore() {
               <p className={styles.cardDesc}>
                 Enterprise retail web control panel built with Next.js 14, featuring real-time stock registers, multi-counter billing reconciliation, and GST reports.
               </p>
-              <div style={{ marginTop: "0.75rem" }}>
+              <div style={{ marginTop: "0.75rem", display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
                 <Link href="/work/myshop-pos" style={{ color: "#a3e635", fontSize: "0.9rem", fontWeight: "600" }}>
                   Read Case Study &rarr;
                 </Link>
+                <a
+                  href="https://myshop.sathishdev.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#38bdf8", fontSize: "0.9rem", fontWeight: "600" }}
+                  title="MyShop Official Website"
+                >
+                  Live Website 🌐
+                </a>
               </div>
             </div>
             <div className={styles.card}>

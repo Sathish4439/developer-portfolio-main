@@ -267,10 +267,19 @@ export default function FlutterAppDevelopmentCoimbatore() {
               <p className={styles.cardDesc}>
                 Cross-platform retail billing cashier tool with local SQLite database, barcode scanning, thermal ESC/POS printing, and real-time cloud analytics.
               </p>
-              <div style={{ marginTop: "0.75rem" }}>
+              <div style={{ marginTop: "0.75rem", display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
                 <Link href="/work/myshop-pos" style={{ color: "#a3e635", fontSize: "0.9rem", fontWeight: "600" }}>
                   Case Study &rarr;
                 </Link>
+                <a
+                  href="https://myshop.sathishdev.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#38bdf8", fontSize: "0.9rem", fontWeight: "600" }}
+                  title="MyShop Official Website"
+                >
+                  Live Website 🌐
+                </a>
               </div>
             </div>
             <div className={styles.card}>

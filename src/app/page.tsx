@@ -57,6 +57,8 @@ const featuredProjects = [
     tagline: "Offline Drift SQLite • Next.js Website • WhatsApp Khata • Instagram Growth",
     desc: "An enterprise-grade offline-first retail POS & ERP ecosystem for supermarkets. Features 0ms offline SQLite billing, ESC/POS Bluetooth printing, production merchant website (myshop.sathishdev.in), in-browser simulator, and WhatsApp/Instagram merchant acquisition.",
     href: "/work/myshop-pos",
+    liveUrl: "https://myshop.sathishdev.in",
+    liveLabel: "Official POS Site 🌐",
     badge: "Enterprise Flutter & Ecosystem",
     tags: ["Flutter", "Drift SQLite", "Next.js 14", "WhatsApp API", "Instagram Growth"],
   },
@@ -248,10 +250,14 @@ export default function Home() {
         <AnimeReveal stagger={100} direction="fade" delay={150}>
           <div className={styles.featuredGrid}>
             {featuredProjects.map((p) => (
-              <Link key={p.title} href={p.href} className={styles.featuredCard}>
+              <div key={p.title} className={styles.featuredCard}>
                 <div>
                   <span className={styles.featuredBadge}>{p.badge}</span>
-                  <h3 className={styles.featuredTitle}>{p.title}</h3>
+                  <h3 className={styles.featuredTitle}>
+                    <Link href={p.href} style={{ textDecoration: "none", color: "inherit" }}>
+                      {p.title}
+                    </Link>
+                  </h3>
                   <div className={styles.featuredTagline}>{p.tagline}</div>
                   <p className={styles.featuredDesc}>{p.desc}</p>
                   <div className={styles.featuredTags}>
@@ -260,11 +266,26 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <div className={styles.featuredCta}>
-                  <span>Read Technical Case Study</span>
-                  <span>&rarr;</span>
+                <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap", alignItems: "center", marginTop: "auto", paddingTop: "1rem" }}>
+                  <Link href={p.href} className={styles.featuredCta} style={{ textDecoration: "none" }}>
+                    <span>Case Study</span>
+                    <span>&rarr;</span>
+                  </Link>
+                  {"liveUrl" in p && p.liveUrl && (
+                    <a
+                      href={p.liveUrl as string}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.featuredCta}
+                      style={{ color: "#38bdf8", textDecoration: "none" }}
+                      title={`${p.title} Official Site`}
+                    >
+                      <span>{(p as { liveLabel?: string }).liveLabel || "Live Site 🌐"}</span>
+                      <span>&rarr;</span>
+                    </a>
+                  )}
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </AnimeReveal>

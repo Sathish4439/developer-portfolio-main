@@ -439,6 +439,15 @@ export default function AppDeveloperKarur() {
                 >
                   📱 Google Play &rarr;
                 </a>
+                <a
+                  href="https://myshop.sathishdev.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#38bdf8", fontSize: "0.85rem", fontWeight: "600" }}
+                  title="MyShop Official Website"
+                >
+                  🌐 Official Website &rarr;
+                </a>
               </div>
             </div>
             <div className={styles.card}>

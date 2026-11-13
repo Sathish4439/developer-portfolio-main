@@ -26,7 +26,7 @@ const footerNav = {
     { label: "VoiceVertick AI Telephony", href: "/work/voice-vertick" },
     { label: "FlatSMS Android Gateway", href: "/work/flatsms-sms-gateway" },
     { label: "MyShop POS & ERP", href: "/work/myshop-pos" },
-    { label: "MyShop Website (Live)", href: "https://myshop.sathishdev.in" },
+    { label: "MyShop — Grocery Billing POS (Live Site)", href: "https://myshop.sathishdev.in" },
     { label: "MyShop Instagram (@myshop.billing)", href: "https://www.instagram.com/myshop.billing/" },
     { label: "All Case Studies & Work", href: "/work" },
   ],

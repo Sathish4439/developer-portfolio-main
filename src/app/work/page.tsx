@@ -326,8 +326,9 @@ export default function Work() {
                         borderColor: `${proj.accent}40`,
                         color: proj.accent,
                       }}
+                      title={`${proj.title} Official Website`}
                     >
-                      Website 🌐
+                      Official Website 🌐
                     </a>
                   )}
 

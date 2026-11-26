@@ -37,7 +37,7 @@ module.exports = {
       },
       {
         source: '/services/backend-development',
-        destination: '/services/nodejs-development',
+        destination: '/nodejs-developer',
         permanent: true,
       },
       {
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         source: '/services/api-development',
-        destination: '/services/nodejs-development',
+        destination: '/nodejs-developer',
         permanent: true,
       },
       {
@@ -103,17 +103,48 @@ module.exports = {
       },
       {
         source: '/flutter-app-development-cost-in-coimbatore',
-        destination: '/flutter-developer-coimbatore',
+        destination: '/flutter-app-development-coimbatore',
         permanent: true,
       },
       {
         source: '/app-development-cost-in-coimbatore',
-        destination: '/flutter-developer-coimbatore',
+        destination: '/flutter-app-development-coimbatore',
         permanent: true,
       },
       {
         source: '/mobile-app-development-cost-in-karur',
         destination: '/app-developer-karur',
+        permanent: true,
+      },
+      // SEO Consolidation 301 Redirects (Eliminate Keyword Cannibalization)
+      {
+        source: '/hire-flutter-developer',
+        destination: '/freelance-flutter-developer',
+        permanent: true,
+      },
+      {
+        source: '/flutter-developer-india',
+        destination: '/freelance-flutter-developer',
+        permanent: true,
+      },
+      {
+        source: '/hire-flutter-developer-coimbatore',
+        destination: '/flutter-app-development-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/flutter-developer-coimbatore',
+        destination: '/flutter-app-development-coimbatore',
+        permanent: true,
+      },
+      {
+        source: '/services/nodejs-development',
+        destination: '/nodejs-developer',
+        permanent: true,
+      },
+      {
+        source: '/services/full-stack-development',
+        destination: '/full-stack-developer',
         permanent: true,
       },
     ];

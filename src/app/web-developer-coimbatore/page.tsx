@@ -5,20 +5,14 @@ import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Web Developer in Coimbatore | Sathish G — React, Next.js & Full-Stack Web Apps",
+  title: "Web Developer in Coimbatore — Next.js & React Apps | Sathish G",
   description:
-    "Hire Sathish G, premier web developer in Coimbatore. High-performance Next.js 14 websites, React SaaS web applications, custom ERP admin dashboards, and Node.js APIs.",
+    "Web developer in Coimbatore building Next.js web applications, client portals, and Node.js APIs for startups and businesses. See portfolio.",
   alternates: {
     canonical: "https://www.sathishdev.in/web-developer-coimbatore",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Coimbatore",
-    "geo.position": "11.0168;76.9558",
-    "ICBM": "11.0168, 76.9558",
-  },
   openGraph: {
-    title: "Web Developer in Coimbatore | Sathish G — React, Next.js & Full-Stack",
+    title: "Web Developer in Coimbatore — Next.js & React Apps | Sathish G",
     description:
       "Modern web development in Coimbatore by Sathish G. Custom Next.js web apps, admin portals, e-commerce platforms, and scalable cloud backends.",
     url: "https://www.sathishdev.in/web-developer-coimbatore",
@@ -34,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Developer in Coimbatore | Sathish G — Next.js & Full-Stack",
+    title: "Web Developer in Coimbatore — Next.js & React Apps | Sathish G",
     description:
       "High-performance React & Next.js web development for Coimbatore businesses and global founders.",
     images: ["https://www.sathishdev.in/sathish.png"],

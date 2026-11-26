@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- =================================================== -->
-  <!-- 1. CORE WEBSITE PAGES                               -->
-  <!-- =================================================== -->
+  
+  
+  
   <url>
     <loc>https://www.sathishdev.in</loc>
     <lastmod>2026-10-23</lastmod>
@@ -42,9 +41,9 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- =================================================== -->
-  <!-- 2. HIGH-INTENT HIRING & LOCATION LANDING PAGES     -->
-  <!-- =================================================== -->
+  
+  
+  
   <url>
     <loc>https://www.sathishdev.in/web-developer-coimbatore</loc>
     <lastmod>2026-10-23</lastmod>
@@ -58,22 +57,10 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.sathishdev.in/hire-flutter-developer-coimbatore</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://www.sathishdev.in/app-developer-karur</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/flutter-developer-coimbatore</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/flutter-app-development-coimbatore</loc>
@@ -100,18 +87,6 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.sathishdev.in/hire-flutter-developer</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/flutter-developer-india</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://www.sathishdev.in/freelance-flutter-developer</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -130,23 +105,11 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- =================================================== -->
-  <!-- 3. SERVICE SUB-PAGES                                -->
-  <!-- =================================================== -->
+  
+  
+  
   <url>
     <loc>https://www.sathishdev.in/services/flutter-development</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/services/full-stack-development</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/services/nodejs-development</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -164,9 +127,9 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- =================================================== -->
-  <!-- 4. SELECTED WORK & CASE STUDIES (WITH GOOGLE IMAGES)-->
-  <!-- =================================================== -->
+  
+  
+  
   <url>
     <loc>https://www.sathishdev.in/work/voice-vertick</loc>
     <lastmod>2026-10-23</lastmod>
@@ -276,9 +239,9 @@
     </image:image>
   </url>
 
-  <!-- =================================================== -->
-  <!-- 5. TECHNICAL ARTICLES & BLOGS                       -->
-  <!-- =================================================== -->
+  
+  
+  
   <url>
     <loc>https://www.sathishdev.in/blogs/textile-erp-software-karur</loc>
     <lastmod>2026-10-23</lastmod>
@@ -321,4 +284,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-</urlset>
+<url><loc>https://www.sathishdev.in/garment-erp-software-tirupur</loc><lastmod>2026-11-26</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url></urlset>

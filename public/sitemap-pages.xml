@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Conversion Pages -->
+  
   <url>
     <loc>https://www.sathishdev.in</loc>
     <lastmod>2026-10-23</lastmod>
@@ -38,7 +38,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- High-Intent Location & Hire Landing Pages -->
+  
   <url>
     <loc>https://www.sathishdev.in/web-developer-coimbatore</loc>
     <lastmod>2026-10-23</lastmod>
@@ -52,22 +52,10 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.sathishdev.in/hire-flutter-developer-coimbatore</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://www.sathishdev.in/app-developer-karur</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/flutter-developer-coimbatore</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.sathishdev.in/flutter-app-development-coimbatore</loc>
@@ -94,18 +82,6 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://www.sathishdev.in/hire-flutter-developer</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/flutter-developer-india</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://www.sathishdev.in/freelance-flutter-developer</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -124,21 +100,9 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Service Capability Sub-Pages -->
+  
   <url>
     <loc>https://www.sathishdev.in/services/flutter-development</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/services/full-stack-development</loc>
-    <lastmod>2026-10-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.sathishdev.in/services/nodejs-development</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -155,4 +119,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-</urlset>
+<url><loc>https://www.sathishdev.in/garment-erp-software-tirupur</loc><lastmod>2026-11-26</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url></urlset>

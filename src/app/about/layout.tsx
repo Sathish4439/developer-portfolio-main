@@ -1,10 +1,19 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Sathish G | Full-Stack Developer — Flutter, React, Node.js & ERP · 2+ Years",
-  description: "Learn about Sathish G — Full-stack developer with 2+ years experience building Flutter mobile apps, React/Next.js web platforms, Node.js APIs & custom ERP software. 15+ apps shipped. Available to hire worldwide.",
+  title: "About Sathish G — Full Stack & Flutter Engineer | Coimbatore",
+  description:
+    "Background, tech stack, and shipped projects of Sathish G, a full stack and mobile engineer specializing in Flutter, Node.js, PostgreSQL, and AWS.",
   alternates: {
     canonical: "https://www.sathishdev.in/about",
+  },
+  openGraph: {
+    title: "About Sathish G — Full Stack & Flutter Engineer | Coimbatore",
+    description:
+      "Background, tech stack, and shipped projects of Sathish G, a full stack and mobile engineer specializing in Flutter, Node.js, PostgreSQL, and AWS.",
+    url: "https://www.sathishdev.in/about",
+    siteName: "Sathish G",
+    type: "profile",
   },
 };
 

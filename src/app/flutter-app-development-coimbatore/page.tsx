@@ -6,20 +6,14 @@ import Testimonials from "../../components/Testimonials";
 import RelatedItems from "../../components/RelatedItems";
 
 export const metadata: Metadata = {
-  title: "Flutter App Development in Coimbatore | Sathish G — iOS & Android",
+  title: "Flutter Developer in Coimbatore — App Development | Sathish G",
   description:
-    "Leading Flutter app development services in Coimbatore by Sathish G. High-performance cross-platform iOS & Android mobile apps, custom UI, and Node.js APIs.",
+    "Flutter developer in Coimbatore for Android & iOS apps, REST APIs, and offline-first business apps. Review shipped projects and get in touch.",
   alternates: {
     canonical: "https://www.sathishdev.in/flutter-app-development-coimbatore",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Coimbatore",
-    "geo.position": "11.0168;76.9558",
-    "ICBM": "11.0168, 76.9558",
-  },
   openGraph: {
-    title: "Flutter App Development in Coimbatore | Sathish G",
+    title: "Flutter Developer in Coimbatore — App Development | Sathish G",
     description:
       "Cross-platform iOS and Android mobile app development in Coimbatore. Production-proven Flutter engineering by Sathish G.",
     url: "https://www.sathishdev.in/flutter-app-development-coimbatore",
@@ -29,13 +23,13 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/sathish.png",
         width: 800,
         height: 800,
-        alt: "Sathish G — Flutter App Development in Coimbatore",
+        alt: "Sathish G — Flutter Developer in Coimbatore",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flutter App Development in Coimbatore | Sathish G",
+    title: "Flutter Developer in Coimbatore — App Development | Sathish G",
     description:
       "High-performance cross-platform Flutter app engineering in Coimbatore for startups and businesses.",
     images: ["https://www.sathishdev.in/sathish.png"],
@@ -332,18 +326,68 @@ export default function FlutterAppDevelopmentCoimbatore() {
           </div>
         </section>
 
+        {/* Regional Industrial Coverage */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Serving Businesses Across Coimbatore, Karur &amp; Western Tamil Nadu</h2>
+          <div className={styles.contentBlock}>
+            <p>
+              Operating directly across Western Tamil Nadu, I provide on-site discovery, sprint planning, and local deployment support for manufacturing enterprises, export houses, and startups across neighboring industrial districts:
+            </p>
+          </div>
+
+          <div className={styles.gridTwo} style={{ marginTop: "1.5rem" }}>
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>📍 Karur &amp; Home Textiles</h3>
+              <p className={styles.cardDesc}>
+                Bespoke textile ERPs, yarn/fabric inventory scanners, export order dashboards, and offline billing systems for Karur manufacturers and bus-body builders.
+              </p>
+              <div style={{ marginTop: "0.75rem" }}>
+                <Link href="/app-developer-karur" style={{ color: "#a3e635", fontSize: "0.9rem", fontWeight: "600" }}>
+                  Explore Karur Services &rarr;
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>📍 Tirupur &amp; Knitwear Garments</h3>
+              <p className={styles.cardDesc}>
+                Garment production line tracking apps, dye-house job-card management, export shipping manifests, and barcode/QR inventory systems with on-premise availability.
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>📍 Erode &amp; Agricultural Commerce</h3>
+              <p className={styles.cardDesc}>
+                Turmeric wholesale auction registers, powerloom order portals, and multi-branch retail distribution apps designed for offline factory floor connectivity.
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>📍 Salem &amp; Pollachi Corridors</h3>
+              <p className={styles.cardDesc}>
+                Logistics dispatch tracking, steel distribution management, and Pollachi agro/coir processing supply-chain mobile applications.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <RelatedItems
-          title="Related Coimbatore Developer Profiles &amp; Case Studies"
+          title="Related Developer Profiles &amp; Case Studies"
           items={[
             {
-              title: "Freelance Flutter Developer in Coimbatore",
-              description: "Direct hire senior Flutter specialist for dedicated sprints, code reviews, and MVP delivery in Coimbatore.",
-              href: "/flutter-developer-coimbatore",
+              title: "Mobile App Developer in Karur",
+              description: "Custom Android & iOS apps, textile ERPs, and billing systems with local on-site visits in Karur.",
+              href: "/app-developer-karur",
             },
             {
-              title: "Hire Flutter Developer in Coimbatore",
-              description: "Explore flexible hiring models (milestone, monthly retainer) and transparent pricing for startups.",
-              href: "/hire-flutter-developer-coimbatore",
+              title: "Freelance Flutter Developer India",
+              description: "Direct hire senior Flutter specialist for dedicated sprints, code reviews, and MVP delivery.",
+              href: "/freelance-flutter-developer",
+            },
+            {
+              title: "Custom ERP & Billing Software",
+              description: "Tailor-made inventory management, retail POS billing, and automated business workflows.",
+              href: "/erp-software-developer-coimbatore",
             },
             {
               title: "MyShop Grocery POS & ERP Case Study",

@@ -4,16 +4,16 @@ import styles from "../hire-flutter-developer/page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 
 export const metadata: Metadata = {
-  title: "Freelance Flutter Developer India | Contract & MVP Specialist — Sathish G",
+  title: "Freelance Flutter Developer in India | Sathish G",
   description:
-    "Hire Sathish G, top freelance Flutter developer in India & Coimbatore. Fast 4-8 week MVP app delivery, full source code ownership, Node.js backends, and zero agency overhead. Available for project & contract roles.",
+    "Hire a freelance Flutter developer for Android & iOS apps with Node.js, Firebase, or PostgreSQL backends. Production case studies on Google Play.",
   alternates: {
     canonical: "https://www.sathishdev.in/freelance-flutter-developer",
   },
   openGraph: {
-    title: "Freelance Flutter Developer India | Sathish G",
+    title: "Freelance Flutter Developer in India | Sathish G",
     description:
-      "Independent contract Flutter developer available for startups, agencies, and custom mobile applications.",
+      "Hire a freelance Flutter developer for Android & iOS apps with Node.js, Firebase, or PostgreSQL backends. Production case studies on Google Play.",
     url: "https://www.sathishdev.in/freelance-flutter-developer",
   },
 };

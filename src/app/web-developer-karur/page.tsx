@@ -4,20 +4,14 @@ import styles from "../app-developer-karur/page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 
 export const metadata: Metadata = {
-  title: "Web Developer in Karur | Sathish G — Modern Websites & Web Portals",
+  title: "Web Developer in Karur — Next.js & Business Portals | Sathish G",
   description:
-    "Hire Sathish G, professional web developer in Karur. Custom Next.js business websites, textile export portals, retail billing web dashboards, and secure cloud apps.",
+    "Next.js websites, order portals, and billing dashboards for Karur manufacturers, exporters, and retailers. Direct work with the developer. View portfolio.",
   alternates: {
     canonical: "https://www.sathishdev.in/web-developer-karur",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Karur",
-    "geo.position": "10.9601;78.0766",
-    "ICBM": "10.9601, 78.0766",
-  },
   openGraph: {
-    title: "Web Developer in Karur | Sathish G — Websites & Web Portals",
+    title: "Web Developer in Karur — Next.js & Business Portals | Sathish G",
     description:
       "Modern web development and portal engineering for Karur businesses. Custom Next.js websites, textile export catalogs, and billing dashboards.",
     url: "https://www.sathishdev.in/web-developer-karur",
@@ -33,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Developer in Karur | Sathish G",
+    title: "Web Developer in Karur — Next.js & Business Portals | Sathish G",
     description:
       "Custom business websites, web portals, and billing dashboards for Karur enterprises.",
     images: ["https://www.sathishdev.in/sathish.png"],

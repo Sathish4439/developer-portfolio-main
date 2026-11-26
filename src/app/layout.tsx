@@ -8,58 +8,34 @@ import MobileStickyBar from "src/components/MobileStickyBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sathishdev.in"),
-  title: "Sathish G | Web, Flutter & Software Developer — 15+ Apps Shipped · Coimbatore, India",
+  title: "Sathish G — Flutter & Node.js Developer | Coimbatore, India",
   description:
-    "Hire Sathish G — expert Flutter mobile, React/Next.js web, Node.js backend & ERP software developer. 15+ production apps. Serving startups and businesses in Coimbatore, Karur, India & worldwide.",
-  keywords: [
-    "Sathish G",
-    "Web Developer Coimbatore",
-    "Flutter Developer Coimbatore",
-    "Software Developer Coimbatore",
-    "ERP Software Developer Coimbatore",
-    "Custom Software Development Coimbatore",
-    "Windows Desktop App Developer",
-    "Mobile App Developer Coimbatore",
-    "React Developer Coimbatore",
-    "Next.js Developer Coimbatore",
-    "Node.js Developer Coimbatore",
-    "Hire Flutter Developer Coimbatore",
-    "App Developer Karur",
-    "Web Developer Karur",
-    "Software Developer Karur",
-    "Flutter Developer Karur",
-    "Hire Full Stack Developer",
-    "Full Stack Engineer Tamil Nadu",
-    "AWS DevOps Coimbatore",
-    "Freelance Developer India",
-    "Freelance Flutter Developer",
-    "Freelance Web Developer Coimbatore",
-  ],
+    "Hire Sathish G — Flutter, Node.js and React full-stack developer in Coimbatore, India. Mobile apps, REST APIs, and scalable web solutions for startups.",
   authors: [{ name: "Sathish G" }],
   alternates: {
     canonical: "https://www.sathishdev.in/",
   },
   openGraph: {
-    title: "Sathish G | Web, Flutter & Software Developer — 15+ Apps Shipped · Coimbatore, India",
+    title: "Sathish G — Flutter & Node.js Developer | Coimbatore, India",
     description:
-      "Hire Sathish G — expert Flutter mobile, React/Next.js web, Node.js backend & ERP software developer. 15+ production apps. Serving startups and businesses in Coimbatore, Karur, India & worldwide.",
+      "Hire Sathish G — Flutter, Node.js and React full-stack developer in Coimbatore, India. Mobile apps, REST APIs, and scalable web solutions for startups.",
     url: "https://www.sathishdev.in",
-    siteName: "Sathish G Portfolio",
+    siteName: "Sathish G",
     type: "website",
     images: [
       {
         url: "https://www.sathishdev.in/og-banner.png",
         width: 1200,
         height: 630,
-        alt: "Sathish G - Web, Flutter & Software Developer in Coimbatore & Karur",
+        alt: "Sathish G — Flutter & Node.js Developer in Coimbatore, India",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sathish G | Web, Flutter & Software Developer — 15+ Apps Shipped · Coimbatore, India",
+    title: "Sathish G — Flutter & Node.js Developer | Coimbatore, India",
     description:
-      "Hire Sathish G — expert Flutter mobile, React/Next.js web, Node.js backend & ERP software developer. 15+ production apps. Serving startups and businesses in Coimbatore, Karur, India & worldwide.",
+      "Hire Sathish G — Flutter, Node.js and React full-stack developer in Coimbatore, India. Mobile apps, REST APIs, and scalable web solutions for startups.",
     images: ["https://www.sathishdev.in/og-banner.png"],
   },
   icons: {
@@ -125,6 +101,22 @@ export default function RootLayout({
                   {
                     "@type": "City",
                     "name": "Karur"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Tiruppur"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Erode"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Salem"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Pollachi"
                   }
                 ],
                 "knowsAbout": [
@@ -140,7 +132,10 @@ export default function RootLayout({
                 "sameAs": [
                   "https://github.com/Sathish4439",
                   "https://www.linkedin.com/in/sathishgobi/",
-                  "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN"
+                  "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN",
+                  "https://leetcode.com/u/aravindsathish0885/",
+                  "https://dev.to/5119__sathishg_d4ba94816",
+                  "https://hashnode.com/@sathish4439"
                 ]
               },
               {
@@ -171,6 +166,26 @@ export default function RootLayout({
                     "@type": "City",
                     "name": "Karur",
                     "sameAs": "https://en.wikipedia.org/wiki/Karur"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Tiruppur",
+                    "sameAs": "https://en.wikipedia.org/wiki/Tiruppur"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Erode",
+                    "sameAs": "https://en.wikipedia.org/wiki/Erode"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Salem",
+                    "sameAs": "https://en.wikipedia.org/wiki/Salem,_Tamil_Nadu"
+                  },
+                  {
+                    "@type": "City",
+                    "name": "Pollachi",
+                    "sameAs": "https://en.wikipedia.org/wiki/Pollachi"
                   },
                   {
                     "@type": "AdministrativeArea",

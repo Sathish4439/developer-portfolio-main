@@ -5,20 +5,14 @@ import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Custom Software Development in Coimbatore | Sathish G — Full Stack Engineer",
+  title: "Custom Software Developer in Coimbatore | Sathish G",
   description:
-    "Hire Sathish G for custom software development in Coimbatore. End-to-end mobile apps (Flutter), web platforms (React/Next.js), high-performance APIs (Node.js), and ERP systems.",
+    "Custom software developer in Coimbatore. End-to-end mobile apps, web portals, Node.js APIs, and business systems for startups and enterprises.",
   alternates: {
     canonical: "https://www.sathishdev.in/custom-software-development-coimbatore",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Coimbatore",
-    "geo.position": "11.0168;76.9558",
-    "ICBM": "11.0168, 76.9558",
-  },
   openGraph: {
-    title: "Custom Software Development in Coimbatore | Sathish G",
+    title: "Custom Software Developer in Coimbatore | Sathish G",
     description:
       "Full-stack custom software development in Coimbatore. Mobile apps, web platforms, cloud microservices, and ERP business software with direct engineer collaboration.",
     url: "https://www.sathishdev.in/custom-software-development-coimbatore",
@@ -28,13 +22,13 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/sathish.png",
         width: 800,
         height: 800,
-        alt: "Sathish G — Custom Software Development in Coimbatore",
+        alt: "Sathish G — Custom Software Developer in Coimbatore",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Software Development in Coimbatore | Sathish G",
+    title: "Custom Software Developer in Coimbatore | Sathish G",
     description:
       "Tailor-made software engineering for Coimbatore startups and businesses. Mobile, web, APIs, and ERP systems.",
     images: ["https://www.sathishdev.in/sathish.png"],

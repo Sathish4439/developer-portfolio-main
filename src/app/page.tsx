@@ -21,8 +21,8 @@ const skills = [
 
 const stats = [
   { value: "2+", label: "Years Experience" },
-  { value: "15+", label: "Projects Completed" },
-  { value: "10+", label: "Production Apps" },
+  { value: "15+", label: "Apps & Systems Built" },
+  { value: "100%", label: "Code Ownership" },
   { value: "100%", label: "On-Time Delivery" },
 ];
 
@@ -171,7 +171,7 @@ export default function Home() {
             {/* Left: Name + Description */}
             <aside className={styles.introLeft}>
               <h2 className={styles.introName}>
-                <span className={styles.accent}>G. </span>Sathish
+                Sathish <span className={styles.accent}>G</span>
               </h2>
               <p className={styles.introTagline}>
                 Full-Stack Mobile Engineer &amp; Product Architect collaborating with startups and growing businesses worldwide — Specializing in cross-platform Android &amp; iOS mobile apps, high-concurrency Node.js REST microservices, and modern React/Next.js platforms.
@@ -244,7 +244,7 @@ export default function Home() {
         <AnimeReveal direction="fade" duration={800}>
           <div className={styles.sectionTop}>
             <h2 className={styles.sectionTitle}>Featured Systems</h2>
-            <Link href="/work" className={styles.viewAllBtn}>All 15+ Case Studies &rarr;</Link>
+            <Link href="/work" className={styles.viewAllBtn}>Explore All Case Studies &rarr;</Link>
           </div>
         </AnimeReveal>
         <AnimeReveal stagger={100} direction="fade" delay={150}>

@@ -5,22 +5,16 @@ import AnimeReveal from "../../components/AnimeReveal";
 import Testimonials from "../../components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Mobile App & Software Development in Karur | Sathish G — Flutter Engineer",
+  title: "Mobile App Developer in Karur — Flutter & Node.js | Sathish G",
   description:
-    "Custom mobile app and software development in Karur by Sathish G. Native Flutter iOS & Android apps, textile ERPs, and retail billing systems. Local in-person consultations. Call +91 78680 31207.",
+    "Flutter and Node.js developer building Android & iOS apps, billing POS, and ERP software for Karur businesses. Direct developer contact. See case studies.",
   alternates: {
     canonical: "https://www.sathishdev.in/app-developer-karur",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Karur",
-    "geo.position": "10.9601;78.0766",
-    "ICBM": "10.9601, 78.0766",
-  },
   openGraph: {
-    title: "Mobile App & Software Development in Karur | Sathish G",
+    title: "Mobile App Developer in Karur — Flutter & Node.js | Sathish G",
     description:
-      "High-performance mobile apps, textile ERP systems, and retail POS software for Karur businesses. Direct engineer partnership and local on-site consultations.",
+      "High-performance mobile apps, textile ERP systems, and retail POS software for Karur businesses. Direct engineer partnership and local consultations.",
     url: "https://www.sathishdev.in/app-developer-karur",
     type: "website",
     images: [
@@ -28,13 +22,13 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/sathish.png",
         width: 800,
         height: 800,
-        alt: "Sathish G — Mobile App & Software Development in Karur",
+        alt: "Sathish G — Mobile App Developer in Karur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mobile App & Software Development in Karur | Sathish G",
+    title: "Mobile App Developer in Karur — Flutter & Node.js | Sathish G",
     description:
       "Custom business software, textile ERPs, and Flutter mobile apps engineered for Karur enterprises and startups.",
     images: ["https://www.sathishdev.in/sathish.png"],
@@ -86,6 +80,21 @@ export default function AppDeveloperKarur() {
                   "@type": "City",
                   "name": "Karur",
                   "sameAs": "https://en.wikipedia.org/wiki/Karur"
+                },
+                {
+                  "@type": "City",
+                  "name": "Coimbatore",
+                  "sameAs": "https://en.wikipedia.org/wiki/Coimbatore"
+                },
+                {
+                  "@type": "City",
+                  "name": "Tiruppur",
+                  "sameAs": "https://en.wikipedia.org/wiki/Tiruppur"
+                },
+                {
+                  "@type": "City",
+                  "name": "Erode",
+                  "sameAs": "https://en.wikipedia.org/wiki/Erode"
                 },
                 {
                   "@type": "AdministrativeArea",
@@ -167,6 +176,21 @@ export default function AppDeveloperKarur() {
         <p className={styles.subtitle}>
           Engineering high-performance custom business software, textile ERPs, retail POS billing systems, and cloud-backed applications for Karur manufacturers, exporters, and retailers. Delivered directly by Sathish G with zero agency markups.
         </p>
+
+        {/* AI Overview & Local Knowledge Graph Definition */}
+        <div style={{
+          background: "rgba(163, 230, 53, 0.05)",
+          border: "1px solid rgba(163, 230, 53, 0.25)",
+          borderRadius: "8px",
+          padding: "1rem 1.25rem",
+          marginBottom: "1.5rem",
+          color: "#e4e4e7",
+          lineHeight: "1.6",
+          fontSize: "0.95rem"
+        }}>
+          <strong style={{ color: "#a3e635" }}>Overview: </strong>
+          Sathish G is an independent Full-Stack and Flutter Mobile App Developer providing bespoke software development in Karur and Western Tamil Nadu. Specializing in custom textile manufacturing ERPs, offline-first retail POS billing, and high-concurrency Node.js cloud APIs for Karur home textile exporters, bus-body builders, and commercial enterprises.
+        </div>
 
         {/* Local Trust & On-Site Consultation Banner */}
         <div className={styles.trustBox}>

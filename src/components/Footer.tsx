@@ -3,24 +3,21 @@ import styles from "./Footer.module.css";
 
 const footerNav = {
   Services: [
-    { label: "Flutter Dev", href: "/services/flutter-development" },
-    { label: "React Web Dev", href: "/services/react-development" },
-    { label: "Node.js Backend", href: "/services/nodejs-development" },
-    { label: "Full Stack & Cloud", href: "/services/full-stack-development" },
-    { label: "ERP Software Dev", href: "/erp-software-developer-coimbatore" },
+    { label: "Flutter Mobile Apps", href: "/services/flutter-development" },
+    { label: "React & Next.js Web", href: "/services/react-development" },
+    { label: "Node.js & Microservices", href: "/nodejs-developer" },
+    { label: "Full Stack Engineering", href: "/full-stack-developer" },
+    { label: "Custom ERP & Billing", href: "/erp-software-developer-coimbatore" },
     { label: "Windows Desktop Apps", href: "/windows-desktop-app-developer" },
     { label: "Custom Software Dev", href: "/custom-software-development-coimbatore" },
   ],
   "Locations & Hiring": [
-    { label: "Flutter App Dev Coimbatore", href: "/flutter-app-development-coimbatore" },
-    { label: "Flutter Dev Coimbatore", href: "/flutter-developer-coimbatore" },
-    { label: "Hire Flutter Coimbatore", href: "/hire-flutter-developer-coimbatore" },
+    { label: "Freelance Flutter Developer", href: "/freelance-flutter-developer" },
+    { label: "Flutter Dev Coimbatore", href: "/flutter-app-development-coimbatore" },
+    { label: "Garment ERP Tirupur", href: "/garment-erp-software-tirupur" },
+    { label: "App Developer Karur", href: "/app-developer-karur" },
     { label: "Web Dev Coimbatore", href: "/web-developer-coimbatore" },
     { label: "Web Dev Karur", href: "/web-developer-karur" },
-    { label: "App Developer Karur", href: "/app-developer-karur" },
-    { label: "ERP Dev Coimbatore", href: "/erp-software-developer-coimbatore" },
-    { label: "Hire Flutter Dev", href: "/hire-flutter-developer" },
-    { label: "Full Stack Developer", href: "/full-stack-developer" },
   ],
   Work: [
     { label: "VoiceVertick AI Telephony", href: "/work/voice-vertick" },

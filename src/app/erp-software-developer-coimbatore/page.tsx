@@ -4,22 +4,16 @@ import styles from "../app-developer-karur/page.module.css";
 import AnimeReveal from "../../components/AnimeReveal";
 
 export const metadata: Metadata = {
-  title: "ERP & Business Software Developer in Coimbatore | Sathish G",
+  title: "Custom ERP & Billing Software Developer, Coimbatore | Sathish G",
   description:
-    "Hire Sathish G, premier ERP software developer in Coimbatore. Custom inventory management, automated payroll, textile ERP, automotive distribution systems, and retail POS software.",
+    "Custom ERP, billing, and inventory software for businesses in Coimbatore and Tamil Nadu. Offline-first mobile apps with web dashboards. See projects.",
   alternates: {
     canonical: "https://www.sathishdev.in/erp-software-developer-coimbatore",
   },
-  other: {
-    "geo.region": "IN-TN",
-    "geo.placename": "Coimbatore",
-    "geo.position": "11.0168;76.9558",
-    "ICBM": "11.0168, 76.9558",
-  },
   openGraph: {
-    title: "ERP Software Developer in Coimbatore | Sathish G",
+    title: "Custom ERP & Billing Software Developer, Coimbatore | Sathish G",
     description:
-      "Custom ERP systems, inventory software, and automated business management tools built for Coimbatore manufacturers, distributors, and retailers.",
+      "Custom ERP systems, billing POS, and inventory software built for Coimbatore manufacturers, distributors, and retailers.",
     url: "https://www.sathishdev.in/erp-software-developer-coimbatore",
     type: "website",
     images: [
@@ -27,13 +21,13 @@ export const metadata: Metadata = {
         url: "https://www.sathishdev.in/sathish.png",
         width: 800,
         height: 800,
-        alt: "Sathish G — ERP Software Developer in Coimbatore",
+        alt: "Sathish G — Custom ERP Software Developer in Coimbatore",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ERP Software Developer in Coimbatore | Sathish G",
+    title: "Custom ERP & Billing Software Developer, Coimbatore | Sathish G",
     description:
       "Custom ERP software, inventory systems, and automated billing for Coimbatore enterprises.",
     images: ["https://www.sathishdev.in/sathish.png"],
@@ -81,6 +75,31 @@ export default function ErpSoftwareDeveloperCoimbatore() {
                   "@type": "City",
                   "name": "Coimbatore",
                   "sameAs": "https://en.wikipedia.org/wiki/Coimbatore",
+                },
+                {
+                  "@type": "City",
+                  "name": "Karur",
+                  "sameAs": "https://en.wikipedia.org/wiki/Karur",
+                },
+                {
+                  "@type": "City",
+                  "name": "Tiruppur",
+                  "sameAs": "https://en.wikipedia.org/wiki/Tiruppur",
+                },
+                {
+                  "@type": "City",
+                  "name": "Erode",
+                  "sameAs": "https://en.wikipedia.org/wiki/Erode",
+                },
+                {
+                  "@type": "City",
+                  "name": "Salem",
+                  "sameAs": "https://en.wikipedia.org/wiki/Salem,_Tamil_Nadu",
+                },
+                {
+                  "@type": "City",
+                  "name": "Pollachi",
+                  "sameAs": "https://en.wikipedia.org/wiki/Pollachi",
                 },
                 {
                   "@type": "AdministrativeArea",

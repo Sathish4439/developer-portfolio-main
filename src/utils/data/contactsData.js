@@ -5,6 +5,7 @@ export const contactsData = {
     github: 'https://github.com/Sathish4439',
     facebook: '',
     linkedIn: 'https://www.linkedin.com/in/sathishgobi/',
+    instagram: 'https://www.instagram.com/sathishdev_in/',
     twitter: '',
     stackOverflow: '',
     playStore: 'https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN',

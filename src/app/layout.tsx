@@ -132,6 +132,7 @@ export default function RootLayout({
                 "sameAs": [
                   "https://github.com/Sathish4439",
                   "https://www.linkedin.com/in/sathishgobi/",
+                  "https://www.instagram.com/sathishdev_in/",
                   "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN",
                   "https://leetcode.com/u/aravindsathish0885/",
                   "https://dev.to/5119__sathishg_d4ba94816",

@@ -31,6 +31,7 @@ const footerNav = {
     { label: "WhatsApp Instant Chat", href: "https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project" },
     { label: "Email Me", href: "mailto:sathishg.dev@gmail.com" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/sathishgobi/" },
+    { label: "Instagram (@sathishdev_in)", href: "https://www.instagram.com/sathishdev_in/" },
     { label: "GitHub", href: "https://github.com/Sathish4439" },
     { label: "Google Play Store", href: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN" },
     { label: "LeetCode", href: "https://leetcode.com/Sathish4439" },
@@ -40,8 +41,8 @@ const footerNav = {
 const socials = [
   { label: "GitHub", href: "https://github.com/Sathish4439" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/sathishgobi/" },
+  { label: "Instagram", href: "https://www.instagram.com/sathishdev_in/" },
   { label: "WhatsApp", href: "https://wa.me/917868031207?text=Hi%20Sathish,%20I%20would%20like%20to%20discuss%20a%20project" },
-  { label: "Instagram", href: "https://www.instagram.com/myshop.billing/" },
   { label: "PlayStore", href: "https://play.google.com/store/apps/dev?id=6517030172709793171&hl=en_IN" },
   { label: "Hashnode", href: "https://hashnode.com/@Sathish4439" },
   { label: "LeetCode", href: "https://leetcode.com/Sathish4439" },
